@@ -1,0 +1,51 @@
+.theme1 {
+        --z-primary: #8d0801;
+        --z-secondary: #9a0800;
+        --text-shadow: #f4d58d;
+        --secondary-box-shadow: #8d08010f;
+        --secondary-box-shadow-hover: #8d08011f;
+        --z-third: #000000;
+        --z-gray: #a4a4a4;
+        --z-gray-light: #c7c7c7;
+        --z-icon: #f4d58d;
+        --z-theme-button-background: #f4d58d;
+}
+
+.theme2 {
+    --z-primary: #202020;
+    --z-secondary: #181818;
+    --text-shadow: #73d1ff;
+    --secondary-box-shadow: #2020200f;
+    --secondary-box-shadow-hover: #2020201f;
+    --z-third: #73d1ff;
+    --z-gray: #a4a4a4;
+    --z-gray-light: #c7c7c7;
+    --z-icon: #ffffff;
+    --z-theme-button-background: #73d1ff;
+}
+
+.theme3 {
+    --z-primary: #4c956c;
+    --z-secondary: #42835e;
+    --text-shadow: #9191E9;
+    --secondary-box-shadow: #4c956c0f;
+    --secondary-box-shadow-hover: #4c956c1f;
+    --z-third: #000000;
+    --z-gray: #a4a4a4;
+    --z-gray-light: #c7c7c7;
+    --z-icon: #ffffff;
+    --z-theme-button-background: #9191E9
+}
+
+.theme4 {
+    --z-primary: #ffd100;
+    --z-secondary: #e7ba0a;
+    --text-shadow: #ffd100;
+    --secondary-box-shadow: #2020200f;
+    --secondary-box-shadow-hover: #2020201f;
+    --z-third: #000000;
+    --z-gray: #a4a4a4;
+    --z-gray-light: #c7c7c7;
+    --z-icon: #000000;
+    --z-theme-button-background: #e7ba0a
+}

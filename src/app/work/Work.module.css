@@ -1,0 +1,12 @@
+.container {
+    padding-top: 5rem;
+}
+
+
+.works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+}

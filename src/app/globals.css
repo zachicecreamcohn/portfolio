@@ -1,0 +1,50 @@
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oceanwide', serif;
+}
+
+p, a, li, span, div {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 3em 3em 20px;
+}
+
+p {
+    font-size: 16pt;
+    line-height: 3rem;
+}
+
+.animate-hover {
+    position: relative;
+    display: inline-block;
+}
+
+.animate-hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--z-primary);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.animate-hover:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.no-margin {
+    margin: 0 !important;
+}

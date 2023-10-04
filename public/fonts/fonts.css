@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Oceanwide';
+    src: url('Oceanwide-Semibold.woff2') format('woff2'),
+        url('Oceanwide-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oceanwide';
+    src: url('Oceanwide-SemiboldOblique.woff2') format('woff2'),
+        url('Oceanwide-SemiboldOblique.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,24 @@
+.container {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    z-index: 99999;
+}
+
+.container button {
+    height: 60px;
+    width: 60px;
+    padding: 0.95rem;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 15px 3px #0000001a;
+    cursor: pointer;
+}
+
+.container:hover button {
+    background-color: var( --z-theme-button-background);
+}
+
+
+

@@ -1,0 +1,102 @@
+{
+  "work": [
+    {
+      "previewTitle": "Busybodies at Givens,",
+      "title": "busybodies",
+      "blurb": "Projection mapping installation, Givens Hall",
+      "images": [
+        {
+          "src": "images/work/busybodies/1.png",
+          "isThumb": true,
+          "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "video/work/busybodies/1.mp4"
+      ],
+      "introText": "Projection mapping installation at Givens Hall, Washington University in St. Louis",
+      "paragraphs": [],
+      "link": "/work/busybodies"
+    },
+    {
+      "previewTitle": "Modern Antiques Product Line",
+      "title": "Modern Antiques Product Line",
+      "blurb": "Low-poly illustrations of antique products for use on consumer products",
+      "images": [
+        {
+          "src": "images/work/retro-low-poly/1.png",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retro-low-poly/2.png",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retro-low-poly/3.png",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retro-low-poly/4.png",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+      ],
+      "videos": [],
+      "introText": "Low-poly illustrations of antique products for use on consumer products",
+      "paragraphs": [],
+      "link": "/work/retro-low-poly"
+    },
+    {
+      "previewTitle": "Retina Burn 2022",
+      "title": "Modern Antiques Product Line",
+      "blurb": "Low-poly illustrations of antique products for use on consumer products",
+      "images": [
+        {
+          "src": "images/work/retina-burn/1.jpeg",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retina-burn/2.jpeg",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retina-burn/3.jpeg",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "images/work/retina-burn/4.jpeg",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+      ],
+      "videos": [],
+      "introText": "Lighting design for live rock concert, as part of the Lighting Technology course at Washington University in St. Louis",
+      "paragraphs": [],
+      "link": "/work/retina-burn"
+    },
+    {
+      "previewTitle": "Bricks at GCADD",
+      "title": "bricks at GCADD",
+      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
+      "images": [
+        {
+          "src": "images/work/bricks/1.png",
+          "isThumb": true,
+          "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "video/work/bricks/1.mp4"
+      ],
+      "introText": "A location-specific interactive art piece created for and shown at GCADD (Granite City Arts and Design). Built using Processing, MadMapper, and an Xbox Kinect.",
+      "paragraphs": [],
+      "link": "/work/bricks"
+    }
+  ]
+}

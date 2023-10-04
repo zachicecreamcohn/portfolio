@@ -1,0 +1,45 @@
+.heroContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.heroContainer .hero h1 {
+    margin: 0;
+    font-size: min(max(2.3rem, 5vw), 5.5rem);
+    padding-bottom: 0;
+}
+
+.heroContainer .hero h1 .name {
+    text-shadow: 2.5px 2px var(--text-shadow);
+}
+
+.heroContainer .hero h1 .color {
+    color: var(--z-primary);
+}
+.heroContainer .hero p {
+    color: var(--z-gray);
+    max-width: 50vw;
+    margin-top: .5rem;
+
+}
+
+.heroContainer .hero .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+
+.heroImage {
+    position: absolute;
+    bottom: 0;
+    max-width: 38vw;
+    z-index: -1;
+    opacity: 1.5;
+    right: 5vw;
+    max-height: 80vh;
+    transform: scaleX(-1);
+    height: auto;
+
+}
