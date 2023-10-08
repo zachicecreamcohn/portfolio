@@ -20,9 +20,9 @@ export default function Home() {
 
             <div className={styles.buttonContainer}>
                 <Button content="Contact Me" style="primary" onClick={() => {}} />
-                <a href="/work">
+                 <Link href={"/work"}>
                 <Button content="View Work" style="secondary" onClick={() => {}} />
-                </a>
+                 </Link>
             </div>
             </div>
 
