@@ -12,8 +12,8 @@ body {
     padding: 3em 3em 20px;
 }
 
-p {
-    font-size: 16pt;
+p, a {
+    font-size: 14pt;
     line-height: 3rem;
 }
 

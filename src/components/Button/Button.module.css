@@ -7,6 +7,12 @@
     cursor: pointer;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+
+.button:has(a) {
+    text-decoration: none;
 }
 
 .button.primary {

@@ -3,7 +3,7 @@
 import React, {useEffect, useState, useMemo} from "react";
 import styles from "./NavBar.module.css";
 import Button from "@/components/Button/Button";
-
+import {useRouter} from "next/router";
 
 export default function NavBar() {
 

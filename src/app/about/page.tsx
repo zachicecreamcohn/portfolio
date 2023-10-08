@@ -33,7 +33,7 @@ export default function About() {
                             <p>I love to explore the intersection of technology and art, especially projection mapping,
                                 theatrical lighting, and performance automation. I&apos;m also an avid cyclist.</p>
                             <div className={styles.cvContainer}>
-                                <Link href={"/contact"} className={"animate-hover"}>Download CV</Link>
+                                <Link href={"/cv"} className={"animate-hover"}>Download CV</Link>
                             </div>
             </div>
                     </div>

@@ -1,9 +1,11 @@
+
+
 import React, { useState, useEffect } from "react";
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 import styles from "./MainContainer.module.css";
 
 export default function MainContainer({ children }: { children: React.ReactNode }) {
-    console.log("init");
+
     const themes = [
         "theme1", "theme2", "theme3", "theme4"
     ];

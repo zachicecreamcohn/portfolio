@@ -4,6 +4,7 @@ import Button from "@/components/Button/Button";
 import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import styles from "./Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
 
   return (
@@ -19,7 +20,9 @@ export default function Home() {
 
             <div className={styles.buttonContainer}>
                 <Button content="Contact Me" style="primary" onClick={() => {}} />
+                <a href="/work">
                 <Button content="View Work" style="secondary" onClick={() => {}} />
+                </a>
             </div>
             </div>
 
