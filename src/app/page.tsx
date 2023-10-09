@@ -19,7 +19,9 @@ export default function Home() {
                 <p>I&apos;m passionate about building full-stack, impactful applications and the ways emerging technologies interface with the arts.</p>
 
             <div className={styles.buttonContainer}>
+                <Link href={"/contact"}>
                 <Button content="Contact Me" style="primary" onClick={() => {}} />
+                </Link>
                  <Link href={"/work"}>
                 <Button content="View Work" style="secondary" onClick={() => {}} />
                  </Link>

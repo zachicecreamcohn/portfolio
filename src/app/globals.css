@@ -53,3 +53,7 @@ p, a {
 a {
     text-decoration: none !important;
 }
+
+*:not(p) {
+    font-family: Oceanwide, sans-serif;
+}

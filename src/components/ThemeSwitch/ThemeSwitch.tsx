@@ -12,8 +12,6 @@ export default function ThemeSwitch({currentTheme, setTheme}: {
 
 
     function onPress() {
-        console.log("pressed")
-        console.log(currentTheme)
         if (currentTheme === "theme1" || currentTheme === undefined)  {
             setTheme("theme2")
         } else if (currentTheme === "theme2") {

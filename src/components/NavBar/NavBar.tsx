@@ -4,6 +4,7 @@ import React, {useEffect, useState, useMemo} from "react";
 import styles from "./NavBar.module.css";
 import Button from "@/components/Button/Button";
 import {useRouter} from "next/router";
+import Link from "next/link";
 
 export default function NavBar() {
 
@@ -80,7 +81,9 @@ export default function NavBar() {
             </div>
 
             <div className={styles.right}>
+                <Link href={"/contact"}>
                 <Button content={"Contact"} onClick={() => {}} style={"primary"} className={"no-margin"}/>
+                </Link>
             </div>
         </div>
     )
