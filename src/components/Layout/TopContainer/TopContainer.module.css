@@ -1,4 +1,6 @@
 .container {
-    height: calc(90vh - 5em);
+    min-height: calc(90vh - 5em);
     margin-top: 1rem;
+    align-items: center;
+    display: flex;
 }

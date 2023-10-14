@@ -54,3 +54,24 @@
     font-size: 14pt;
     margin-right: 1.5rem;
 }
+
+
+/*On mobile... */
+@media (max-width: 768px) {
+    .container {
+        padding: 3.5em 1em 1em;
+    }
+
+    .container .left {
+justify-content: center;
+        width: 100%;
+    }
+
+    .container .left a {
+        margin-bottom: 1rem;
+    }
+
+    .container .right {
+        display: none;
+    }
+}

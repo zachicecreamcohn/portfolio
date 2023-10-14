@@ -36,6 +36,7 @@
     overflow: hidden;
     border-radius: .75rem;
     max-height: 600px;
+    margin-right: 5rem;
 }
 
 .container .imageContainer img {
@@ -59,6 +60,7 @@
 
 .cvContainer {
     margin-top: 4rem;
+    margin-bottom: 8rem;
 }
 
 .cvContainer a {
@@ -66,4 +68,19 @@
     font-weight: bold;
     color: var(--z-primary);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .imageContainer {
+        margin-right: 0;
+    }
+
+    .container > div {
+        align-items: flex-start;
+    }
 }

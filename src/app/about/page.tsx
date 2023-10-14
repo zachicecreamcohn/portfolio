@@ -5,6 +5,7 @@ import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar/NavBar";
+import Footer from "@/components/Footer/Footer";
 
 export default function About() {
 
@@ -12,10 +13,9 @@ export default function About() {
         <>
             <NavBar/>
             <TopContainer>
-                <div className={styles.container + " row"}>
-                    <div className="container">
+                <div className={styles.container + " container"}>
 
-                        <div className={styles.left + " col-12 col-sm-4"}>
+                        <div className={styles.left}>
                             <div className={styles.imageContainer}>
                                 <Image
                                     src={"/images/headshot.png"}
@@ -26,7 +26,7 @@ export default function About() {
                                 />
                             </div>
                         </div>
-                        <div className="d-none d-sm-block col-1  col-lg-2"></div>
+                        {/*<div className="d-none d-sm-block col-1  col-lg-2"></div>*/}
                         <div className={styles.right + " col-12 col-sm-7 col-lg-6"}>
                             <div className={styles.aboutContainer}>
                                 <h1>hello!</h1>
@@ -43,7 +43,6 @@ export default function About() {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </TopContainer>
         </>

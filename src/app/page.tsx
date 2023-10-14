@@ -16,8 +16,8 @@ export default function Home() {
             <NavBar/>
 
             <TopContainer>
-                <div className={styles.heroContainer + " container;"}>
-                    <div className={"col-xs-12 col-md-8"}>
+                <div className={styles.heroContainer}>
+                    <div className={`col-xs-12 col-md-8 ${styles.left}`}>
                         <div className={styles.hero}>
                             <h1>im <span className={styles.name}>zach cohn</span>,</h1>
                             <h1>
@@ -48,7 +48,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className={`col-md-4 d-none d-md-block ${styles.right}`}>
+                    <div className={`col-md-4 ${styles.right}`}>
                         <Image src={"/images/hero.png"} alt={"png artwork of Zach Cohn smiling"}
                                className={styles.heroImage}
                                width={400}

@@ -45,3 +45,34 @@
     display: flex;
     /*justify-content: end;*/
 }
+
+
+
+
+/*On mobile... */
+@media (max-width: 768px) {
+    .container {
+        padding: 3.5em 1em 1em;
+    }
+
+    .left {
+        justify-content: center;
+        width: 100% !important
+    }
+
+    .left .hero h1 {
+        font-size: 4rem;
+    }
+
+    .left .hero p {
+        max-width: none;
+    }
+
+    .left a {
+        margin-bottom: 1rem;
+    }
+
+    .right {
+        display: none;
+    }
+}

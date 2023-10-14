@@ -36,10 +36,11 @@ export default function RootLayout({
         <body>
         <MainContainer>
             {children}
-            <Footer/>
 
 
         </MainContainer>
+        <Footer/>
+
         </body>
         </html>
     )
