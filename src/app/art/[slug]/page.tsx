@@ -49,7 +49,7 @@ export default async function Page({params}: { params: { slug: string } }) {
                             if (image.isOnContentPage) {
                                 return (
                                     <div className={styles.imageContainer} key={index}>
-                                        <Image key={index} src={`/${image.src}`}
+                                        <img key={index} src={`${image.src}`}
                                                width={500}
                                                height={500}
                                              alt={works_data.title}/>
