@@ -18,7 +18,7 @@ export default function WorkPreview({ImageSrc, Title, Description, Route, hidden
         <div className={styles.container + " " + (hidden ? styles.hidden : "")}>
             <Link href={Route} legacyBehavior>
                 <a className={styles.imageContainer}>
-                    <Image src={ImageSrc} alt={Title} width={500} height={500}/>
+                    <img src={ImageSrc} alt={Title} width={500} height={500}/>
                 </a>
             </Link>
             <div className={styles.titleContainer}>

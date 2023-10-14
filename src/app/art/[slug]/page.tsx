@@ -32,7 +32,7 @@ export default async function Page({params}: { params: { slug: string } }) {
                         return (
                             <div className={styles.videoContainer} key={index}>
 
-                                <Video src={video} poster={process.env.ROOT_URL + "/" + works_data.images[0].src}/>
+                                <Video src={video} poster={works_data.images[0].src}/>
                             </div>
 
 

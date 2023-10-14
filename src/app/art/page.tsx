@@ -44,7 +44,7 @@ export default async function Page({params}: { params: { slug: string } }) {
                     }, index: number) => {
 
                         const thumbImage = work.images.find(image => image.isThumb);
-                    let imageSrc = thumbImage ? `/${thumbImage.src}` : "";
+                    let imageSrc = thumbImage ? `${thumbImage.src}` : "";
 
 
                         return <WorkPreview key={index} ImageSrc={imageSrc} Title={work.previewTitle}

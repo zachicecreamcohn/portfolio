@@ -6,42 +6,42 @@
       "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
       "images": [
         {
-          "src": "images/work/fucking-a/1-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/1-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/2-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/2-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/3-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/3-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/4-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/4-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/5-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/4-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/6-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/5-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/7-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/7-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/8-min.jpg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/fucking-a/8-min.jpg",
           "isThumb": true,
           "isOnContentPage": true
         }
@@ -57,7 +57,7 @@
       "blurb": "Projection mapping installation, Givens Hall",
       "images": [
         {
-          "src": "images/work/busybodies/1.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/givens-project/Project%20Cover%20Photo.png",
           "isThumb": true,
           "isOnContentPage": false
         }
@@ -75,22 +75,22 @@
       "blurb": "Low-poly illustrations of antique products for use on consumer products",
       "images": [
         {
-          "src": "images/work/retro-low-poly/1.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retro-low-poly-products/white%20background%20for%20laptop.png",
           "isThumb": true,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retro-low-poly/2.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retro-low-poly-products/black%20and%20white%20cases.png",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retro-low-poly/3.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retro-low-poly-products/mug%20nice%20mockup.png",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retro-low-poly/4.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retro-low-poly-products/airpods%20mockup.png",
           "isThumb": false,
           "isOnContentPage": true
         }
@@ -106,22 +106,22 @@
       "blurb": "Lighting design for Lighting Technology Course",
       "images": [
         {
-          "src": "images/work/retina-burn/1.jpeg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retina-burn/retina-burn-wide.jpg",
           "isThumb": true,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retina-burn/2.jpeg",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retina-burn/retina-burn-board-shot.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retina-burn/3.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retina-burn/retina-burn-3.png",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/retina-burn/4.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/retina-burn/Retina-burn-4.png",
           "isThumb": false,
           "isOnContentPage": true
         }
@@ -137,7 +137,7 @@
       "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
       "images": [
         {
-          "src": "images/work/bricks/1.png",
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/bricks/cover-photo.png",
           "isThumb": true,
           "isOnContentPage": false
         }
@@ -148,6 +148,24 @@
       "introText": "A location-specific interactive art piece created for and shown at GCADD (Granite City Arts and Design). Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
       "link": "/art/bricks"
+    },
+    {
+      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
+        "title": "Boxes and Cubes: Dynamic Art For All",
+        "blurb": "Prototype for a dynamic art installation meant for the home",
+      "images": [
+        {
+          "src": "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/images/boxes/Screenshot%202023-10-13%20at%2011.11.52%E2%80%AFPM.png",
+            "isThumb": true,
+            "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/video/projection-mapping/boxes.mov"
+      ],
+        "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
+        "paragraphs": [],
+        "link": "/art/boxes"
     }
   ],
   "author": "",
