@@ -10,9 +10,10 @@
 .container.hidden {
     opacity: 0;
     height: 0;
-    margin-bottom:0 !important;
+    margin-bottom: 0 !important;
     padding: 0;
     margin-top: 0 !important;
+}
 
 .container .imageContainer {
     width: 600px;
