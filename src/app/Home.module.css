@@ -30,6 +30,11 @@
     margin-top: 1rem;
 }
 
+.heroContainer .hero .buttonContainer > div {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .heroImage {
     width: 100% !important;
@@ -55,9 +60,10 @@
         padding: 3.5em 1em 1em;
     }
 
+
     .left {
         justify-content: center;
-        width: 100% !important
+        width: 100% !important;
     }
 
     .left .hero h1 {
@@ -74,5 +80,31 @@
 
     .right {
         display: none;
+    }
+
+    .buttonContainer {
+        flex-direction: column !important;
+    }
+
+
+    /*Select the first button that is a child */
+    .buttonContainer .contactButton button {
+        width: 100%;
+    }
+
+    .buttonContainer > div {
+        width: 100%;
+    }
+
+    .buttonContainer > div button {
+        width: 100%;
+    }
+
+    .buttonContainer > div a {
+        width: 100%;
+    }
+
+    .buttonContainer > div a:nth-of-type(1) {
+        margin-right: 1rem;
     }
 }

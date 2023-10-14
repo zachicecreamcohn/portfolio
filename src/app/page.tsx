@@ -27,10 +27,11 @@ export default function Home() {
                                 emerging technologies interface with the arts.</p>
 
                             <div className={styles.buttonContainer}>
-                                <Link href={"/contact"}>
+                                <Link href={"/contact"} className={styles.contactButton}>
                                     <Button style="primary" onClick={() => {
                                     }}>Contact Me</Button>
                                 </Link>
+                                <div>
                                 <Link href={"/dev"}>
                                     <Button style="secondary" onClick={() => {
                                     }}>
@@ -44,6 +45,7 @@ export default function Home() {
                                         <Brush size={24} strokeWidth={1.5} color={"#000000"}/>
                                     </Button>
                                 </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

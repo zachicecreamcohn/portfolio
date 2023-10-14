@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Work.module.css";
+import styles from "./Art.module.css";
 import WorkPreview from "@/components/WorkPreview/WorkPreview";
 import {root} from "postcss";
 import Navbar from "@/components/NavBar/NavBar";
