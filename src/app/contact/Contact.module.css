@@ -70,3 +70,16 @@
     margin-bottom: 1rem;
     font-size: min(max(1.3rem, 3vw), 3.5rem);
 }
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.contactInfo a {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}

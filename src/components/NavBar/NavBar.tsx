@@ -38,18 +38,29 @@ export default function NavBar() {
             path: "/about"
         },
         {
-            title: "Work",
-            path: "/work"
+            title: "Software",
+            path: "/dev"
+        },
+        {
+            title: "Art",
+            path: "/art"
+        },
+        {
+            title: "CV",
+            path: "/cv"
         }
     ], []);
 
 
-    const [currentPageIndex, setCurrentPageIndex] = useState(0);
+    const [currentPageIndex, setCurrentPageIndex] = useState(undefined);
     useEffect(() => {
         function getIndexFromPath(path: string) {
             for (let i = 0; i < pages.length; i++) {
-                if (pages[i].path === path) {
+                console.log(pages[i].path, path);
+                if (pages[i].path == path) {
+                    console.log("returning", i);
                     return i;
+
                 }
             }
         }
@@ -57,7 +68,8 @@ export default function NavBar() {
 
         const currentPage = window.location.pathname;
         const currentPageIndex = getIndexFromPath(currentPage);
-        if (currentPageIndex) {
+        if (currentPageIndex !== undefined) {
+            // @ts-ignore
             setCurrentPageIndex(currentPageIndex);
         }
     }, [pages]);
@@ -72,9 +84,9 @@ export default function NavBar() {
 
         {pages.map((page, index) => {
             return (
-                <a key={index} href={page.path} className={index === currentPageIndex ? styles.active : ""}>
+                <Link key={index} href={page.path} className={index === currentPageIndex ? styles.active : ""}>
                     {page.title}
-                </a>
+                </Link>
             )
         })}
 
@@ -82,7 +94,9 @@ export default function NavBar() {
 
             <div className={styles.right}>
                 <Link href={"/contact"}>
-                <Button content={"Contact"} onClick={() => {}} style={"primary"} className={"no-margin"}/>
+                <Button onClick={() => {}} style={"primary"} className={"no-margin"}>
+                    Contact
+                </Button>
                 </Link>
             </div>
         </div>

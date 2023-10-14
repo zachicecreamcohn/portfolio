@@ -49,3 +49,7 @@
     --z-icon: #000000;
     --z-theme-button-background: #e7ba0a
 }
+
+:root {
+    --light-border: #f2f2f2;
+}

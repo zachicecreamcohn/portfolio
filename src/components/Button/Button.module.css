@@ -10,7 +10,7 @@
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    height: fit-content;
+    height: 55px;
 }
 
 
@@ -20,7 +20,7 @@
 
 .button.primary {
     background-color: var(--z-primary);
-    border: 1px solid var(--z-primary);
+    border: 1px solid var(--light-border);
     color: #ffffff;
 }
 
@@ -29,14 +29,21 @@
     border: 1px solid var(--z-secondary);
 }
 .button.secondary {
-    border: 1px solid #ffffff;
+    border: 1px solid #c2c2c2;
     background-color: #ffffff;
     color: #000000;
     display: flex;
-    box-shadow: var(--secondary-box-shadow) 0 0 20px 10px;
 }
 
 .button.secondary:hover {
-    box-shadow: var(--secondary-box-shadow-hover) 0 0 20px 10px;
     color: #111111;
+    background-color: #f8f8f8;
+    border-color: #b4b4b4;
+}
+
+.button.secondary:active {
+    color: #070707;
+    background-color: #f6f6f6;
+
+    border-color: #b4b4b4;
 }

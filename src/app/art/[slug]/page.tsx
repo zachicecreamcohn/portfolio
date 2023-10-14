@@ -9,8 +9,8 @@ export default async function Page({params}: { params: { slug: string } }) {
     const works_data = await fetch(process.env.ROOT_URL + "/data/db.json")
         .then(response => response.json())
         .then(data => {
-                // find the work with the matching slug (use the data.work.link property)
-                // return that work
+                // find the art with the matching slug (use the data.art.link property)
+                // return that art
 
                 for (let work of data.work) {
                     // get the part of the link after the last slash

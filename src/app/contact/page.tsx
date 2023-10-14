@@ -84,12 +84,20 @@ export default function Contact() {
                         </div>
 
                         <div className="d-flex justify-content-center">
-                        <Button content={"Send"} style={"primary"} className={styles.customButton}/>
+                        <Button  style={"primary"} className={styles.customButton}>
+                            Send
+                        </Button>
                         </div>
 
 
                     </form>
                 </div>
+                    <div className={styles.contactInfo}>
+
+                        <p><a href="mailto:zcohn@wustl.edu">zcohn@wustl.edu</a> | <a href="tel:646-477-2420">(646)-477-2420</a>
+                        </p>
+                    </div>
+
                 </>)}
         </div>
         </div>

@@ -14,7 +14,7 @@ export default function About() {
                     <div className={styles.left + " col-12 col-sm-4"}>
                         <div className={styles.imageContainer}>
                             <Image
-                                src={"/images/headshot2.jpeg"}
+                                src={"/images/headshot.png"}
                                 alt={"Zach Cohn"}
                                 layout="responsive"
                                 width={400}

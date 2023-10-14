@@ -5,38 +5,59 @@ import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import styles from "./Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import {Code, Brush} from 'tabler-icons-react';
+import React from "react";
+
 export default function Home() {
 
-  return (
-   <>
+    return (
+        <>
 
-    <TopContainer>
-        <div className={styles.heroContainer}>
-            <div className={styles.hero}>
-                <h1>im <span className={styles.name}>zach cohn</span>,</h1>
-                <h1>
-                    <span className={styles.color}>dev</span> and <span className={styles.color}>theatre artist</span></h1>
-                <p>I&apos;m passionate about building full-stack, impactful applications and the ways emerging technologies interface with the arts.</p>
 
-            <div className={styles.buttonContainer}>
-                <Link href={"/contact"}>
-                <Button content="Contact Me" style="primary" onClick={() => {}} />
-                </Link>
-                 <Link href={"/work"}>
-                <Button content="View Work" style="secondary" onClick={() => {}} />
-                 </Link>
-            </div>
-            </div>
+            <TopContainer>
+                <div className={styles.heroContainer + " container;"}>
+                    <div className={"col-xs-12 col-md-8"}>
+                        <div className={styles.hero}>
+                            <h1>im <span className={styles.name}>zach cohn</span>,</h1>
+                            <h1>
+                                <span className={styles.color}>dev</span> and <span className={styles.color}>theatre artist</span>
+                            </h1>
+                            <p>I&apos;m passionate about building full-stack, impactful applications and the ways
+                                emerging technologies interface with the arts.</p>
 
-        </div>
-        <Image src={"/images/hero.svg"} alt={"Vector artwork of Zach Cohn smiling"}
-            className={styles.heroImage}
-               width={500}
-               height={500}
+                            <div className={styles.buttonContainer}>
+                                <Link href={"/contact"}>
+                                    <Button style="primary" onClick={() => {
+                                    }}>Contact Me</Button>
+                                </Link>
+                                <Link href={"/dev"}>
+                                    <Button style="secondary" onClick={() => {
+                                    }}>
+                                        <Code size={24} strokeWidth={1.5} color={"#000000"}/>
+                                    </Button>
 
-        />
+                                </Link>
+                                <Link href={"/art"}>
+                                    <Button style="secondary" onClick={() => {
+                                    }}>
+                                        <Brush size={24} strokeWidth={1.5} color={"#000000"}/>
+                                    </Button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
 
-    </TopContainer>
-     </>
-  )
+                    <div className={`col-md-4 d-none d-md-block ${styles.right}` }>
+                        <Image src={"/images/hero.png"} alt={"png artwork of Zach Cohn smiling"}
+                            className={styles.heroImage}
+                               width={400}
+                               height={400}
+                        />
+                    </div>
+                </div>
+
+
+            </TopContainer>
+        </>
+    )
 }

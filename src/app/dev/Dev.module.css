@@ -1,0 +1,55 @@
+.container h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin: 0;
+}
+
+.container .right {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.right .technologySection {
+    margin-top: .75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.right .technologySection .title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: var(--z-primary);
+    text-decoration: none;
+    margin-top: .75rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.right .technologySection .technologyIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+}
+
+.left .experienceSection {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left .experienceSection h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    color: var(--z-primary);
+    text-decoration: none;
+    margin-top: .75rem;
+    margin-bottom: 0.75rem;
+}
+
+.left .intro {
+    margin-bottom: 8rem;
+}

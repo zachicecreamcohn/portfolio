@@ -6,7 +6,7 @@
 
 .heroContainer .hero h1 {
     margin: 0;
-    font-size: min(max(2.3rem, 5vw), 5.5rem);
+    font-size: min(max(2.3rem, 5vw), 11.5rem);
     padding-bottom: 0;
 }
 
@@ -32,14 +32,16 @@
 
 
 .heroImage {
-    position: absolute;
-    bottom: 0;
-    max-width: 38vw;
-    z-index: -1;
-    opacity: 1.5;
-    right: 5vw;
-    max-height: 80vh;
-    transform: scaleX(-1);
+    width: 100% !important;
     height: auto;
+    max-width: 800px;
 
+
+}
+
+.right {
+
+
+    display: flex;
+    /*justify-content: end;*/
 }

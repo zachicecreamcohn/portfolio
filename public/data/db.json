@@ -6,42 +6,42 @@
       "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
       "images": [
         {
-          "src": "images/work/fucking-a/1.jpg",
+          "src": "images/work/fucking-a/1-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/2.jpg",
+          "src": "images/work/fucking-a/2-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/3.jpg",
+          "src": "images/work/fucking-a/3-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/4.jpg",
+          "src": "images/work/fucking-a/4-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/5.jpg",
+          "src": "images/work/fucking-a/5-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/6.jpg",
+          "src": "images/work/fucking-a/6-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/7.jpg",
+          "src": "images/work/fucking-a/7-min.jpg",
           "isThumb": false,
           "isOnContentPage": true
         },
         {
-          "src": "images/work/fucking-a/8.jpg",
+          "src": "images/work/fucking-a/8-min.jpg",
           "isThumb": true,
           "isOnContentPage": true
         }
@@ -149,5 +149,12 @@
       "paragraphs": [],
       "link": "/work/bricks"
     }
-  ]
+  ],
+  "author": "",
+  "config": {},
+  "createAt": "",
+  "homepage": "",
+  "identifier": "",
+  "meta": {},
+  "schemaVersion": 0
 }
