@@ -6,6 +6,7 @@ import TechnologyIcon from "@/components/TechnologyIcon/TechnologyIcon";
 import styles from "./Dev.module.css";
 import Image from "next/image";
 import head from "next/head";
+import Navbar from "@/components/NavBar/NavBar";
 
 export default function dev() {
 
@@ -22,6 +23,8 @@ export default function dev() {
 
     return (
         <>
+            <Navbar />
+
             <head>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
             </head>

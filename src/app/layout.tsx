@@ -3,11 +3,12 @@
 import './globals.css'
 import './theming.css'
 import "../../public/fonts/fonts.css"
-import type { Metadata } from 'next'
+import type {Metadata} from 'next'
 import Navbar from "../components/NavBar/NavBar"
 import React, {useState} from "react";
 import MainContainer from "@/components/Layout/MainContainer/MainContainer";
 import "../bootstrap.min.css"
+import Footer from "@/components/Footer/Footer";
 
 // TODO: find a way to use metadata and the theme switcher
 //  the issue is that metadata requires server side component and the theme switcher requires client side component
@@ -17,26 +18,24 @@ import "../bootstrap.min.css"
 // }
 
 
-
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
+                                       children,
+                                   }: {
+    children: React.ReactNode
 }) {
 
 
-
     return (
-    <html lang="en">
-      <body>
-      <MainContainer>
-      <Navbar />
-      {children}
+        <html lang="en">
+        <body>
+        <MainContainer>
+            {children}
+            <Footer/>
 
-      </MainContainer>
 
-      </body>
-    </html>
-  )
+        </MainContainer>
+        </body>
+        </html>
+    )
 }
 

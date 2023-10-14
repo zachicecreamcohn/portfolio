@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./SpecificWork.module.css"
 import Video from "@/components/Video/Video";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default async function Page({params}: { params: { slug: string } }) {
 
@@ -23,6 +24,7 @@ export default async function Page({params}: { params: { slug: string } }) {
 
     return (
         <>
+            <NavBar/>
             <div className={styles.container}>
                 <h1>{works_data.title}</h1>
                 <p>{works_data.introText}</p>

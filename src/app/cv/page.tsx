@@ -4,6 +4,7 @@ import React from "react";
 import { saveAs } from "file-saver";
 import styles from "./cv.module.css"
 import Link from "next/link";
+import NavBar from "@/components/NavBar/NavBar";
 export default function cv() {
 
     const downloadStandard = () => {
@@ -14,6 +15,9 @@ export default function cv() {
         saveAs("/cvs/theatre.pdf", "Zach Cohn CV - Theatre.pdf");
     }
     return (
+        <>
+        <NavBar/>
+
         <div className={styles.cv}>
             <h1>Choose a CV</h1>
             <div className={styles.cvsContainer + " row"}>
@@ -29,5 +33,6 @@ export default function cv() {
                 </div>
             </div>
         </div>
+        </>
     )
 }

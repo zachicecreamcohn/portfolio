@@ -10,6 +10,7 @@ p, a, li, span, div {
 
 body {
     padding: 3em 3em 20px;
+    overflow-x: hidden;
 }
 
 p, a {

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Work.module.css";
 import WorkPreview from "@/components/WorkPreview/WorkPreview";
 import {root} from "postcss";
+import Navbar from "@/components/NavBar/NavBar";
 
 export default async function Page({params}: { params: { slug: string } }) {
 
@@ -19,6 +20,9 @@ export default async function Page({params}: { params: { slug: string } }) {
 
 
     return (
+        <>
+        <Navbar />
+
         <div className={styles.container}>
             <div className={styles.works}>
 
@@ -60,5 +64,6 @@ export default async function Page({params}: { params: { slug: string } }) {
                     ))}
             </div>
         </div>
+        </>
     )
 }

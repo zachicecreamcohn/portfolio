@@ -1,0 +1,21 @@
+.container {
+   display: flex;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 28pt;
+    margin: 10px !important;
+    opacity: .2;
+    filter: contrast(0);
+    cursor: pointer;
+}
+
+.iconsContainer {
+    margin-top: -3rem;
+}
+
+.icon:hover {
+    opacity: 1;
+    filter: contrast(1);
+}

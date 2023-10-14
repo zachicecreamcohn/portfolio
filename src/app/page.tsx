@@ -7,12 +7,13 @@ import Image from "next/image";
 import Link from "next/link";
 import {Code, Brush} from 'tabler-icons-react';
 import React from "react";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
 
     return (
         <>
-
+            <NavBar/>
 
             <TopContainer>
                 <div className={styles.heroContainer + " container;"}>
@@ -47,9 +48,9 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className={`col-md-4 d-none d-md-block ${styles.right}` }>
+                    <div className={`col-md-4 d-none d-md-block ${styles.right}`}>
                         <Image src={"/images/hero.png"} alt={"png artwork of Zach Cohn smiling"}
-                            className={styles.heroImage}
+                               className={styles.heroImage}
                                width={400}
                                height={400}
                         />
