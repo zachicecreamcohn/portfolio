@@ -49,7 +49,7 @@
       "videos": [],
       "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
       "paragraphs": [],
-      "link": "/work/fucking-a"
+      "link": "/art/fucking-a"
     },
     {
       "previewTitle": "Busybodies at Givens",
@@ -67,7 +67,7 @@
       ],
       "introText": "Projection mapping installation at Givens Hall, Washington University in St. Louis",
       "paragraphs": [],
-      "link": "/work/busybodies"
+      "link": "/art/busybodies"
     },
     {
       "previewTitle": "Modern Antiques Product Line",
@@ -98,7 +98,7 @@
       "videos": [],
       "introText": "Low-poly illustrations of antique products for use on consumer products",
       "paragraphs": [],
-      "link": "/work/retro-low-poly"
+      "link": "/art/retro-low-poly"
     },
     {
       "previewTitle": "Retina Burn 2022",
@@ -129,7 +129,7 @@
       "videos": [],
       "introText": "Lighting design for live rock concert, as part of the Lighting Technology course at Washington University in St. Louis",
       "paragraphs": [],
-      "link": "/work/retina-burn"
+      "link": "/art/retina-burn"
     },
     {
       "previewTitle": "Bricks at GCADD",
@@ -147,7 +147,7 @@
       ],
       "introText": "A location-specific interactive art piece created for and shown at GCADD (Granite City Arts and Design). Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
-      "link": "/work/bricks"
+      "link": "/art/bricks"
     }
   ],
   "author": "",

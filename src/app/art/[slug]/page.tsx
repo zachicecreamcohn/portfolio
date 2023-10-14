@@ -16,8 +16,7 @@ export default async function Page({params}: { params: { slug: string } }) {
                     // get the part of the link after the last slash
                     const slug = work.link.split("/").pop()
                     if (slug === params.slug) {
-                        return work
-                    }
+                        return work;}
                 }
             }
         )
