@@ -41,7 +41,7 @@
 
 .container .imageContainer img {
     height: 100% !important;
-    width: 100% !important;
+    width: auto !important;
     max-height: 500px;
 
 }
