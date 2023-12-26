@@ -1,23 +1,18 @@
 "use client"
 
-import React from "react";
+import React, {useState} from "react";
 
 import TechnologyIcon from "@/components/TechnologyIcon/TechnologyIcon";
 import styles from "./Dev.module.css";
 import Image from "next/image";
 import head from "next/head";
 import Navbar from "@/components/NavBar/NavBar";
+import TechnologyList from "@/components/TechnologyList/TechnologyList";
 
 export default function dev() {
 
-    const spacer =
-        <>
-        <TechnologyIcon labelText={""} spacer><span/></TechnologyIcon>
-    <TechnologyIcon labelText={""} spacer><span/></TechnologyIcon>
-    <TechnologyIcon labelText={""} spacer><span/></TechnologyIcon>
-    <TechnologyIcon labelText={""} spacer><span/></TechnologyIcon>
-    <TechnologyIcon labelText={""} spacer><span/></TechnologyIcon>
-        </>
+
+
 
 
 
@@ -93,111 +88,7 @@ export default function dev() {
 
                     <div className={"col-md-1 col-12 " + styles.middle}></div>
                     <div className={"col-md-3 col-12 " + styles.right}>
-                        <h2>I am proficient in...</h2>
-
-                        <div className={styles.technologySection}>
-                            <p className={styles.title}>Frameworks</p>
-                            <div className={styles.technologyIcons}>
-                                <TechnologyIcon labelText="React">
-                                    <i className={"devicon-react-original colored"}></i>
-                                </TechnologyIcon>
-
-                                <TechnologyIcon labelText="Next.js">
-                                    <i className={"devicon-nextjs-original colored"}></i>
-                                </TechnologyIcon>
-
-                                <TechnologyIcon labelText="Flask">
-                                    <i className="devicon-flask-original colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText="Symfony">
-                                    <i className="devicon-symfony-original colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText="Bootstrap">
-                                    <i className="devicon-bootstrap-plain colored"></i>
-                                </TechnologyIcon>
-
-
-                                {spacer}
-
-
-                            </div>
-                        </div>
-
-                        <div className={styles.technologySection}>
-                            <p className={styles.title}>Languages</p>
-                            <div className={styles.technologyIcons}>
-                                <TechnologyIcon labelText="JavaScript">
-                                    <i className={"devicon-javascript-plain colored"}></i>
-                                </TechnologyIcon>
-
-                                <TechnologyIcon labelText="TypeScript">
-                                    <i className={"devicon-typescript-plain colored"}></i>
-                                </TechnologyIcon>
-
-                                <TechnologyIcon labelText="Python">
-                                    <i className="devicon-python-plain colored"></i>
-                                </TechnologyIcon>
-
-                                <TechnologyIcon labelText="PHP">
-                                    <i className="devicon-php-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"VB.NET"}>
-                                    <i className="devicon-dot-net-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"Arduino C"}>
-                                    <i className="devicon-arduino-plain colored"></i>
-                                </TechnologyIcon>
-
-
-                                {spacer}
-
-                            </div>
-                        </div>
-
-                        <div className={styles.technologySection}>
-                            <p className={styles.title}>Technologies</p>
-                            <div className={styles.technologyIcons}>
-                                <TechnologyIcon labelText="Git">
-                                    <i className={"devicon-git-plain colored"}></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"Firebase"}>
-                                    <i className="devicon-firebase-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"HTML5"}>
-                                    <i className="devicon-html5-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"CSS3"}>
-                                    <i className="devicon-css3-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"MySQL"}>
-                                    <i className="devicon-mysql-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"MongoDB"}>
-                                    <i className="devicon-mongodb-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"AWS"}>
-                                    <i className="devicon-amazonwebservices-original colored"></i>
-                                </TechnologyIcon>
-
-
-                                {spacer}
-                            </div>
-                        </div>
-                        <div className={styles.technologySection}>
-                            <p className={styles.title}>Tools</p>
-                            <div className={styles.technologyIcons}>
-                                <TechnologyIcon labelText={"Figma"}>
-                                    <i className="devicon-figma-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"Photoshop"}>
-                                    <i className="devicon-photoshop-plain colored"></i>
-                                </TechnologyIcon>
-                                <TechnologyIcon labelText={"Illustrator"}>
-                                    <i className="devicon-illustrator-plain colored"></i>
-                                </TechnologyIcon>
-
-                            </div>
-                        </div>
+                        <TechnologyList/>
                     </div>
                 </div>
 

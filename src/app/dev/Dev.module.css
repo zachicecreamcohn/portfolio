@@ -13,30 +13,6 @@
     flex-direction: column;
 }
 
-.right .technologySection {
-    margin-top: .75rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.right .technologySection .title {
-    font-size: 16pt;
-    font-weight: bold;
-    color: var(--z-primary);
-    text-decoration: none;
-    margin-top: .75rem;
-    margin-bottom: 0.75rem;
-}
-
-
-.right .technologySection .technologyIcons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
-    justify-content: center;
-}
 
 .left .experienceSection {
     margin-top: 2rem;

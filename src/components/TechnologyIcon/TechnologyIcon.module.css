@@ -28,47 +28,8 @@
 }
 
 
-.labelContainer {
-    display: flex;
-    width: 0;
-    position: absolute;
-    height: 35px;
-    padding: 1rem 0;
-    justify-content: center;
-    border-radius: .5rem;
-align-items: center;
-    border: 1px solid black;
-    transition: all .25s ease-in-out;
-    top: calc(50% - 17.5px);
-    left: 6px;
-    background-color: white;
-    z-index: -1;
-}
-
 .container:hover .icon {
-    border: 1px solid black;
-}
-.container:hover {
-    z-index: 900;
-}
-.container:hover .labelContainer {
-    padding: 5px 5px 5px 5rem;
-    overflow: hidden;
-    width: 200px;
-    transition: all .25s ease-in-out;
-}
-
-.labelContainer .labelText {
-    opacity: 0;
-    transition: all .0s;
-    font-size: 12pt;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-.container:hover .labelText {
-    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 
