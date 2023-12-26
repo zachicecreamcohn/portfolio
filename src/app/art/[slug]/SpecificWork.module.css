@@ -62,9 +62,28 @@
 
 .videoContainer {
     max-width: 1000px;
+    width: 60vw;
+    height: 62vh;
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
+
+
+}
+
+.videoContainer iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+
+    /*border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;*/
+}
+
+@media (max-width: 708px) {
+    .videoContainer {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 

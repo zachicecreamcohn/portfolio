@@ -14,6 +14,8 @@ export default async function Page({params}: { params: { slug: string } }) {
     const works_data = await fetch(process.env.ROOT_URL + "/data/db.json")
         .then(response => response.json())
         .then(data => {
+            console.log("Fetched data from " + process.env.ROOT_URL + "/data/db.json")
+            console.log(data.work[0].images)
                 return data.work
             }
         )
@@ -27,6 +29,7 @@ export default async function Page({params}: { params: { slug: string } }) {
             <div className={styles.works}>
 
                 {works_data.map((work: {
+                        "hidden": boolean,
                         "previewTitle": string,
                         "title": string,
                         "blurb": string,
@@ -50,7 +53,9 @@ export default async function Page({params}: { params: { slug: string } }) {
                         const thumbImage = work.images.find(image => image.isThumb);
                     let imageSrc = thumbImage ? `${thumbImage.src}` : "";
 
-
+                        if (work.hidden) {
+                            return <></>
+                        }
                         return <WorkPreview key={index} ImageSrc={imageSrc} Title={work.previewTitle}
                                             Description={work.blurb} Route={work.link}/>
                     }
@@ -59,6 +64,7 @@ export default async function Page({params}: { params: { slug: string } }) {
                 {Array(8)
                     .fill(0)
                     .map((_, i) => (
+
                         <WorkPreview ImageSrc={""} Title={""} Description={""} Route={""} hidden key={i}/>
 
                     ))}

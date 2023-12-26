@@ -31,11 +31,22 @@ export default async function Page({params}: { params: { slug: string } }) {
 
                 <div className={styles.works}>
                     {works_data.videos.map((video: string, index: number) => {
+                        // @ts-ignore
                         return (
                             <div className={styles.videoContainer} key={index}>
-
-                                <Video src={video} poster={works_data.images[0].src}/>
+                                <iframe
+                                    src={video}
+                                    allowFullScreen={true}
+                                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                                ></iframe>
                             </div>
+
+
+
+                            //
+                            //
+                            //     <Video src={video} poster={works_data.images[0].src}/>
+                            // </div>
 
 
                         )
