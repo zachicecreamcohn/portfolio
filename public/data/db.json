@@ -1,6 +1,52 @@
 {
   "work": [
     {
+      "previewTitle": "God of Carnage",
+        "title": "God of Carnage, Yasmina Reza",
+        "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/8fb5e58e-11e1-4a7e-950a-3194c7f3a800/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fc84236a-b4b8-4753-92db-a96eeb751300/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/60562907-8f1c-44bf-cdae-561be4772f00/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/60d511de-a99f-4c72-2171-daa897b03800/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fb172440-1225-4d7a-2e59-ba3c782d8f00/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/bac07b7c-19aa-499d-5014-245220e2fd00/public",
+            "isThumb": true,
+            "isOnContentPage": true
+        }
+
+      ],
+      "videos": [],
+        "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
+        "paragraphs": [
+          "Directed by Sami Ginoplos. Photography by Jack Rushen."
+        ],
+        "link": "/art/god-of-carnage"
+    },
+    {
       "previewTitle": "Fucking A",
       "title": "Fucking A, Suzan-Lori Parks",
       "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",

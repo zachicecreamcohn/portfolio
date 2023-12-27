@@ -61,8 +61,8 @@ export default async function Page({params}: { params: { slug: string } }) {
                                 return (
                                     <div className={styles.imageContainer} key={index}>
                                         <img key={index} src={`${image.src}`}
-                                               width={500}
-                                               height={500}
+                                               width={1000}
+                                               height={1000}
                                              alt={works_data.title}/>
                                     </div>
                                 )

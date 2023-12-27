@@ -16,14 +16,19 @@
     height: 0 !important;
     margin-bottom:0;
     margin-top: 0;
+    width: 600px;
 }
 
 .container .imageContainer {
-    width: 600px;
+    /*width: 600px;*/
     height: 375px;
     margin: 1em auto;
+    background-color: black; /* Set black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    object-fit: cover;
+    border-radius: 0.95em;
 }
 
 .container .imageContainer img {
