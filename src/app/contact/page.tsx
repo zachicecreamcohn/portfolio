@@ -4,6 +4,7 @@ import React  from "react";
 
 import styles from "./Contact.module.css";
 import Button from "@/components/Button/Button";
+import Navbar from "@/components/NavBar/NavBar";
 
 export default function Contact() {
 
@@ -45,6 +46,8 @@ export default function Contact() {
 
 
     return (
+        <>
+        <Navbar />
         <div className={styles.container}>
             <div className={styles.contactContainer}>
                 {alertMessage ? <div className={styles.alert}>{alertMessage}</div> : (<>
@@ -101,5 +104,6 @@ export default function Contact() {
                 </>)}
         </div>
         </div>
+        </>
     )
 }
