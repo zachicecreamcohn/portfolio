@@ -3,6 +3,8 @@ import styles from "./Art.module.css";
 import WorkPreview from "@/components/WorkPreview/WorkPreview";
 import {root} from "postcss";
 import Navbar from "@/components/NavBar/NavBar";
+import dbData from "../../../public/data/db.json"
+import {Project} from "@/Types";
 
 export default async function Page({params}: { params: { slug: string } }) {
 
@@ -11,14 +13,8 @@ export default async function Page({params}: { params: { slug: string } }) {
     // for each project, render a WorkPreview component
 
 
-    const works_data = await fetch(process.env.ROOT_URL + "/data/db.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log("Fetched data from " + process.env.ROOT_URL + "/data/db.json")
-            console.log(data.work[0].images)
-                return data.work
-            }
-        )
+    const works_data = dbData.work;
+
 
 
     return (
@@ -28,27 +24,8 @@ export default async function Page({params}: { params: { slug: string } }) {
         <div className={styles.container}>
             <div className={styles.works}>
 
-                {works_data.map((work: {
-                        "hidden": boolean,
-                        "previewTitle": string,
-                        "title": string,
-                        "blurb": string,
-                        "images": [
-                            {
-                                "src": string,
-                                "isThumb": boolean
-                                "isOnContentPage": boolean
-                            }
-                        ],
-                        "videos": [
-                            string
-                        ],
-                        "introText": string,
-                        paragraphs: [
-                            string
-                        ],
-                        link: string
-                    }, index: number) => {
+                {works_data.map((work:Project, index:number) => {
+
 
                         const thumbImage = work.images.find(image => image.isThumb);
                     let imageSrc = thumbImage ? `${thumbImage.src}` : "";

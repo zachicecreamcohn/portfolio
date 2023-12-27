@@ -4,87 +4,83 @@ import styles from "./SpecificWork.module.css"
 import Video from "@/components/Video/Video";
 import NavBar from "@/components/NavBar/NavBar";
 
+import dbData from "../../../../public/data/db.json"
+import {Project} from "@/Types";
+
 export default async function Page({params}: { params: { slug: string } }) {
 
-
-    const works_data = await fetch(process.env.ROOT_URL + "/data/db.json")
-        .then(response => response.json())
-        .then(data => {
-                // find the art with the matching slug (use the data.art.link property)
-                // return that art
-
-                for (let work of data.work) {
-                    // get the part of the link after the last slash
-                    const slug = work.link.split("/").pop()
-                    if (slug === params.slug) {
-                        return work;}
-                }
+    const getSlugData = (): Project | undefined => {
+        for (let work of dbData.work) {
+            // get the part of the link after the last slash
+            const slug = work.link.split("/").pop();
+            if (slug === params.slug) {
+                return work;
             }
-        )
+        }
+        // Optionally return undefined explicitly if no match is found
+        return undefined;
+    }
+
+    const slugData: Project | undefined = getSlugData();
 
     return (
         <>
             <NavBar/>
-            <div className={styles.container}>
-                <h1>{works_data.title}</h1>
-                <p>{works_data.introText}</p>
+            {slugData &&
+                <div className={styles.container}>
+                    <h1>{slugData.title}</h1>
+                    <p>{slugData.introText}</p>
 
-                <div className={styles.works}>
-                    {works_data.videos.map((video: string, index: number) => {
-                        // @ts-ignore
-                        return (
-                            <div className={styles.videoContainer} key={index}>
-                                <iframe
-                                    src={video}
-                                    allowFullScreen={true}
-                                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                                ></iframe>
-                            </div>
-
-
-
-                            //
-                            //
-                            //     <Video src={video} poster={works_data.images[0].src}/>
-                            // </div>
+                    <div className={styles.works}>
+                        {slugData.videos.map((video: string, index: number) => {
+                            // @ts-ignore
+                            return (
+                                <div className={styles.videoContainer} key={index}>
+                                    <iframe
+                                        src={video}
+                                        allowFullScreen={true}
+                                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                                    ></iframe>
+                                </div>
 
 
-                        )
-                    })
-                    }
-                    {works_data.images.map((image: {
-                            src: string,
-                            isThumb: boolean,
-                            isOnContentPage: boolean
-                        }, index: number) => {
-                            if (image.isOnContentPage) {
-                                return (
-                                    <div className={styles.imageContainer} key={index}>
-                                        <img key={index} src={`${image.src}`}
-                                               width={1000}
-                                               height={1000}
-                                             alt={works_data.title}/>
-                                    </div>
-                                )
-                            }
+                            )
+                        })
                         }
-                    )}
+                        {slugData.images.map((image: {
+                                src: string,
+                                isThumb: boolean,
+                                isOnContentPage: boolean
+                            }, index: number) => {
+                                if (image.isOnContentPage) {
+                                    return (
+                                        <div className={styles.imageContainer} key={index}>
+                                            <img key={index} src={`${image.src}`}
+                                                 width={1000}
+                                                 height={1000}
+                                                 alt={slugData.title}/>
+                                        </div>
+                                    )
+                                }
+                            }
+                        )}
 
-                    {
-                        // if there is more than 1 image, show the spacers
-                        works_data.images.length > 1 &&
+                        {
+                            // if there is more than 1 image, show the spacers
+                            slugData.images.length > 1 &&
 
-                        Array(8)
-                        .fill(0)
-                        .map((_, i) => (
-                            <div
-                                className={`${styles.imageContainer} ${styles.hidden}`}
-                                key={i}
-                            ></div>
-                        ))}
+                            Array(8)
+                                .fill(0)
+                                .map((_, i) => (
+                                    <div
+                                        className={`${styles.imageContainer} ${styles.hidden}`}
+                                        key={i}
+                                    ></div>
+                                ))}
+                    </div>
                 </div>
-            </div>
-        </>
-    )
+            }
+                </>
+                )
 
-}
+            }
