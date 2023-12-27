@@ -68,12 +68,12 @@
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7f7dd666-b2c6-4677-ca0f-0732dd274f00/public",
-          "isThumb": false,
+          "isThumb": true,
           "isOnContentPage": true
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/13f561da-4cde-4c0c-91c7-ba6a13a3d900/public",
-          "isThumb": true,
+          "isThumb": false,
           "isOnContentPage": true
         },
         {
