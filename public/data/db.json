@@ -106,36 +106,24 @@
       "link": "/art/busybodies"
     },
     {
-      "previewTitle": "Modern Antiques Product Line",
-      "title": "Modern Antiques Product Line",
-      "blurb": "Low-poly illustrations of antique products for use on consumer products",
+      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
+      "title": "Boxes and Cubes: Dynamic Art For All",
+      "blurb": "Prototype for a dynamic art installation meant for the home",
       "images": [
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/d380852d-2511-4ae1-2966-3a4461dad700/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0ed704c1-49bb-4825-c14b-79294f8a6200/public",
           "isThumb": true,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fb1f08c5-877b-406c-1872-d9c5b848fb00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/521481d5-e73b-44d3-8fb3-bba272c43100/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b94e690a-77d0-4aa0-d93b-01fce9223e00/public",
-          "isThumb": false,
-          "isOnContentPage": true
+          "isOnContentPage": false
         }
       ],
-      "videos": [],
-      "introText": "Low-poly illustrations of antique products for use on consumer products",
+      "videos": [
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/7d4b9925a195dc793a847d6b94150b01/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2F7d4b9925a195dc793a847d6b94150b01%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      ],
+      "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
       "paragraphs": [],
-      "link": "/art/retro-low-poly"
+      "link": "/art/boxes"
     },
+
     {
       "previewTitle": "Retina Burn 2022",
       "title": "Retina Burn 2022",
@@ -187,22 +175,35 @@
       "link": "/art/bricks"
     },
     {
-      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
-        "title": "Boxes and Cubes: Dynamic Art For All",
-        "blurb": "Prototype for a dynamic art installation meant for the home",
+      "previewTitle": "Modern Antiques Product Line",
+      "title": "Modern Antiques Product Line",
+      "blurb": "Low-poly illustrations of antique products for use on consumer products",
       "images": [
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0ed704c1-49bb-4825-c14b-79294f8a6200/public",
-            "isThumb": true,
-            "isOnContentPage": false
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/d380852d-2511-4ae1-2966-3a4461dad700/public",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fb1f08c5-877b-406c-1872-d9c5b848fb00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/521481d5-e73b-44d3-8fb3-bba272c43100/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b94e690a-77d0-4aa0-d93b-01fce9223e00/public",
+          "isThumb": false,
+          "isOnContentPage": true
         }
       ],
-      "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/7d4b9925a195dc793a847d6b94150b01/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2F7d4b9925a195dc793a847d6b94150b01%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-      ],
-        "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
-        "paragraphs": [],
-        "link": "/art/boxes"
+      "videos": [],
+      "introText": "Low-poly illustrations of antique products for use on consumer products",
+      "paragraphs": [],
+      "link": "/art/retro-low-poly"
     }
   ]
 }
