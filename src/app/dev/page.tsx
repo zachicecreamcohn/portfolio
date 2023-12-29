@@ -50,11 +50,11 @@ export default function dev() {
                                 I&apos;ve been the <b>Head TA</b> for this course for the past three semesters, leading a team of ~15 TAs and overseeing the grading of ~200 students. My role involves assisting students with debugging and comprehending their projects, requiring an in-depth grasp of the course material.</p>
 
                             <p>
-                                I&apos;ve written tools in Python to speed up grading, including a Canvas feedback uploader and an autograder for a project on Python and Regex. I am currently in the process of developing a full-stack grading utility with Next.js and TypeScript to further streamline course management.
+                                I&apos;ve written tools in Python to speed up grading, including a Canvas feedback uploader and an autograder for a project on Python and Regex.
                                 I have also contributed to the refactoring of the course&apos;s textbook and produced TA training materials.
                             </p>
                             <p>
-                                The course covers: <b>HTML/CSS, Git, AWS Linux instances, LAMP stack (Linux, Apache, MySQL, PHP), Python scripting and Regex, Javascript  (AJAX), Node.JS, Socket.IO</b></p>
+                                The course covers: <b>HTML/CSS, Git, AWS Linux instances, LAMP stack (Linux, Apache, MySQL, PHP), MERN stack (MongoDB, Express, React, Node.js), Python scripting and Regex, Javascript, and Socket.IO</b></p>
 
                         </div>
 
