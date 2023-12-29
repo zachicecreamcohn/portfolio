@@ -7,8 +7,8 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar/NavBar";
 export default function cv() {
 
-    const downloadStandard = () => {
-        saveAs("/cvs/standard.pdf", "Zach Cohn CV - Standard.pdf");
+    const downloadSoftware = () => {
+        saveAs("/cvs/software.pdf", "Zach Cohn CV - Standard.pdf");
     }
 
     const downloadTheatre = () => {
@@ -22,9 +22,9 @@ export default function cv() {
             <h1>Choose a CV</h1>
             <div className={styles.cvsContainer + " row"}>
                 <div className={styles.cvContainer + " col-12 col-md-6 d-flex"}>
-                    <h2>Standard</h2>
-                    <p>My standard CV, with a focus on my work experience and education.</p>
-                    <Link onClick={downloadStandard} href={"#"} className={"animate-hover"}>Download</Link>
+                    <h2>Software Engineering</h2>
+                    <p>A resume focusing on my experience as a developer</p>
+                    <Link onClick={downloadSoftware} href={"#"} className={"animate-hover"}>Download</Link>
                 </div>
                 <div className={styles.cvContainer + " col-12 col-md-6 d-flex"}>
                     <h2>Theatre</h2>
