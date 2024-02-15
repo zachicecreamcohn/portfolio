@@ -1,0 +1,120 @@
+
+.container h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+}
+
+.container .hidden {
+    opacity: 0;
+    height: 0 !important;
+    margin-bottom:0;
+    margin-top: 0;
+    width: 600px;
+}
+
+.container .imageContainer {
+    width: 600px;
+    height: 350px;
+    margin: 1em auto;
+    background-color: black; /* Set black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.95em;
+}
+
+.container .imageContainer img {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 0.95em;
+    object-fit: contain !important;
+}
+
+
+.container .titleContainer a {
+    font-size: 18pt;
+    font-weight: bold;
+    color: var(--z-primary);
+    text-decoration: none;
+    margin-top: .75rem;
+}
+
+.container p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: var(--z-gray);
+    margin-top: .8rem;
+    font-size: 15pt;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+}
+
+
+.videoContainer {
+    max-width: 1000px;
+    width: 60vw;
+    height: 62vh;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.videoContainer iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+
+    /*border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;*/
+}
+
+@media (max-width: 708px) {
+    .videoContainer {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .works {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .imageContainer {
+        width: 350px;
+        height: 219px;
+    }
+
+    .container h1 {
+        width: calc(100% - 2rem);
+    }
+
+    .container p {
+        width: calc(100% - 2rem);
+    }
+}
