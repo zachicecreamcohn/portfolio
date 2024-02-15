@@ -16,7 +16,7 @@ export default async function Page({params}: { params: { slug: string } }) {
 
                 <div className={styles.container}>
                     <h1>Love Note Printer</h1>
-                    <p>For a recent anniversary gift for my girlfriend, Nina, I designed a device that uses a Raspberri Pi Zero W, a thermal (receipt) printer, and an lcd display to print daily love notes. For this project, I designed and 3D printed an enclosure. Node.js code interfaces with Socket.js code written in TypeScript that runs on an ec2 server. A client application, written in React, allows me to upload and manage love notes and other messages. Each morning, a random message is printed on the printer and marked as "sent" so it can't be printed again.</p>
+                    <p>For a recent anniversary gift for my girlfriend, Nina, I designed a device that uses a Raspberry Pi Zero W, a thermal (receipt) printer, and an lcd display to print daily love notes. For this project, I designed and 3D printed an enclosure. Node.js code interfaces with Socket.js code written in TypeScript that runs on an ec2 server. A client application, written in React, allows me to upload and manage love notes and other messages. Each morning, a random message is printed on the printer and marked as &ldquo;sent&rdquo; so it can&apos;t be printed again.</p>
 
 
                     <div className={styles.works}>
