@@ -88,7 +88,7 @@
       "link": "/art/fucking-a"
     },
     {
-      "previewTitle": "Busybodies at Givens",
+      "previewTitle": "Busybodies in Givens",
       "title": "busybodies",
       "blurb": "Projection mapping installation, Givens Hall",
       "images": [
@@ -156,9 +156,8 @@
       "link": "/art/retina-burn"
     },
     {
-      "hidden": true,
-      "previewTitle": "Bricks at GCADD",
-      "title": "bricks at GCADD",
+      "previewTitle": "Bricks @ GCADD",
+      "title": "bricks @ GCADD",
       "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
       "images": [
         {
@@ -168,9 +167,9 @@
         }
       ],
       "videos": [
-        "https://zachcohn.sfo3.cdn.digitaloceanspaces.com/video/projection-mapping/bricks.mp4"
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
       ],
-      "introText": "A location-specific interactive art piece created for and shown at GCADD (Granite City Arts and Design). Built using Processing, MadMapper, and an Xbox Kinect.",
+      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
       "link": "/art/bricks"
     },
