@@ -1,6 +1,59 @@
 {
   "work": [
     {
+      "previewTitle": "Pazazz 2024",
+        "title": "Pazazz 2024, SLAD",
+        "blurb": "Lighting design for Pazazz 2024, the culminating event for the Saint Louis Academy of Dance",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/92c33385-686d-4fb6-0427-ef7164bad700/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/a936f899-12a7-4803-3858-676e71172300/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0bc59b45-5463-42da-e92a-8ddfe1321d00/public",
+            "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e9e9ad10-bebf-439c-6ced-d0151fda7600/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/87911509-ec61-4d64-dc3b-a8e28a239500/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/74492d1e-85cf-43a6-38da-08432044fb00/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fee7e3ee-afa6-4479-51d8-2f1f316bd900/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/193b7b2b-387e-4ced-0ca6-07aee3b78000/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c1e8a348-023a-4c35-4ceb-01140a300d00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }],
+      "videos": [],
+      "link": "/art/pazazz-2024"
+    },
+    {
       "previewTitle": "God of Carnage",
         "title": "God of Carnage, Yasmina Reza",
         "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
