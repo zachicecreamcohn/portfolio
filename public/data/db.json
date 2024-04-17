@@ -51,7 +51,10 @@
             "isOnContentPage": true
         }],
       "videos": [],
+      "introText": "Lighting design for Pazazz 2024, the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
+      "paragraphs": [],
       "link": "/art/pazazz-2024"
+
     },
     {
       "previewTitle": "God of Carnage",
@@ -88,9 +91,9 @@
 
       ],
       "videos": [],
-        "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
-        "paragraphs": [
-          "Directed by Sami Ginoplos. Photography by Jack Rushen."
+      "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
+      "paragraphs": [
+        "Directed by Sami Ginoplos. Photography by Jack Rushen."
         ],
         "link": "/art/god-of-carnage"
     },
