@@ -1,6 +1,64 @@
 {
   "work": [
     {
+      "previewTitle": "Alice in Wonderland",
+      "title": "Alice in Wonderland",
+      "blurb": "Projection design for Alice in Wonderland, All Student Theater 2024",
+      "images" : [
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df6b0d33-a4b0-4ab6-f043-df0042bb0a00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
+          "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7ed419af-caeb-4b7a-01a2-7411a726aa00/public",
+          "isThumb": false,
+          "isOnContentPage": false
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e99779a2-704a-41ea-0913-c8ce4e6b1300/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/8bc9dc8d-afee-4ed6-5274-4747cd3edb00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/5ce70bf1-bd76-4c39-d8e4-8e9252f85c00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+      ],
+        "videos": [],
+        "introText": "Projection design for Alice in Wonderland, All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
+        "paragraphs": [],
+        "link": "/art/alice-in-wonderland"
+    },
+    {
       "previewTitle": "Pazazz 2024",
         "title": "Pazazz 2024, SLAD",
         "blurb": "Lighting design for Pazazz 2024, the culminating event for the Saint Louis Academy of Dance",
@@ -11,10 +69,11 @@
             "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c1e8a348-023a-4c35-4ceb-01140a300d00/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/74492d1e-85cf-43a6-38da-08432044fb00/public",
           "isThumb": false,
           "isOnContentPage": true
         },
+
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/87911509-ec61-4d64-dc3b-a8e28a239500/public",
           "isThumb": false,
@@ -31,12 +90,12 @@
             "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e9e9ad10-bebf-439c-6ced-d0151fda7600/public",
-            "isThumb": false,
-            "isOnContentPage": true
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c1e8a348-023a-4c35-4ceb-01140a300d00/public",
+          "isThumb": false,
+          "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/74492d1e-85cf-43a6-38da-08432044fb00/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e9e9ad10-bebf-439c-6ced-d0151fda7600/public",
             "isThumb": false,
             "isOnContentPage": true
         },
