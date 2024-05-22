@@ -3,7 +3,7 @@
     {
       "previewTitle": "Alice in Wonderland",
       "title": "Alice in Wonderland",
-      "blurb": "Projection design for Alice in Wonderland, All Student Theater 2024",
+      "blurb": "Projection design for 'Alice in Wonderland', All Student Theater 2024",
       "images" : [
 
         {
@@ -54,14 +54,14 @@
         }
       ],
         "videos": [],
-        "introText": "Projection design for Alice in Wonderland, All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
+        "introText": "Projection design for 'Alice in Wonderland', All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
         "paragraphs": [],
         "link": "/art/alice-in-wonderland"
     },
     {
       "previewTitle": "Pazazz 2024",
         "title": "Pazazz 2024, SLAD",
-        "blurb": "Lighting design for Pazazz 2024, the culminating event for the Saint Louis Academy of Dance",
+        "blurb": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance",
       "images": [
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/92c33385-686d-4fb6-0427-ef7164bad700/public",
@@ -110,10 +110,58 @@
             "isOnContentPage": true
         }],
       "videos": [],
-      "introText": "Lighting design for Pazazz 2024, the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
+      "introText": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
       "paragraphs": [],
       "link": "/art/pazazz-2024"
 
+    },
+    {
+      "previewTitle": "Hold On",
+      "title": "Projection design for 'Hold On' with the Black Rep",
+      "blurb": "Projection design for 'Hold On' with the Black Rep in St. Louis, 2024",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/117ba658-ce0b-434b-b85d-044d5bd4c200/public",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/782240ed-e84b-47d2-8df4-c90d5ee44c00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/cee7d3c9-9737-4038-b843-54e3d4ed4200/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/18b63232-7f2a-4536-c516-ce2bf9703f00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/4959e7be-603a-44ba-4690-e7c1302ed000/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/41e74b4f-1d12-4103-679b-ccc54f5f3b00/public",
+          "isThumb": false,
+          "isOnContentPage": false
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/dc4b3ea3-4538-4858-4a79-a7409eceeb00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+
+      ],
+        "videos": [],
+        "introText": "Projection design for 'Hold On' with the Black Rep in St. Louis, 2024. Performed at the Edison Theater at Washington University in St. Louis",
+        "paragraphs": [],
+        "link": "/art/hold-on"
     },
     {
       "previewTitle": "God of Carnage",
@@ -150,7 +198,7 @@
 
       ],
       "videos": [],
-      "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
+      "introText": "Lighting design for 'God of Carnage' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
       "paragraphs": [
         "Directed by Sami Ginoplos. Photography by Jack Rushen."
         ],
@@ -198,7 +246,7 @@
         }
       ],
       "videos": [],
-      "introText": "Lighting design for Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
+      "introText": "Lighting design for 'Fucking A' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
       "paragraphs": [],
       "link": "/art/fucking-a"
     },
