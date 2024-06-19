@@ -97,7 +97,7 @@ export default function Contact() {
                 </div>
                     <div className={styles.contactInfo}>
 
-                        <p><a href="mailto:zcohn@wustl.edu">zcohn@wustl.edu</a> | <a href="tel:646-477-2420">(646)-477-2420</a>
+                        <p><a href="mailto:contact@zachwcohn.com">contact@zachwcohn.com</a> | <a href="tel:646-477-2420">(646)-477-2420</a>
                         </p>
                     </div>
 
