@@ -42,7 +42,13 @@ export default function Home() {
                                 <Link href={"/art"}>
                                     <Button style="secondary" onClick={() => {
                                     }}>
-                                        <Brush size={24} strokeWidth={1.5} color={"#000000"}/>
+                                        <Image
+                                            src={"/icons/stage-lights.svg"}
+                                            alt={"Theater and other work"}
+                                            width={24}
+                                            height={24}
+                                            className={styles['theater-icon']}
+                                        />
                                     </Button>
                                 </Link>
                                 </div>
