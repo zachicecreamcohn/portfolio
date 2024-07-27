@@ -251,6 +251,22 @@
       "link": "/art/fucking-a"
     },
     {
+      "previewTitle": "Cabaret",
+      "title": "Cabaret",
+      "blurb": "Projection design for Performing Arts Department, Washington University in St. Louis",
+      "images":[
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/4c63b8bb-baf9-4c27-ea06-69fd09ac3f00/public",
+          "isThumb": true,
+          "isOnContentPage": true
+        }
+      ],
+      "videos": [],
+      "introText": "Projection design for 'Cabaret' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the Edison Theater",
+      "paragraphs":[],
+      "link":"/art/cabaret"
+    },
+    {
       "previewTitle": "Busybodies in Givens",
       "title": "busybodies",
       "blurb": "Projection mapping installation, Givens Hall",
