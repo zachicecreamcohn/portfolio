@@ -56,7 +56,7 @@
         "videos": [],
         "introText": "Projection design for 'Alice in Wonderland', All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
         "paragraphs": [],
-        "link": "/art/alice-in-wonderland"
+        "link": "/design/alice-in-wonderland"
     },
     {
       "previewTitle": "Pazazz 2024",
@@ -65,7 +65,7 @@
       "images": [
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/92c33385-686d-4fb6-0427-ef7164bad700/public",
-            "isThumb": false,
+            "isThumb": true,
             "isOnContentPage": true
         },
         {
@@ -112,7 +112,7 @@
       "videos": [],
       "introText": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
       "paragraphs": [],
-      "link": "/art/pazazz-2024"
+      "link": "/design/pazazz-2024"
 
     },
     {
@@ -161,7 +161,7 @@
         "videos": [],
         "introText": "Projection design for 'Hold On' with the Black Rep in St. Louis, 2024. Performed at the Edison Theater at Washington University in St. Louis",
         "paragraphs": [],
-        "link": "/art/hold-on"
+        "link": "/design/hold-on"
     },
     {
       "previewTitle": "God of Carnage",
@@ -202,7 +202,7 @@
       "paragraphs": [
         "Directed by Sami Ginoplos. Photography by Jack Rushen."
         ],
-        "link": "/art/god-of-carnage"
+        "link": "/design/god-of-carnage"
     },
     {
       "previewTitle": "Fucking A",
@@ -248,7 +248,7 @@
       "videos": [],
       "introText": "Lighting design for 'Fucking A' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
       "paragraphs": [],
-      "link": "/art/fucking-a"
+      "link": "/design/fucking-a"
     },
     {
       "previewTitle": "Cabaret",
@@ -264,7 +264,7 @@
       "videos": [],
       "introText": "Projection design for 'Cabaret' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the Edison Theater",
       "paragraphs":[],
-      "link":"/art/cabaret"
+      "link":"/design/cabaret"
     },
     {
       "previewTitle": "Busybodies in Givens",
@@ -282,7 +282,7 @@
       ],
       "introText": "Projection mapping installation at Givens Hall, Washington University in St. Louis",
       "paragraphs": [],
-      "link": "/art/busybodies"
+      "link": "/design/busybodies"
     },
     {
       "previewTitle": "Boxes and Cubes: Dynamic Art For All",
@@ -300,7 +300,7 @@
       ],
       "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
       "paragraphs": [],
-      "link": "/art/boxes"
+      "link": "/design/boxes"
     },
 
     {
@@ -332,7 +332,7 @@
       "videos": [],
       "introText": "Lighting design for live rock concert, as part of the Lighting Technology course at Washington University in St. Louis",
       "paragraphs": [],
-      "link": "/art/retina-burn"
+      "link": "/design/retina-burn"
     },
     {
       "previewTitle": "Bricks @ GCADD",
@@ -350,7 +350,7 @@
       ],
       "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
-      "link": "/art/bricks"
+      "link": "/design/bricks"
     },
     {
       "previewTitle": "Modern Antiques Product Line",
@@ -381,7 +381,7 @@
       "videos": [],
       "introText": "Low-poly illustrations of antique products for use on consumer products",
       "paragraphs": [],
-      "link": "/art/retro-low-poly"
+      "link": "/design/retro-low-poly"
     }
   ]
 }

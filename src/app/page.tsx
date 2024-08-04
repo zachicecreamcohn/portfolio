@@ -39,7 +39,7 @@ export default function Home() {
                                     </Button>
 
                                 </Link>
-                                <Link href={"/art"}>
+                                <Link href={"/design"}>
                                     <Button style="secondary" onClick={() => {
                                     }}>
                                         <Image
