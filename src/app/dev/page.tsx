@@ -21,7 +21,7 @@ export default function dev() { // Capitalize the component name
             <div className={"container " + styles.container}>
 
                 <h1>Software Development</h1>
-                <div className={"row"}>
+                <div>
                     <div className={"col-12 " + styles.left}>
                         <p className={styles.intro}>
                             I fell in love with software development the summer before my freshman year of college,
