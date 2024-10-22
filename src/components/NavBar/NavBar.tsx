@@ -48,6 +48,10 @@ export default function NavBar() {
         {
             title: "CV",
             path: "/cv"
+        },
+        {
+            title: "Blog",
+            path: "https://blog.zachwcohn.com"
         }
     ], []);
 
