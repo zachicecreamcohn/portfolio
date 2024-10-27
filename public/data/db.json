@@ -1,11 +1,57 @@
 {
   "work": [
+      {
+          "previewTitle": "The Rest Is Silence",
+          "title": "The Rest Is Silence",
+          "blurb": "Immersive Hamlet experience, All Student Theater 2024",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/4102454e-1288-4cc1-82db-fbd32b30df00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/580e8813-3fd0-4ed8-4683-b87d765caa00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0d84994e-8456-4138-15d1-fd4635060400/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/045e7447-0b80-41d0-f300-a0b843f4c800/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/bc6ccfeb-047f-42a9-cd70-dc2e4c95a800/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/41decd52-5b1e-45d2-a095-555f65f3f100/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              }
+          ],
+          "videos": [],
+            "introText": "Immersive Hamlet experience, All Student Theater 2024. Performed in the Village Black Box Theater at Washington University in St. Louis",
+            "paragraphs": [],
+            "link": "/design/the-rest-is-silence"
+      },
+
     {
       "previewTitle": "Alice in Wonderland",
       "title": "Alice in Wonderland",
       "blurb": "Projection design for 'Alice in Wonderland', All Student Theater 2024",
       "images" : [
-
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
           "isThumb": false,
@@ -16,16 +62,10 @@
           "isThumb": false,
           "isOnContentPage": true
         },
-
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
           "isThumb": true,
             "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
-          "isThumb": false,
-          "isOnContentPage": true
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
@@ -251,6 +291,7 @@
       "link": "/design/fucking-a"
     },
     {
+    "hidden":true,
       "previewTitle": "Cabaret",
       "title": "Cabaret",
       "blurb": "Projection design for Performing Arts Department, Washington University in St. Louis",
