@@ -7,7 +7,7 @@ import styles from "./Dev.module.css";
 import Image from "next/image";
 import Head from "next/head"; // Correct import for Head
 import Navbar from "@/components/NavBar/NavBar";
-
+import Link from "next/link";
 export default function dev() { // Capitalize the component name
 
     return (
@@ -28,6 +28,7 @@ export default function dev() { // Capitalize the component name
                             with Python and Flask. In the years since, I&apos;ve learned a lot.
                             My projects vary, but the thrill of problem-solving stays constant. Here&apos;s a rundown of some of my recent work.
                         </p>
+                        <p>Helfpul utilities: <Link href="https://utilities.zachwcohn.com">utilities.zachwcohn.com</Link></p>
                         <div className={styles.experienceSection}>
                             <h2>Amplify Education</h2>
                             <p>
