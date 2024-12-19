@@ -11,6 +11,11 @@
                   "isOnContentPage": true
               },
               {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/ee23ccb5-2fc5-45f0-c3bd-a778e58d2300/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/580e8813-3fd0-4ed8-4683-b87d765caa00/public",
                   "isThumb": false,
                   "isOnContentPage": true
@@ -26,6 +31,11 @@
                   "isOnContentPage": true
               },
               {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c45d186f-c0ab-48c0-066b-cc1b226dfc00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/045e7447-0b80-41d0-f300-a0b843f4c800/public",
                   "isThumb": false,
                   "isOnContentPage": true
@@ -33,13 +43,14 @@
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/bc6ccfeb-047f-42a9-cd70-dc2e4c95a800/public",
                   "isThumb": false,
-                  "isOnContentPage": true
+                  "isOnContentPage": false
               },
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/41decd52-5b1e-45d2-a095-555f65f3f100/public",
                   "isThumb": false,
                   "isOnContentPage": true
               }
+
           ],
           "videos": [],
             "introText": "Immersive Hamlet experience, All Student Theater 2024. Performed in the Village Black Box Theater at Washington University in St. Louis",
