@@ -46,8 +46,8 @@ export default function NavBar() {
             path: "/design"
         },
         {
-            title: "CV",
-            path: "/cv"
+            title: "Resume",
+            path: "/resume"
         },
         {
             title: "Blog",
