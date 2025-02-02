@@ -39,7 +39,7 @@ export default function About() {
                                     mapping,
                                     theatrical lighting, and performance automation. I&apos;m also an avid cyclist.</p>
                                 <div className={styles.cvContainer}>
-                                    <Link href={"/cv"} className={"animate-hover"}>Download CV</Link>
+                                    <Link href={"/cv"} className={"animate-hover"}>Resume</Link>
                                 </div>
                             </div>
                         </div>

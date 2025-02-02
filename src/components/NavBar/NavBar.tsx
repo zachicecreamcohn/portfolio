@@ -46,10 +46,6 @@ export default function NavBar() {
             path: "/design"
         },
         {
-            title: "Resume",
-            path: "/resume"
-        },
-        {
             title: "Blog",
             path: "https://blog.zachwcohn.com"
         }
