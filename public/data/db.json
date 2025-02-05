@@ -178,12 +178,12 @@
       "images": [
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/117ba658-ce0b-434b-b85d-044d5bd4c200/public",
-          "isThumb": true,
+          "isThumb": false,
           "isOnContentPage": true
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/782240ed-e84b-47d2-8df4-c90d5ee44c00/public",
-          "isThumb": false,
+          "isThumb": true,
           "isOnContentPage": true
         },
         {
