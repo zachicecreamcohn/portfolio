@@ -41,11 +41,6 @@ export default function About() {
                 especially projection mapping, theatrical lighting, and
                 performance automation.
               </p>
-              <div className={styles.cvContainer}>
-                <Link href={"/resume"} className={"animate-hover"}>
-                  Resume
-                </Link>
-              </div>
             </div>
           </div>
         </div>
