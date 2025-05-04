@@ -87,7 +87,7 @@
 
 
     /*Select the first button that is a child */
-    .buttonContainer .contactButton button {
+    .buttonContainer button {
         width: 100%;
     }
 

@@ -30,29 +30,16 @@ export default function Home() {
               </p>
 
               <div className={styles.buttonContainer}>
-                <Link href={"/contact"} className={styles.contactButton}>
+                <Link href={"/contact"}>
                   <Button style="primary" onClick={() => {}}>
                     Contact Me
                   </Button>
                 </Link>
-                <div>
-                  <Link href={"/dev"}>
-                    <Button style="secondary" onClick={() => {}}>
-                      <Code size={24} strokeWidth={1.5} color={"#000000"} />
-                    </Button>
-                  </Link>
-                  <Link href={"/design"}>
-                    <Button style="secondary" onClick={() => {}}>
-                      <Image
-                        src={"/icons/stage-lights.svg"}
-                        alt={"Theater and other work"}
-                        width={24}
-                        height={24}
-                        className={styles["theater-icon"]}
-                      />
-                    </Button>
-                  </Link>
-                </div>
+                <Link href={"/design"}>
+                  <Button style="secondary" onClick={() => {}}>
+                    Design Work
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
