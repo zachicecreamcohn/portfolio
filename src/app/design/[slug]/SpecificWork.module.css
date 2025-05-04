@@ -47,13 +47,14 @@
     margin-top: .75rem;
 }
 
-.container p {
+.container p, .container i {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     color: var(--z-gray);
     margin-top: .8rem;
     font-size: 15pt;
 }
+
 
 .works {
     display: flex;

@@ -18,9 +18,9 @@
 
           ],
           "videos": [],
-            "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
-            "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
-            "link": "/design/sp-2025-dance-capstone"
+        "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
+        "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
+        "link": "/design/sp-2025-dance-capstone"
       },
       {
           "previewTitle": "The Rest Is Silence",

@@ -29,7 +29,15 @@ export default async function Page({params}: { params: { slug: string } }) {
             {slugData &&
                 <div className={styles.container}>
                     <h1>{slugData.title}</h1>
-                    <p>{slugData.introText}</p>
+                    <i>{slugData.introText}</i>
+                    {slugData.paragraphs.map((paragraph: string, index: number) => {
+                        return (
+                            <p key={index} className={styles.paragraph}>
+                                {paragraph}
+                            </p>
+                        )
+                    }
+                                            )}
 
                     <div className={styles.works}>
                         {slugData.videos.map((video: string, index: number) => {
