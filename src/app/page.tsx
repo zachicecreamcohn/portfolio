@@ -22,8 +22,8 @@ export default function Home() {
                 im <span className={styles.name}>zach cohn</span>,
               </h1>
               <h1>
-                <span className={styles.color}>dev</span> and{" "}
-                <span className={styles.color}>theatre artist</span>
+                <span className={styles.color}>theatre artist </span>
+                and <span className={styles.color}> software engineer</span>
               </h1>
               <p>
                 I do theatre, software, and sometimes both at the same time!

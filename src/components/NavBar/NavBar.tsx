@@ -37,10 +37,6 @@ export default function NavBar() {
         path: "/about",
       },
       {
-        title: "Software",
-        path: "/dev",
-      },
-      {
         title: "Design",
         path: "/design",
       },
