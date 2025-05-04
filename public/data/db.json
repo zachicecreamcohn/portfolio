@@ -1,6 +1,28 @@
 {
   "work": [
       {
+          "previewTitle": "Dance Capstone (SP 2025)",
+          "title": "Dance Cpastone",
+          "blurb": "Projection and Lighting design for dance capstone.",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/50fcdc72-0f4b-47f9-19c1-292235253800/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6508ab3f-fb8f-41dc-098e-c8b7e2258e00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              }
+
+          ],
+          "videos": [],
+            "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
+            "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
+            "link": "/design/sp-2025-dance-capstone"
+      },
+      {
           "previewTitle": "The Rest Is Silence",
           "title": "The Rest Is Silence",
           "blurb": "Immersive Hamlet experience, All Student Theater 2024",
