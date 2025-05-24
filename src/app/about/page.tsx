@@ -23,23 +23,22 @@ export default function About() {
               />
             </div>
           </div>
-          {/*<div className="d-none d-sm-block col-1  col-lg-2"></div>*/}
           <div className={styles.right + " col-12 col-sm-7 col-lg-6"}>
             <div className={styles.aboutContainer}>
               <h1>hello!</h1>
-
               <p>
-                My name is Zach Cohn, and I&apos;m a developer and theatre maker
-                from NYC.
+                I'm an NYC-based software engineer and lighting and projections
+                designer for theatre.
               </p>
               <p>
-                I&apos;m currently studying Drama and Computer Science at
-                Washington University in St. Louis.
+                I studied technical theatre and computer science at Washington
+                University in St. Louis, and I love combining art and technology
+                in new and interesting ways.
               </p>
               <p>
-                I love to explore the intersection of technology and art,
-                especially projection mapping, theatrical lighting, and
-                performance automation.
+                In addition to my design practice, I build custom software tools
+                that integrate with lighting and video systems for improved
+                efficiency and to expand production possibilities.
               </p>
             </div>
           </div>
