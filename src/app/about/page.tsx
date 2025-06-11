@@ -27,8 +27,8 @@ export default function About() {
             <div className={styles.aboutContainer}>
               <h1>hello!</h1>
               <p>
-                I'm an NYC-based software engineer and lighting and projections
-                designer for theatre.
+                I&apos;m an NYC-based software engineer and lighting and
+                projections designer for theatre.
               </p>
               <p>
                 I studied technical theatre and computer science at Washington

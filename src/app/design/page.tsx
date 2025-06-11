@@ -32,7 +32,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 Title={work.previewTitle}
                 Description={work.blurb}
                 Route={work.link}
-                Paragraphs={work.paragraphs}
               />
             );
           })}
