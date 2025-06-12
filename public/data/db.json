@@ -1,6 +1,37 @@
 {
   "work": [
       {
+          "previewTitle": "Urinetown",
+          "title": "Urinetown",
+          "blurb": "Lighting design, Cast 'n Crew 2025",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/8c2e4034-11e5-49f8-1408-a8e9c9e84c00/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/468f3f97-ed14-428f-f8ee-14c85148dc00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              },
+              { "src":"https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/2dfde881-3ae4-4061-9b84-2a0feff8ee00/public",
+                  "isThumb":false, "isOnContentPage": true},
+                  {
+                      "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/cbb96370-e447-4575-3516-2d93bf598c00/public",
+                      "isThumb": false,
+                      "isOnContentPage": true
+
+                  }
+
+
+          ],
+          "videos": [],
+        "introText": "Lighting design for Urinetown for Cast 'n Crew at WashU'",
+        "paragraphs": [],
+        "link": "/design/urinetown"
+      },
+      {
           "previewTitle": "Dance Capstone (SP 2025)",
           "title": "Dance Cpastone",
           "blurb": "Projection and Lighting design for dance capstone.",
