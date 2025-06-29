@@ -27,13 +27,13 @@
 
           ],
           "videos": [],
-        "introText": "Lighting design for Urinetown for Cast 'n Crew at WashU'",
+        "introText": "Lighting design for Urinetown for Cast 'n Crew at WashU",
         "paragraphs": [],
         "link": "/design/urinetown"
       },
       {
           "previewTitle": "Dance Capstone (SP 2025)",
-          "title": "Dance Cpastone",
+          "title": "Dance Capstone",
           "blurb": "Projection and Lighting design for dance capstone.",
           "images": [
               {
@@ -392,24 +392,23 @@
       "link": "/design/busybodies"
     },
     {
-      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
-      "title": "Boxes and Cubes: Dynamic Art For All",
-      "blurb": "Prototype for a dynamic art installation meant for the home",
+      "previewTitle": "Bricks @ GCADD",
+      "title": "bricks @ GCADD",
+      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
       "images": [
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0ed704c1-49bb-4825-c14b-79294f8a6200/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
           "isThumb": true,
           "isOnContentPage": false
         }
       ],
       "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/7d4b9925a195dc793a847d6b94150b01/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2F7d4b9925a195dc793a847d6b94150b01%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
       ],
-      "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
+      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
-      "link": "/design/boxes"
+      "link": "/design/bricks"
     },
-
     {
       "previewTitle": "Retina Burn 2022",
       "title": "Retina Burn 2022",
@@ -442,22 +441,22 @@
       "link": "/design/retina-burn"
     },
     {
-      "previewTitle": "Bricks @ GCADD",
-      "title": "bricks @ GCADD",
-      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
+      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
+      "title": "Boxes and Cubes: Dynamic Art For All",
+      "blurb": "Prototype for a dynamic art installation meant for the home",
       "images": [
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0ed704c1-49bb-4825-c14b-79294f8a6200/public",
           "isThumb": true,
           "isOnContentPage": false
         }
       ],
       "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/7d4b9925a195dc793a847d6b94150b01/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2F7d4b9925a195dc793a847d6b94150b01%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
       ],
-      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
+      "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
       "paragraphs": [],
-      "link": "/design/bricks"
+      "link": "/design/boxes"
     }
   ]
 }
