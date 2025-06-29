@@ -1,4 +1,5 @@
 .container {
+    background-color:#181a1b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,17 +7,16 @@
     /*height: calc(11vh - 2em);*/
     position: fixed;
     top: 0;
-    background-color: white;
     left: 0;
     right: 0;
     padding: 3.5em 3em 1em;
     transition: all 0.3s;
     z-index: 999;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid transparent;
 }
 
 .container.scrolled {
-    border-bottom-color: #eaeaea;
+    border-bottom-color: #393939;
 }
 
 .container .left {
@@ -36,7 +36,7 @@
 }
 
 .container .left a:hover {
-    color: black;
+    color: #d8d8d8;
 }
 
 .container .left a.active {

@@ -52,9 +52,7 @@ export default function NavBar() {
   useEffect(() => {
     function getIndexFromPath(path: string) {
       for (let i = 0; i < pages.length; i++) {
-        console.log(pages[i].path, path);
         if (pages[i].path == path) {
-          console.log("returning", i);
           return i;
         }
       }

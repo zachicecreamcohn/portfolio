@@ -2,15 +2,18 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oceanwide', serif;
+    color: #d8d8d8;
 }
 
 p, a, li, span, div {
     font-family: 'Roboto', sans-serif;
+    color: #d8d8d8;
 }
 
 body {
     padding: 3em 3em 20px;
     overflow-x: hidden;
+    background-color:#181a1b;
 }
 
 p, a {

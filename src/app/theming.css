@@ -1,27 +1,28 @@
 .theme1 {
-        --z-primary: #8d0801;
-        --z-secondary: #9a0800;
-        --text-shadow: #f4d58d;
+        --z-primary: #8c0800;
+        --z-secondary: #fe716a;
+        --text-shadow: #fac852;
         --secondary-box-shadow: #8d08010f;
         --secondary-box-shadow-hover: #8d08011f;
         --z-third: #000000;
         --z-gray: #a4a4a4;
         --z-gray-light: #c7c7c7;
-        --z-icon: #f4d58d;
-        --z-theme-button-background: #f4d58d;
+        --z-icon: #fac852;
+        --z-theme-button-background: #fac852;
 }
 
 .theme2 {
-    --z-primary: #202020;
+    --z-primary: #0a8ece;
+    --z-secondary:  #0a8ece;
     --z-secondary: #181818;
-    --text-shadow: #73d1ff;
+    --text-shadow: #0a8ece;
     --secondary-box-shadow: #2020200f;
     --secondary-box-shadow-hover: #2020201f;
     --z-third: #73d1ff;
     --z-gray: #a4a4a4;
     --z-gray-light: #c7c7c7;
     --z-icon: #ffffff;
-    --z-theme-button-background: #73d1ff;
+    --z-theme-button-background: #0a8ece;
 }
 
 .theme3 {
@@ -38,18 +39,18 @@
 }
 
 .theme4 {
-    --z-primary: #ffd100;
-    --z-secondary: #e7ba0a;
-    --text-shadow: #ffd100;
+    --z-primary: #ff7800;
+    --z-secondary: #e26b00;
+    --text-shadow: #e26b00;
     --secondary-box-shadow: #2020200f;
     --secondary-box-shadow-hover: #2020201f;
     --z-third: #000000;
     --z-gray: #a4a4a4;
     --z-gray-light: #c7c7c7;
     --z-icon: #000000;
-    --z-theme-button-background: #e7ba0a
+    --z-theme-button-background: #e26b00;
 }
 
 :root {
-    --light-border: #f2f2f2;
+    --light-border: #303436;
 }

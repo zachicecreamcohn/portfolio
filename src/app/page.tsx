@@ -5,7 +5,6 @@ import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import styles from "./Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Code } from "tabler-icons-react";
 import React from "react";
 import NavBar from "@/components/NavBar/NavBar";
 
