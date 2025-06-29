@@ -27,8 +27,8 @@ export default function About() {
             <div className={styles.aboutContainer}>
               <h1>hello!</h1>
               <p>
-                I&apos;m an NYC-based software engineer and lighting and
-                projections designer for theatre.
+                I&apos;m an NYC-based lighting and projections designer for
+                theatre.
               </p>
               <p>
                 I studied technical theatre and computer science at Washington
@@ -36,9 +36,11 @@ export default function About() {
                 in new and interesting ways.
               </p>
               <p>
-                In addition to my design practice, I build custom software tools
-                that integrate with lighting and video systems for improved
-                efficiency and to expand production possibilities.
+                I love combining art and technology in new and interesting ways.
+                In addition to my design practice, I’m also a software engineer
+                and build custom tools that integrate with lighting and video
+                systems to improve efficiency and expand production
+                possibilities.
               </p>
             </div>
           </div>
