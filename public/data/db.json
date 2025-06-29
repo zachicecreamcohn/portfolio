@@ -6,19 +6,19 @@
           "blurb": "Lighting design, Cast 'n Crew 2025",
           "images": [
               {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/8c2e4034-11e5-49f8-1408-a8e9c9e84c00/public",
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/36fea407-600a-4c46-7503-43fb87882e00/public",
                   "isThumb": true,
                   "isOnContentPage": true
               },
               {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/468f3f97-ed14-428f-f8ee-14c85148dc00/public",
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7c237a45-1f9a-459d-977a-7a15a2f14700/public",
                   "isThumb": false,
                   "isOnContentPage": true
               },
-              { "src":"https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/2dfde881-3ae4-4061-9b84-2a0feff8ee00/public",
+              { "src":"https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/059bfa59-ecbe-4f02-5aa4-592c54077a00/public",
                   "isThumb":false, "isOnContentPage": true},
                   {
-                      "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/cbb96370-e447-4575-3516-2d93bf598c00/public",
+                      "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6fa780cb-daa0-45cc-3188-5ab4bf858700/public",
                       "isThumb": false,
                       "isOnContentPage": true
 
@@ -116,8 +116,20 @@
       "title": "Alice in Wonderland",
       "blurb": "Projection design for 'Alice in Wonderland', All Student Theater 2024",
       "images" : [
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df6b0d33-a4b0-4ab6-f043-df0042bb0a00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
           "isThumb": false,
           "isOnContentPage": true
         },
@@ -127,19 +139,9 @@
           "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df6b0d33-a4b0-4ab6-f043-df0042bb0a00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
           "isThumb": true,
             "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
-          "isThumb": false,
-          "isOnContentPage": true
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7ed419af-caeb-4b7a-01a2-7411a726aa00/public",
@@ -152,12 +154,7 @@
           "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/8bc9dc8d-afee-4ed6-5274-4747cd3edb00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/5ce70bf1-bd76-4c39-d8e4-8e9252f85c00/public",
+            "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/68576955-baee-4398-4a17-3b14ab5da300/public",
           "isThumb": false,
           "isOnContentPage": true
         }
