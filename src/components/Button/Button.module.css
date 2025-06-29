@@ -20,13 +20,13 @@
 
 .button.primary {
     background-color: var(--z-primary);
-    border: 1px solid var(--light-border);
+    border: 1px solid #d8d8d8;
     color: #d8d8d8;
 }
 
 .button.primary:hover {
     background-color: var(--z-secondary);
-    border: 1px solid var(--z-secondary);
+    border: 1px solid #d8d8d8;
 }
 .button.secondary {
     border: 1px solid #c2c2c2;

@@ -134,14 +134,9 @@
           "isOnContentPage": true
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e99779a2-704a-41ea-0913-c8ce4e6b1300/public",
           "isThumb": false,
           "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
-          "isThumb": true,
-            "isOnContentPage": true
         },
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7ed419af-caeb-4b7a-01a2-7411a726aa00/public",
@@ -149,7 +144,12 @@
           "isOnContentPage": false
         },
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e99779a2-704a-41ea-0913-c8ce4e6b1300/public",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
+          "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
           "isThumb": false,
           "isOnContentPage": true
         },

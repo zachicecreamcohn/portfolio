@@ -21,8 +21,8 @@ export default function Home() {
                 im <span className={styles.name}>zach cohn</span>,
               </h1>
               <h1>
-                <span className={styles.color}>theatre artist </span>
-                and <span className={styles.color}> software engineer</span>
+                <span className={styles.color}>lighting </span>
+                and <span className={styles.color}>projections designer</span>
               </h1>
               <p>
                 I do theatre, software, and sometimes both at the same time!
@@ -36,7 +36,7 @@ export default function Home() {
                 </Link>
                 <Link href={"/design"}>
                   <Button style="secondary" onClick={() => {}}>
-                    Design Work
+                    My Work
                   </Button>
                 </Link>
               </div>
