@@ -24,9 +24,7 @@ export default function Home() {
                 <span className={styles.color}>lighting </span>
                 and <span className={styles.color}>projections designer</span>
               </h1>
-              <p>
-                I do theatre, software, and sometimes both at the same time!
-              </p>
+              <p>an NYC-based designer for theatre and dance</p>
 
               <div className={styles.buttonContainer}>
                 <Link href={"/contact"}>
