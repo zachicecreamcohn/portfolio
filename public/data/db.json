@@ -32,28 +32,6 @@
         "link": "/design/urinetown"
       },
       {
-          "previewTitle": "Dance Capstone (SP 2025)",
-          "title": "Dance Capstone",
-          "blurb": "Projection and Lighting design for dance capstone.",
-          "images": [
-              {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/50fcdc72-0f4b-47f9-19c1-292235253800/public",
-                  "isThumb": true,
-                  "isOnContentPage": true
-              },
-              {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6508ab3f-fb8f-41dc-098e-c8b7e2258e00/public",
-                  "isThumb": false,
-                  "isOnContentPage": true
-              }
-
-          ],
-          "videos": [],
-        "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
-        "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
-        "link": "/design/sp-2025-dance-capstone"
-      },
-      {
           "previewTitle": "The Rest Is Silence",
           "title": "The Rest Is Silence",
           "blurb": "Immersive Hamlet experience, All Student Theater 2024",
@@ -109,6 +87,28 @@
             "introText": "Immersive Hamlet experience, All Student Theater 2024. Performed in the Village Black Box Theater at Washington University in St. Louis",
             "paragraphs": [],
             "link": "/design/the-rest-is-silence"
+      },
+      {
+          "previewTitle": "Dance Capstone (SP 2025)",
+          "title": "Dance Capstone",
+          "blurb": "Projection and Lighting design for dance capstone.",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/50fcdc72-0f4b-47f9-19c1-292235253800/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6508ab3f-fb8f-41dc-098e-c8b7e2258e00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              }
+
+          ],
+          "videos": [],
+        "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
+        "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
+        "link": "/design/sp-2025-dance-capstone"
       },
 
     {
@@ -439,24 +439,6 @@
       "introText": "Lighting design for live rock concert, as part of the Lighting Technology course at Washington University in St. Louis",
       "paragraphs": [],
       "link": "/design/retina-burn"
-    },
-    {
-      "previewTitle": "Boxes and Cubes: Dynamic Art For All",
-      "title": "Boxes and Cubes: Dynamic Art For All",
-      "blurb": "Prototype for a dynamic art installation meant for the home",
-      "images": [
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0ed704c1-49bb-4825-c14b-79294f8a6200/public",
-          "isThumb": true,
-          "isOnContentPage": false
-        }
-      ],
-      "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/7d4b9925a195dc793a847d6b94150b01/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2F7d4b9925a195dc793a847d6b94150b01%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-      ],
-      "introText": "A prototype for a dynamic art installation meant for the home. Built using Isadora and Adobe Illustrator.",
-      "paragraphs": [],
-      "link": "/design/boxes"
     }
   ]
 }

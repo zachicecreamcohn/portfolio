@@ -15,7 +15,7 @@ export default function Home() {
 
       <TopContainer>
         <div className={styles.heroContainer}>
-          <div className={`col-xs-12 col-md-8 ${styles.left}`}>
+          <div className={`col-xs-12 ${styles.left}`}>
             <div className={styles.hero}>
               <h1>
                 im <span className={styles.name}>zach cohn</span>,
@@ -41,16 +41,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
-
-          <div className={`col-md-4 ${styles.right}`}>
-            <Image
-              src={"/images/hero.png"}
-              alt={"png artwork of Zach Cohn smiling"}
-              className={styles.heroImage}
-              width={400}
-              height={400}
-            />
           </div>
         </div>
       </TopContainer>
