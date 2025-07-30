@@ -88,28 +88,6 @@
             "paragraphs": [],
             "link": "/design/the-rest-is-silence"
       },
-      {
-          "previewTitle": "Dance Capstone (SP 2025)",
-          "title": "Dance Capstone",
-          "blurb": "Projection and Lighting design for dance capstone.",
-          "images": [
-              {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/50fcdc72-0f4b-47f9-19c1-292235253800/public",
-                  "isThumb": true,
-                  "isOnContentPage": true
-              },
-              {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6508ab3f-fb8f-41dc-098e-c8b7e2258e00/public",
-                  "isThumb": false,
-                  "isOnContentPage": true
-              }
-
-          ],
-          "videos": [],
-        "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
-        "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
-        "link": "/design/sp-2025-dance-capstone"
-      },
 
     {
       "previewTitle": "Alice in Wonderland",
@@ -165,61 +143,22 @@
         "link": "/design/alice-in-wonderland"
     },
     {
-      "previewTitle": "Pazazz 2024",
-        "title": "Pazazz 2024, SLAD",
-        "blurb": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance",
+      "previewTitle": "Bricks @ GCADD",
+      "title": "bricks @ GCADD",
+      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
       "images": [
         {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/92c33385-686d-4fb6-0427-ef7164bad700/public",
-            "isThumb": true,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/74492d1e-85cf-43a6-38da-08432044fb00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/87911509-ec61-4d64-dc3b-a8e28a239500/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/a936f899-12a7-4803-3858-676e71172300/public",
-            "isThumb": false,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0bc59b45-5463-42da-e92a-8ddfe1321d00/public",
-            "isThumb": true,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c1e8a348-023a-4c35-4ceb-01140a300d00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e9e9ad10-bebf-439c-6ced-d0151fda7600/public",
-            "isThumb": false,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fee7e3ee-afa6-4479-51d8-2f1f316bd900/public",
-            "isThumb": false,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/193b7b2b-387e-4ced-0ca6-07aee3b78000/public",
-            "isThumb": false,
-            "isOnContentPage": true
-        }],
-      "videos": [],
-      "introText": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
+          "isThumb": true,
+          "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      ],
+      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
       "paragraphs": [],
-      "link": "/design/pazazz-2024"
-
+      "link": "/design/bricks"
     },
     {
       "previewTitle": "Hold On",
@@ -311,6 +250,81 @@
         "link": "/design/god-of-carnage"
     },
     {
+      "previewTitle": "Pazazz 2024",
+        "title": "Pazazz 2024, SLAD",
+        "blurb": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/92c33385-686d-4fb6-0427-ef7164bad700/public",
+            "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/74492d1e-85cf-43a6-38da-08432044fb00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/87911509-ec61-4d64-dc3b-a8e28a239500/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/a936f899-12a7-4803-3858-676e71172300/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0bc59b45-5463-42da-e92a-8ddfe1321d00/public",
+            "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c1e8a348-023a-4c35-4ceb-01140a300d00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e9e9ad10-bebf-439c-6ced-d0151fda7600/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fee7e3ee-afa6-4479-51d8-2f1f316bd900/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/193b7b2b-387e-4ced-0ca6-07aee3b78000/public",
+            "isThumb": false,
+            "isOnContentPage": true
+        }],
+      "videos": [],
+      "introText": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance. Performed at the Edison Theater at Washington University in St. Louis",
+      "paragraphs": [],
+      "link": "/design/pazazz-2024"
+
+    },
+    {
+      "previewTitle": "Busybodies in Givens",
+      "title": "busybodies",
+      "blurb": "Projection mapping installation, Givens Hall",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c91888bf-7a91-467b-fb71-458aab972900/public",
+          "isThumb": true,
+          "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/c3bf17d6a5408a0df1a6e939a4e06e80/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fc3bf17d6a5408a0df1a6e939a4e06e80%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      ],
+      "introText": "Projection mapping installation at Givens Hall, Washington University in St. Louis",
+      "paragraphs": [],
+      "link": "/design/busybodies"
+    },
+    {
       "previewTitle": "Fucking A",
       "title": "Fucking A, Suzan-Lori Parks",
       "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
@@ -374,42 +388,6 @@
       "link":"/design/cabaret"
     },
     {
-      "previewTitle": "Busybodies in Givens",
-      "title": "busybodies",
-      "blurb": "Projection mapping installation, Givens Hall",
-      "images": [
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c91888bf-7a91-467b-fb71-458aab972900/public",
-          "isThumb": true,
-          "isOnContentPage": false
-        }
-      ],
-      "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/c3bf17d6a5408a0df1a6e939a4e06e80/iframe?muted=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fc3bf17d6a5408a0df1a6e939a4e06e80%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-      ],
-      "introText": "Projection mapping installation at Givens Hall, Washington University in St. Louis",
-      "paragraphs": [],
-      "link": "/design/busybodies"
-    },
-    {
-      "previewTitle": "Bricks @ GCADD",
-      "title": "bricks @ GCADD",
-      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
-      "images": [
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
-          "isThumb": true,
-          "isOnContentPage": false
-        }
-      ],
-      "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-      ],
-      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
-      "paragraphs": [],
-      "link": "/design/bricks"
-    },
-    {
       "previewTitle": "Retina Burn 2022",
       "title": "Retina Burn 2022",
       "blurb": "Lighting design for Lighting Technology Course",
@@ -439,6 +417,28 @@
       "introText": "Lighting design for live rock concert, as part of the Lighting Technology course at Washington University in St. Louis",
       "paragraphs": [],
       "link": "/design/retina-burn"
-    }
+    },
+      {
+          "previewTitle": "Dance Capstone (SP 2025)",
+          "title": "Dance Capstone",
+          "blurb": "Projection and Lighting design for dance capstone.",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/50fcdc72-0f4b-47f9-19c1-292235253800/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6508ab3f-fb8f-41dc-098e-c8b7e2258e00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              }
+
+          ],
+          "videos": [],
+        "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
+        "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
+        "link": "/design/sp-2025-dance-capstone"
+      }
   ]
 }
