@@ -34,7 +34,7 @@
       {
           "previewTitle": "The Rest Is Silence",
           "title": "The Rest Is Silence",
-          "blurb": "Immersive Hamlet experience, All Student Theater 2024",
+          "blurb": "Lighting design for immersive Hamlet experience, All Student Theater 2024",
           "images": [
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/4102454e-1288-4cc1-82db-fbd32b30df00/public",
@@ -89,72 +89,6 @@
             "link": "/design/the-rest-is-silence"
       },
 
-    {
-      "previewTitle": "Alice in Wonderland",
-      "title": "Alice in Wonderland",
-      "blurb": "Projection design for 'Alice in Wonderland', All Student Theater 2024",
-      "images" : [
-
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df6b0d33-a4b0-4ab6-f043-df0042bb0a00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e99779a2-704a-41ea-0913-c8ce4e6b1300/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7ed419af-caeb-4b7a-01a2-7411a726aa00/public",
-          "isThumb": false,
-          "isOnContentPage": false
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
-          "isThumb": true,
-            "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        }
-      ],
-        "videos": [],
-        "introText": "Projection design for 'Alice in Wonderland', All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
-        "paragraphs": [],
-        "link": "/design/alice-in-wonderland"
-    },
-    {
-      "previewTitle": "Bricks @ GCADD",
-      "title": "bricks @ GCADD",
-      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
-      "images": [
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
-          "isThumb": true,
-          "isOnContentPage": false
-        }
-      ],
-      "videos": [
-        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-      ],
-      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
-      "paragraphs": [],
-      "link": "/design/bricks"
-    },
     {
       "previewTitle": "Hold On",
       "title": "Projection design for 'Hold On' with the Black Rep",
@@ -245,6 +179,100 @@
         "link": "/design/god-of-carnage"
     },
     {
+      "previewTitle": "Fucking A",
+      "title": "Fucking A, Suzan-Lori Parks",
+      "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/d3c3a265-2d4a-49b7-4cfd-8dc1ae641400/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c92795ea-6fa9-4793-8e06-826f41b87700/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0fc786cc-ee3e-477b-9e67-55c51c6e8f00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/5e88101a-b917-4f42-761c-19ba7a65c100/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7f7dd666-b2c6-4677-ca0f-0732dd274f00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/13f561da-4cde-4c0c-91c7-ba6a13a3d900/public",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df42eb0f-5a1d-4eb1-8f09-b05a5c664a00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+      ],
+      "videos": [],
+      "introText": "Lighting design for 'Fucking A' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
+      "paragraphs": [],
+      "link": "/design/fucking-a"
+    },
+    {
+      "previewTitle": "Alice in Wonderland",
+      "title": "Alice in Wonderland",
+      "blurb": "Projection design for 'Alice in Wonderland', All Student Theater 2024",
+      "images" : [
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df6b0d33-a4b0-4ab6-f043-df0042bb0a00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/fe7f1d3c-fbe8-46d4-0545-3f47fa401600/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/757565fe-3e1d-488b-b84e-a7afb8d66500/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e99779a2-704a-41ea-0913-c8ce4e6b1300/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7ed419af-caeb-4b7a-01a2-7411a726aa00/public",
+          "isThumb": false,
+          "isOnContentPage": false
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/383b2630-538b-4c84-18c9-3a87783dff00/public",
+          "isThumb": true,
+            "isOnContentPage": true
+        },
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/b12fe941-8a90-4941-d6d6-620878282e00/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+      ],
+        "videos": [],
+        "introText": "Projection design for 'Alice in Wonderland', All Student Theater 2024. Performed in on the Brookings Quad at Washington University in St. Louis",
+        "paragraphs": [],
+        "link": "/design/alice-in-wonderland"
+    },
+    {
       "previewTitle": "Pazazz 2024",
         "title": "Pazazz 2024, SLAD",
         "blurb": "Lighting design for 'Pazazz 2024', the culminating event for the Saint Louis Academy of Dance",
@@ -320,52 +348,6 @@
       "link": "/design/busybodies"
     },
     {
-      "previewTitle": "Fucking A",
-      "title": "Fucking A, Suzan-Lori Parks",
-      "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
-      "images": [
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/d3c3a265-2d4a-49b7-4cfd-8dc1ae641400/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c92795ea-6fa9-4793-8e06-826f41b87700/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/0fc786cc-ee3e-477b-9e67-55c51c6e8f00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/5e88101a-b917-4f42-761c-19ba7a65c100/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/7f7dd666-b2c6-4677-ca0f-0732dd274f00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/13f561da-4cde-4c0c-91c7-ba6a13a3d900/public",
-          "isThumb": true,
-          "isOnContentPage": true
-        },
-        {
-          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/df42eb0f-5a1d-4eb1-8f09-b05a5c664a00/public",
-          "isThumb": false,
-          "isOnContentPage": true
-        }
-      ],
-      "videos": [],
-      "introText": "Lighting design for 'Fucking A' presented by the Performing Arts Department, Washington University in St. Louis. Performed in the A.E Hotchner Theater",
-      "paragraphs": [],
-      "link": "/design/fucking-a"
-    },
-    {
     "hidden":true,
       "previewTitle": "Cabaret",
       "title": "Cabaret",
@@ -434,6 +416,24 @@
         "introText": "Projection and Lighting design for Spring 2025 dance capstone performance at WashU. ",
         "paragraphs": ["I built a custom application to interface with and visualize data from Movella wireless motion tracking sensors worn by dancers"],
         "link": "/design/sp-2025-dance-capstone"
-      }
+      },
+    {
+      "previewTitle": "Bricks @ GCADD",
+      "title": "bricks @ GCADD",
+      "blurb": "Interactive projection mapping installation, Granite City Arts and Design District",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f3840501-fb69-4dfc-947b-2b930ecfb800/public",
+          "isThumb": true,
+          "isOnContentPage": false
+        }
+      ],
+      "videos": [
+        "https://customer-63jclgud800yj7zi.cloudflarestream.com/b90199ea55218385b0155015df8ac58a/iframe?muted=true&preload=true&poster=https%3A%2F%2Fcustomer-63jclgud800yj7zi.cloudflarestream.com%2Fb90199ea55218385b0155015df8ac58a%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+      ],
+      "introText": "A site-specific interactive art piece created for and shown at GCADD. Built using Processing, MadMapper, and an Xbox Kinect.",
+      "paragraphs": [],
+      "link": "/design/bricks"
+    }
   ]
 }
