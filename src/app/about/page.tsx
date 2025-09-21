@@ -3,7 +3,6 @@ import React from "react";
 import styles from "./About.module.css";
 import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import Image from "next/image";
-import Link from "next/link";
 import NavBar from "@/components/NavBar/NavBar";
 
 export default function About() {
@@ -31,15 +30,10 @@ export default function About() {
                 theatre.
               </p>
               <p>
-                I studied technical theatre and computer science at Washington
-                University in St. Louis, and I love combining art and technology
-                in new and interesting ways.
-              </p>
-              <p>
                 I love combining art and technology in new and interesting ways.
-                In addition to my design practice, I’m also a software engineer
-                and build custom tools that integrate with lighting and video
-                systems to improve efficiency and expand production
+                In addition to my design practice, I&apos;m also a software
+                engineer and build custom tools that integrate with lighting and
+                video systems to improve efficiency and expand production
                 possibilities.
               </p>
             </div>
