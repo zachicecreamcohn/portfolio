@@ -1,6 +1,27 @@
 {
   "work": [
       {
+          "previewTitle": "Murder on the Orient Express",
+          "title": "Murder on the Orient Express",
+          "blurb": "Assistant Projection Design, ASF",
+          "images": [
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/338544be-3f7e-4647-e522-da02ba7d8c00/public",
+                  "isThumb": true,
+                  "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/6b2e5e0c-5e74-459a-7b82-cb3b6401da00/public",
+                  "isThumb": false,
+                  "isOnContentPage": true
+              }
+          ],
+          "videos": [],
+            "paragraphs": [],
+          "introText": "Assistant Projection Design: Zachary Cohn; Projection Design: Kylee Loera.",
+          "link": "/design/murder-asf"
+      },
+      {
           "previewTitle": "Urinetown",
           "title": "Urinetown",
           "blurb": "Lighting design, Cast 'n Crew 2025",
