@@ -24,7 +24,7 @@
 }
 .contact input {
     border: none;
-    background-color: #eeeeee;
+    background-color: black;
     padding: 1.25rem;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 1rem;
@@ -32,7 +32,7 @@
 
 .contact textarea {
     border: none;
-    background-color: #eeeeee;
+    background-color: black;
     padding: 1.25rem;
     font-family: 'Roboto', sans-serif;
     resize: none;
