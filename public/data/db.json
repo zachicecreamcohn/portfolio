@@ -159,6 +159,24 @@
         "link": "/design/hold-on"
     },
     {
+      "previewTitle": "A Chrsitmas Carol",
+        "title": "A Christmas Carol",
+        "blurb": "Lighting design for Chaminade College Prepatory School",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e978e137-f385-4eec-3ade-e47d0fc19700/public",
+            "isThumb": true,
+            "isOnContentPage": true
+        }
+      ],
+      "videos": [],
+      "introText": "Lighting design for 'A Christmas Carol' at Chaminade College Prepatory School",
+      "paragraphs": [
+        "Directed by Sami Ginoplos. Photography by Jack Rushen."
+        ],
+        "link": "/design/god-of-carnage"
+    },
+    {
       "previewTitle": "God of Carnage",
         "title": "God of Carnage, Yasmina Reza",
         "blurb": "Lighting design for Performing Arts Department, Washington University in St. Louis",
