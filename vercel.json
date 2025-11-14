@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "next build",
-  "nodeVersion": "22.x"
+  "buildCommand": "next build"
 }
