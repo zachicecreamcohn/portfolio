@@ -7,11 +7,6 @@
           "images": [
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/792e4b37-41a7-439a-cc51-d36e58287b00/public",
-                  "isThumb": true,
-                  "isOnContentPage": true
-              },
-              {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/59322f72-a5c7-458d-9b11-b78a25b6a500/public",
                   "isThumb": false,
                   "isOnContentPage": true
               },
@@ -21,9 +16,14 @@
                   "isOnContentPage": true
               },
               {
-                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/e07b5451-9f67-4f2c-44b7-4f3c7e07a900/public",
-                  "isThumb": false,
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/eca13b22-639b-46f2-a800-98534c8ab700/public",
+                  "isThumb": true,
                   "isOnContentPage": true
+              },
+              {
+                  "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/2073db92-f007-47c5-30b2-e11f8f47b700/public",
+                  "isThumb":false,
+                  "isOnContentPage":true
               }
           ],
           "videos": [],
