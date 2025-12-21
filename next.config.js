@@ -13,7 +13,7 @@ const nextConfig = withFonts({
       {
         source: "/resume/lighting-and-video",
         destination:
-          "https://docs.google.com/document/d/e/2PACX-1vR42hKiBPp0BEwj27hHM8mVaju2NBCkGMRzjlBMv5nAK3w19reS3RSg4J-OfRFyzJkpwz3RcLWFKthS/pub",
+          "https://docs.google.com/document/d/1eN_pMOG4Rz2iXEkLVxvSXaXTNk_DsOvEr194x6ckBiA/edit?tab=t.0",
         permanent: false,
       },
     ];
