@@ -1,5 +1,52 @@
 {
   "work": [
+    {
+      "previewTitle": "Stardust: From Tin Pan Alley to Broadway",
+      "title": "Stardust: From Tin Pan Alley to Broadway",
+      "blurb": "Projection design, co-design with Kylee Loera @ 92NY",
+      "images": [
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c0117235-b188-4fc9-4126-223407e79400/public",
+          "isThumb": true,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/d849a127-166e-4a5c-5c04-5554b9231200/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/f4835b19-0c59-4278-0b30-fb550c7c2700/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/a63eca16-24c0-4ada-132b-85c0d845a800/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+        {
+          "src":"https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/2c4f6763-5087-47e8-a8ad-f1d34bc61400/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        },
+
+        {
+          "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/700951ac-9e64-4577-f294-338a6f97f200/public",
+          "isThumb": false,
+          "isOnContentPage": true
+        }
+
+      ],
+
+        "videos": [],
+        "paragraphs": ["Directed by Kathleen Marshall. Photos by Richard Termine, "],
+        "introText": "Projection Design, co-design with Kylee Loera. Performed at the 92nd Street Y in New York City.",
+        "link": "/design/curious-incident-chaminade"
+    },
       {
           "previewTitle": "Curious Incident of the Dog in the Nighttime",
           "title": "Curious Incident of the Dog in the Nighttime",
