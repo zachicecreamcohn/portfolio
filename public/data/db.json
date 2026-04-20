@@ -7,7 +7,7 @@
       "images": [
         {
           "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/c0117235-b188-4fc9-4126-223407e79400/public",
-          "isThumb": true,
+          "isThumb": false,
           "isOnContentPage": true
         },
 
@@ -30,7 +30,7 @@
         },
         {
           "src":"https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/2c4f6763-5087-47e8-a8ad-f1d34bc61400/public",
-          "isThumb": false,
+          "isThumb": true,
           "isOnContentPage": true
         },
 
