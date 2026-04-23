@@ -38,6 +38,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script defer src="https://umami.zachwcohn.com/script.js" data-website-id="ab92de79-1741-4644-a1f8-11a7cfc9bfd9"></script>
       </head>
       <body>
         <MainContainer>{children}</MainContainer>
