@@ -25,3 +25,11 @@
         align-items: center;
     }
 }
+.cvLink {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 15pt;
+    color: var(--z-gray);
+    padding: 0 3rem 2rem;
+}
+

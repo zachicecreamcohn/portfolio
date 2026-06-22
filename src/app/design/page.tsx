@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./Art.module.css";
 import WorkPreview from "@/components/WorkPreview/WorkPreview";
 import { root } from "postcss";
@@ -15,6 +16,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Navbar />
+      <div className={styles.cvLink}>
+        For a full list of work, see <Link href="/resume/lighting-projections.pdf" target="_blank" rel="noopener noreferrer" className="animate-hover">my CV</Link>
+      </div>
 
       <div className={styles.container}>
         <div className={styles.works}>
