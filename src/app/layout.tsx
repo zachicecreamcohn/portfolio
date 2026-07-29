@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -38,6 +38,11 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t=document.cookie.match(/(?:^|;\\s*)theme=([^;]*)/);document.documentElement.className=t?t[1]:'theme1'})()`,
+          }}
+        />
         <script defer src="https://umami.zachwcohn.com/script.js" data-website-id="ab92de79-1741-4644-a1f8-11a7cfc9bfd9"></script>
       </head>
       <body>

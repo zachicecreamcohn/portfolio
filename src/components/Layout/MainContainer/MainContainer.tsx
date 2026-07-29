@@ -1,31 +1,29 @@
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 import styles from "./MainContainer.module.css";
 
+function getCookieTheme(): string {
+    if (typeof document === "undefined") return "theme1";
+    const match = document.cookie.match(/(?:^|;\s*)theme=([^;]*)/);
+    return match ? match[1] : "theme1";
+}
+
 export default function MainContainer({ children }: { children: React.ReactNode }) {
-
-    const themes = [
-        "theme1", "theme2", "theme3", "theme4"
-    ];
-
-    const [currentTheme, setTheme] = useState("theme1");
-
-    useEffect(() => {
-        const storedTheme = window.localStorage.getItem('theme');
-        if (storedTheme) {
-            setTheme(storedTheme);
-        }
-    }, []);
+    const [currentTheme, setTheme] = useState(getCookieTheme);
 
     const setAndStoreTheme = (theme: string) => {
         setTheme(theme);
-        window.localStorage.setItem('theme', theme);
+        document.documentElement.className = theme;
+        document.cookie = `theme=${theme}; path=/; max-age=${60 * 60 * 24 * 365}`;
+        try {
+            window.localStorage.setItem('theme', theme);
+        } catch { /* storage full or unavailable */ }
     };
 
     return (
-        <div className={currentTheme + " " + styles.container}>
+        <div className={styles.container}>
             {children}
             <ThemeSwitch
                 setTheme={setAndStoreTheme}
