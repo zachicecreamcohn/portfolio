@@ -54,7 +54,7 @@
           "images": [
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/792e4b37-41a7-439a-cc51-d36e58287b00/public",
-                  "isThumb": false,
+                  "isThumb": true,
                   "isOnContentPage": true
               },
               {
@@ -64,7 +64,7 @@
               },
               {
                   "src": "https://imagedelivery.net/jz7aVQ2qyRcSQ0bsKclVwA/eca13b22-639b-46f2-a800-98534c8ab700/public",
-                  "isThumb": true,
+                  "isThumb": false,
                   "isOnContentPage": true
               },
               {
