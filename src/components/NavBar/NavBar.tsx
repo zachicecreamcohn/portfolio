@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useMemo } from "react";
 import styles from "./NavBar.module.css";
 import Button from "@/components/Button/Button";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -48,24 +48,7 @@ export default function NavBar() {
     [],
   );
 
-  const [currentPageIndex, setCurrentPageIndex] = useState(undefined);
-  useEffect(() => {
-    function getIndexFromPath(path: string) {
-      for (let i = 0; i < pages.length; i++) {
-        if (pages[i].path == path) {
-          return i;
-        }
-      }
-    }
-    // get the current page via the window object
-
-    const currentPage = window.location.pathname;
-    const currentPageIndex = getIndexFromPath(currentPage);
-    if (currentPageIndex !== undefined) {
-      // @ts-ignore
-      setCurrentPageIndex(currentPageIndex);
-    }
-  }, [pages]);
+  const pathname = usePathname();
 
   return (
     <div className={styles.container + " " + (scrolled ? styles.scrolled : "")}>
@@ -75,7 +58,7 @@ export default function NavBar() {
             <Link
               key={index}
               href={page.path}
-              className={index === currentPageIndex ? styles.active : ""}
+              className={page.path === pathname ? styles.active : ""}
             >
               {page.title}
             </Link>
