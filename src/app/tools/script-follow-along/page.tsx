@@ -1,13 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "@/components/NavBar/NavBar";
 import styles from "./ScriptFollowAlong.module.css";
 
 export default function ScriptFollowAlongPage() {
   return (
     <>
-      <Navbar />
-      <div className={"container " + styles.container}>
+      <div className={styles.container}>
         <h1>Script Follow-Along</h1>
 
         <section className={styles.section}>

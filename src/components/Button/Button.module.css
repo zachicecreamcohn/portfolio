@@ -1,49 +1,41 @@
 .button {
-    padding: 1.35rem 1.75rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    display: flex;
-    font-size: 14pt;
-    cursor: pointer;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    height: 55px;
-}
-
-
-.button:has(a) {
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  /* Was `height: 55px` plus 1.35rem vertical padding — redundant, and it
+     clipped as soon as the type scale changed. */
+  min-height: 44px;
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  font-size: var(--step--1);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-ui);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease);
 }
 
 .button.primary {
-    background-color: var(--z-primary);
-    border: 1px solid #d8d8d8;
-    color: #d8d8d8;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 .button.primary:hover {
-    background-color: var(--z-secondary);
-    border: 1px solid #d8d8d8;
+  background-color: var(--primary-hover);
 }
+
 .button.secondary {
-    border: 1px solid #c2c2c2;
-    background-color:#d8d8d8;
-    color: #000000;
-    display: flex;
+  background-color: transparent;
+  border-color: var(--border);
+  color: var(--text);
 }
 
 .button.secondary:hover {
-    color: #111111;
-    background-color: #f8f8f8;
-    border-color: #b4b4b4;
-}
-
-.button.secondary:active {
-    color: #070707;
-    background-color: #f6f6f6;
-
-    border-color: #b4b4b4;
+  background-color: var(--surface-2);
+  border-color: var(--text-subtle);
 }

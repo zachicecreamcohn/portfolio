@@ -42,7 +42,7 @@
 .container p, .container i {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: var(--z-gray);
+    color: var(--text-muted);
     margin: .8rem 0;
     font-size: 15pt;
     line-height: 1.6;

@@ -3,8 +3,6 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import Button from "@/components/Button/Button";
-import Navbar from "@/components/NavBar/NavBar";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -40,88 +38,73 @@ export default function Contact() {
   }
 
   return (
-    <>
-      <Navbar />
-      <div className={styles.container}>
-        <div className={styles.contactContainer}>
-          {alertMessage ? (
-            <div className={styles.alert}>{alertMessage}</div>
-          ) : (
-            <>
-              <h1>Get in touch</h1>
-              <div className={styles.contact}>
-                <form
-                  action="#"
-                  method="POST"
-                  className=""
-                  onSubmit={sendEmail}
-                >
-                  <div className="d-flex flex-column mb-3">
-                    <label htmlFor="name">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      className="mt-1"
-                      placeholder="First Last"
-                      required
-                      onChange={(e) => {
-                        setName(e.target.value);
-                      }}
-                      value={name}
-                    />
-                  </div>
-
-                  <div className="d-flex flex-column mb-3">
-                    <label htmlFor="email">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      className="mt-1"
-                      placeholder="placeholder@test.com"
-                      required
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                      value={email}
-                    />
-                  </div>
-
-                  <div className="d-flex flex-column mb-3">
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                      className="mt-1"
-                      name="message"
-                      id="message"
-                      placeholder="Let's work together!"
-                      required
-                      onChange={(e) => {
-                        setMessage(e.target.value);
-                      }}
-                      value={message}
-                    />
-                  </div>
-
-                  <div className="d-flex justify-content-center">
-                    <Button style={"primary"} className={styles.customButton}>
-                      Send
-                    </Button>
-                  </div>
-                </form>
-              </div>
-              <div className={styles.contactInfo}>
-                <p>
-                  <a href="mailto:contact@zachwcohn.com">
-                    contact@zachwcohn.com
-                  </a>{" "}
-                  | <a href="tel:646-477-2420">(646)-477-2420</a>
-                </p>
-              </div>
-            </>
-          )}
+    <div className={styles.container}>
+      {alertMessage ? (
+        <div className={styles.alert} role="status">
+          {alertMessage}
         </div>
-      </div>
-    </>
+      ) : (
+        <>
+          <h1>Get in touch</h1>
+          <form className={styles.form} onSubmit={sendEmail}>
+            <div className={styles.field}>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="First Last"
+                required
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+                value={name}
+              />
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="placeholder@test.com"
+                required
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                value={email}
+              />
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Let's work together!"
+                required
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+                value={message}
+              />
+            </div>
+
+            <button type="submit" className={styles.submit}>
+              Send
+            </button>
+          </form>
+
+          <div className={styles.contactInfo}>
+            <p>
+              <a href="mailto:contact@zachwcohn.com">contact@zachwcohn.com</a>
+              <span aria-hidden="true"> · </span>
+              <a href="tel:+16464772420">(646)-477-2420</a>
+            </p>
+          </div>
+        </>
+      )}
+    </div>
   );
 }

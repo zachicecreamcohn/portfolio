@@ -9,7 +9,7 @@
 
 .container .right {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
@@ -24,7 +24,7 @@
 .left .experienceSection h2 {
     font-size: 16pt;
     font-weight: bold;
-    color: var(--z-primary-text);
+    color: var(--primary-text);
     text-decoration: none;
     margin-top: .75rem;
     margin-bottom: 0.75rem;

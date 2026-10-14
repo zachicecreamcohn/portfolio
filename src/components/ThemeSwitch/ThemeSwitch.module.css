@@ -1,27 +1,33 @@
-.container {
-    position: fixed;
-    right: 2.5rem;
-    bottom: 2.5rem;
-    z-index: 99999;
+/*
+ * ThemeSwitch — a control in the NavBar, not a floating bubble.
+ *
+ * Previously a 60px circle fixed to the bottom-right corner with
+ * `z-index: 99999`, which sat on top of page content on small screens. It is
+ * now a normal inline control with a proper touch target.
+ */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  background-color: transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
 }
 
-.container button {
-    height: 60px;
-    width: 60px;
-    padding: 0.95rem;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    box-shadow: 0 0 15px 3px #0000001a;
-    cursor: pointer;
+.button:hover {
+  background-color: var(--theme-button-background);
+  border-color: var(--border);
 }
 
-.container:hover button {
-    background-color: var( --z-theme-button-background);
-}
-
-
-.container svg {
-  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
-          filter: invert(100%);
+.button img {
+  width: 20px;
+  height: 20px;
 }

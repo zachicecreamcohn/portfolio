@@ -23,14 +23,14 @@
 .title {
     font-size: 16pt;
     font-weight: bold;
-    color: var(--z-primary-text);
+    color: var(--primary-text);
     text-decoration: none;
 }
 
 .subtitle {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: var(--z-gray);
+    color: var(--text-muted);
     margin: 0.25rem 0 0 0;
     font-size: 15pt;
     line-height: 1.6;

@@ -3,45 +3,31 @@
 import Button from "@/components/Button/Button";
 import TopContainer from "@/components/Layout/TopContainer/TopContainer";
 import styles from "./Home.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <>
-      <NavBar />
+    <TopContainer>
+      <div className={styles.hero}>
+        <h1 className={styles.title}>
+          im <span className={styles.name}>zach cohn</span>,
+        </h1>
+        <h1 className={styles.title}>
+          <span className={styles.color}>lighting </span>
+          and <span className={styles.color}>projections designer</span>
+        </h1>
+        <p className={styles.intro}>
+          an NYC-based designer for theatre and dance
+        </p>
 
-      <TopContainer>
-        <div className={styles.heroContainer}>
-          <div className={`col-xs-12 ${styles.left}`}>
-            <div className={styles.hero}>
-              <h1>
-                im <span className={styles.name}>zach cohn</span>,
-              </h1>
-              <h1>
-                <span className={styles.color}>lighting </span>
-                and <span className={styles.color}>projections designer</span>
-              </h1>
-              <p>an NYC-based designer for theatre and dance</p>
-
-              <div className={styles.buttonContainer}>
-                <Link href={"/contact"}>
-                  <Button style="primary" onClick={() => {}}>
-                    Contact Me
-                  </Button>
-                </Link>
-                <Link href={"/design"}>
-                  <Button style="secondary" onClick={() => {}}>
-                    My Work
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className={styles.buttonContainer}>
+          <Button href="/contact" variant="primary">
+            Contact Me
+          </Button>
+          <Button href="/design" variant="secondary">
+            My Work
+          </Button>
         </div>
-      </TopContainer>
-    </>
+      </div>
+    </TopContainer>
   );
 }

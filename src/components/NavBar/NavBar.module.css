@@ -1,82 +1,226 @@
+/*
+ * NavBar — sticky, full-bleed, with a <details> disclosure below the nav
+ * breakpoint.
+ *
+ * Replaced the previous `position: fixed` nav, which required every page to
+ * carry a magic margin (`body { padding: 3em }` + `MainContainer { margin-top:
+ * 6em }`) to avoid being covered. Sticky reserves its own space in flow, so
+ * those offsets are gone.
+ */
+
 .container {
-    background-color:#181a1b;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /*height: calc(11vh - 2em);*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 3.5em 3em 1em;
-    transition: all 0.3s;
-    z-index: 999;
-    border-bottom: 1px solid transparent;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  background-color: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-base) var(--ease);
 }
 
 .container.scrolled {
-    border-bottom-color: #393939;
+  border-bottom-color: var(--border);
 }
 
-.container .left {
-    display: flex;
-    flex-direction: row;
+/* Falls back to an opaque bar where backdrop-filter is unsupported. */
+@supports not (backdrop-filter: blur(12px)) {
+  .container {
+    background-color: var(--bg);
+  }
 }
 
-.container .right {
-    display: flex;
-    flex-direction: row;
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-inline: var(--page-pad);
+  min-height: var(--nav-h);
 }
 
-
-.container .left a {
-    color: #a4a4a4;
-    text-decoration: none;
+.brand {
+  font-family: "Oceanwide", system-ui, sans-serif;
+  font-size: var(--step-1);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--text);
+  white-space: nowrap;
 }
 
-.container .left a:hover {
-    color: #d8d8d8;
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
-.container .left a.active {
-    color: var(--z-primary-text);
+.links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-.container .left a {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 14pt;
-    /* Phase 1 shim: the nav's vertical padding is in `em`, and `em` now
-       resolves against a 16px body font (was 14px under bootstrap), which
-       would grow the nav box from ~85px to ~119px. Pinning line-height holds
-       the box at its current height until Phase 2 restructures the nav. */
-    line-height: 1.35;
-    margin-right: 1.5rem;
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px; /* touch target */
+  font-size: var(--step--1);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-ui);
+  color: var(--text-muted);
+  transition: color var(--dur-fast) var(--ease);
 }
 
+.links a:hover {
+  color: var(--text);
+}
 
-/*On mobile... */
-@media (max-width: 768px) {
-    .container {
-        padding: 3.5em 1em 1em;
-    }
+.links a.active {
+  color: var(--primary-text);
+}
 
-    .container .left {
-justify-content: center;
-        width: 100%;
-    }
+.cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--space-4);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  font-size: var(--step--1);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-ui);
+  color: var(--text);
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease);
+}
 
-    .container .left a {
-        margin-bottom: 1rem;
-    }
+.cta:hover {
+  background-color: var(--surface-2);
+  border-color: var(--text-subtle);
+}
 
-    .container .right {
-        display: none;
-    }
+/* --------------------------------------------------------- mobile menu */
+
+.menu {
+  display: none;
+  position: relative;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  list-style: none;
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Hamburger drawn in CSS so there is no icon dependency. */
+.burger,
+.burger::before,
+.burger::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--text);
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.burger {
+  position: relative;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger::before {
+  top: -6px;
+}
+
+.burger::after {
+  top: 6px;
+}
+
+.menu[open] .burger {
+  background-color: transparent;
+}
+
+.menu[open] .burger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu[open] .burger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.menuLinks {
+  position: absolute;
+  top: calc(100% + var(--space-3));
+  right: 0;
+  min-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-2);
+  margin: 0;
+  list-style: none;
+  background-color: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.35);
+}
+
+.menuLinks a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--step-0);
+  color: var(--text-muted);
+}
+
+.menuLinks a:hover {
+  color: var(--text);
+  background-color: var(--surface-2);
+}
+
+.menuLinks a.active {
+  color: var(--primary-text);
+}
+
+/* ------------------------------------------------------------ breakpoint */
+
+@media (max-width: 48rem) {
+  .links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+/* On the narrowest screens the full CTA competes with the brand + menu. */
+@media (max-width: 26rem) {
+  .cta {
+    display: none;
+  }
 }

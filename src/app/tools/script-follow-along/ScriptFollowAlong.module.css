@@ -15,19 +15,19 @@
 .section h2 {
     font-size: 20pt;
     font-weight: bold;
-    color: var(--z-primary-text);
+    color: var(--primary-text);
     margin-bottom: 0.75rem;
 }
 
 .section .updated {
     font-size: 13pt;
-    color: var(--z-gray-light);
+    color: var(--text-muted);
 }
 
 .section h3 {
     font-size: 15pt;
     font-weight: bold;
-    color: var(--z-gray-light);
+    color: var(--text-muted);
     margin-top: 1.75rem;
     margin-bottom: 0.5rem;
 }
@@ -35,7 +35,7 @@
 .section p {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: var(--z-gray);
+    color: var(--text-muted);
     margin: 0.5rem 0;
     font-size: 15pt;
     line-height: 1.6;

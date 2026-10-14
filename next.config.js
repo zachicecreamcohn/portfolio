@@ -1,12 +1,14 @@
-// @ts-ignore
-const withFonts = require("next-fonts");
-
-const nextConfig = withFonts({
-  webpack(config, options) {
-    return config;
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: ["localhost", "https://zachcohn.sfo3.digitaloceanspaces.com"],
+    // `domains` is deprecated in favour of `remotePatterns`.
+    remotePatterns: [
+      { protocol: "https", hostname: "imagedelivery.net" },
+      {
+        protocol: "https",
+        hostname: "zachcohn.sfo3.digitaloceanspaces.com",
+      },
+    ],
   },
   async redirects() {
     return [
@@ -18,6 +20,6 @@ const nextConfig = withFonts({
       },
     ];
   },
-});
+};
 
 module.exports = nextConfig;

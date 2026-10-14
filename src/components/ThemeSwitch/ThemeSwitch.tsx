@@ -1,39 +1,35 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-
 import styles from "./ThemeSwitch.module.css";
-export default function ThemeSwitch({
-  currentTheme,
-  setTheme,
-}: {
-  // a state var
-  currentTheme: string;
+import { useTheme } from "@/components/ThemeProvider/ThemeProvider";
 
-  // setCurrentTheme is a setter function for state that takes a string
-  setTheme: (theme: "theme1" | "theme2" | "theme3" | "theme4") => void;
-}) {
-  function onPress() {
-    if (currentTheme === "theme1" || currentTheme === undefined) {
-      setTheme("theme2");
-    } else if (currentTheme === "theme2") {
-      setTheme("theme3");
-    } else if (currentTheme === "theme3") {
-      setTheme("theme4");
-    } else if (currentTheme === "theme4") {
-      setTheme("theme1");
-    }
-  }
+/**
+ * Cycles the site palette. Lives in the NavBar.
+ *
+ * The icon is a fixed white-stroke SVG, so no filter is applied — the previous
+ * implementation inverted it (`filter: invert(100%)`), which made the glyph
+ * nearly invisible in the dark palettes.
+ */
+export default function ThemeSwitch() {
+  const { theme, cycleTheme } = useTheme();
 
   return (
-    <div className={styles.container}>
-      <button onClick={onPress}>
-        <Image
-          src={"/icons/paint-icon.svg"}
-          alt={"paintbrush icon"}
-          width={28}
-          height={28}
-        />
-      </button>
-    </div>
+    <button
+      type="button"
+      onClick={cycleTheme}
+      className={styles.button}
+      title="Change colour theme"
+    >
+      <Image
+        src="/icons/paint-icon.svg"
+        alt=""
+        width={20}
+        height={20}
+        aria-hidden="true"
+      />
+      <span className="sr-only">Change colour theme (current: {theme})</span>
+    </button>
   );
 }

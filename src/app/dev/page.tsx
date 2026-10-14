@@ -1,28 +1,30 @@
 
 "use client"
 
-import React, { useState } from "react";
+import React from "react";
 import TechnologyIcon from "@/components/TechnologyIcon/TechnologyIcon";
 import styles from "./Dev.module.css";
-import Image from "next/image";
-import Head from "next/head"; // Correct import for Head
-import Navbar from "@/components/NavBar/NavBar";
 import Link from "next/link";
-export default function dev() { // Capitalize the component name
-
+export default function Dev() {
     return (
         <>
-            <Navbar />
+            {/*
+              Devicon glyph font for the technology icons below. Previously
+              this lived in a `next/head` tag on this page (a no-op in the App
+              Router) AND in a raw <head> element inside the Footer component,
+              which was never rendered. It only worked because that stray <head>
+              was hoisted by the browser — i.e. it was broken-by-luck.
+              Rendering a plain <link> here is the supported approach.
+            */}
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+            />
 
-            <Head>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-            </Head>
-
-            <div className={"container " + styles.container}>
-
+            <div className={styles.container}>
                 <h1>Software Development</h1>
                 <div>
-                    <div className={"col-12 " + styles.left}>
+                    <div className={styles.left}>
                         <p className={styles.intro}>
                             I fell in love with software development the summer before my freshman year of college,
                             with Python and Flask. In the years since, I&apos;ve learned a lot.

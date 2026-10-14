@@ -2,17 +2,42 @@ import "./globals.css";
 import "./theming.css";
 import "../../public/fonts/fonts.css";
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import MainContainer from "@/components/Layout/MainContainer/MainContainer";
-import "../bootstrap.min.css";
+import NavBar from "@/components/NavBar/NavBar";
+import {
+  ThemeProvider,
+  DEFAULT_THEME,
+  isTheme,
+} from "@/components/ThemeProvider/ThemeProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
+export const metadata: Metadata = {
+  title: {
+    default: "Zach Cohn — Lighting & Projections Designer",
+    template: "%s — Zach Cohn",
+  },
+  description:
+    "Zach Cohn is an NYC-based lighting and projections designer for theatre and dance, and a software engineer.",
+  metadataBase: new URL("https://zachwcohn.com"),
+};
+
+/**
+ * The theme is applied as a class on <html> by the blocking script below,
+ * BEFORE paint, to avoid a flash of the wrong palette. Reading the cookie here
+ * too means the server-rendered markup already carries the right theme, so
+ * there is nothing for React to correct on hydration.
+ */
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieTheme = cookies().get("theme")?.value;
+  const initialTheme = isTheme(cookieTheme) ? cookieTheme : DEFAULT_THEME;
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={initialTheme} suppressHydrationWarning>
       <head>
         <link
           rel="apple-touch-icon"
@@ -35,22 +60,27 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var t=document.cookie.match(/(?:^|;\\s*)theme=([^;]*)/);document.documentElement.className=t?t[1]:'theme1'})()`,
+            __html: `(function(){var t=document.cookie.match(/(?:^|;\\s*)theme=([^;]*)/);if(t)document.documentElement.className=t[1]})()`,
           }}
         />
-        <script defer src="https://umami.zachwcohn.com/script.js" data-website-id="ab92de79-1741-4644-a1f8-11a7cfc9bfd9"></script>
+        <script
+          defer
+          src="https://umami.zachwcohn.com/script.js"
+          data-website-id="ab92de79-1741-4644-a1f8-11a7cfc9bfd9"
+        ></script>
       </head>
       <body>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
-        <MainContainer>
-          {/* `.page` is a global class defined in globals.css. It is the single
-              owner of page-level geometry — see the comment there. */}
-          <main id="main" className="page">
-            {children}
-          </main>
-        </MainContainer>
+        <ThemeProvider initialTheme={initialTheme}>
+          <MainContainer>
+            <NavBar />
+            <main id="main" className="page">
+              {children}
+            </main>
+          </MainContainer>
+        </ThemeProvider>
         <GoogleAnalytics gaId="G-PPDRH7FT49" />
       </body>
     </html>

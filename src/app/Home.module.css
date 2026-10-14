@@ -1,109 +1,51 @@
-.heroContainer {
-    display: flex;
-    align-items: center;
-    height: 100%;
+/*
+ * Home — hero.
+ *
+ * The old module kept `.container`, `.left`, `.right`, `.heroImage`, and
+ * `.theater-icon` rules, none of which the page rendered (the hero image was
+ * removed at some point). Everything below is actually used.
+ */
+
+.hero {
+  display: flex;
+  flex-direction: column;
 }
 
-.heroContainer .hero h1 {
-    margin: 0;
-    font-size: min(max(2.3rem, 5vw), 11.5rem);
-    padding-bottom: 0;
+.title {
+  margin: 0;
+  font-size: clamp(2.25rem, 1.5rem + 4vw, 7rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
-.heroContainer .hero h1 .name {
-    text-shadow: 2.5px 2px var(--text-shadow);
+.name {
+  text-shadow: 2.5px 2px var(--text-shadow);
 }
 
-.heroContainer .hero h1 .color {
-    color: var(--z-primary-text);
-}
-.heroContainer .hero p {
-    color: var(--z-gray);
-    max-width: 50vw;
-    margin-top: .5rem;
-
+.color {
+  color: var(--primary-text);
 }
 
-.heroContainer .hero .buttonContainer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
+.intro {
+  color: var(--text-muted);
+  max-width: 34ch;
+  margin-top: var(--space-4);
 }
 
-.heroContainer .hero .buttonContainer > div {
-    display: flex;
-    flex-direction: row;
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
 }
 
+@media (max-width: 48rem) {
+  .intro {
+    max-width: none;
+  }
 
-.heroImage {
-    width: 100% !important;
-    height: auto;
-    max-width: 800px;
-
-
-}
-
-.right {
-    display: flex;
-}
-
-.theater-icon {
-    transform: scale(1.1);
-}
-
-
-/*On mobile... */
-@media (max-width: 768px) {
-    .container {
-        padding: 3.5em 1em 1em;
-    }
-
-
-    .left {
-        justify-content: center;
-        width: 100% !important;
-    }
-
-    .left .hero h1 {
-        font-size: 4rem;
-    }
-
-    .left .hero p {
-        max-width: none;
-    }
-
-    .left a {
-        margin-bottom: 1rem;
-    }
-
-    .right {
-        display: none;
-    }
-
-    .buttonContainer {
-        flex-direction: column !important;
-    }
-
-
-    /*Select the first button that is a child */
-    .buttonContainer button {
-        width: 100%;
-    }
-
-    .buttonContainer > div {
-        width: 100%;
-    }
-
-    .buttonContainer > div button {
-        width: 100%;
-    }
-
-    .buttonContainer > div a {
-        width: 100%;
-    }
-
-    .buttonContainer > div a:nth-of-type(1) {
-        margin-right: 1rem;
-    }
+  .buttonContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }

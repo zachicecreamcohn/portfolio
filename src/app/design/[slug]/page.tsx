@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./SpecificWork.module.css"
-import Video from "@/components/Video/Video";
-import NavBar from "@/components/NavBar/NavBar";
 
 import dbData from "../../../../public/data/db.json"
 import {Project} from "@/Types";
@@ -25,7 +23,6 @@ export default async function Page({params}: { params: { slug: string } }) {
 
     return (
         <>
-            <NavBar/>
             {slugData &&
                 <div className={styles.container}>
                     <h1>{slugData.title}</h1>

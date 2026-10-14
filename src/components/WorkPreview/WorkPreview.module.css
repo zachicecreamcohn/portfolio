@@ -41,7 +41,7 @@
 .container .titleContainer a {
     font-size: 18pt;
     font-weight: bold;
-    color: var(--z-primary-text);
+    color: var(--primary-text);
     text-decoration: none;
     margin-top: .75rem;
 }
@@ -49,7 +49,7 @@
 .container p {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: var(--z-gray);
+    color: var(--text-muted);
     margin-top: .8rem;
     font-size: 15pt;
     width: 600px;

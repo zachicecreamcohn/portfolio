@@ -1,34 +1,48 @@
 /*
  * theming.css — theme colour tokens.
  *
- * Applied as a class on <html> by the blocking script in layout.tsx.
+ * Applied as a class on <html> by RootLayout (server) and by the blocking
+ * script in its <head> (client, before paint).
  *
  * Token roles:
  *   --primary            FILLS ONLY (button backgrounds). Dark on purpose.
- *   --primary-text       TEXT, icons, thin borders. Must pass 4.5:1 on --bg.
- *   --secondary          hover fill for --primary
+ *   --primary-text       TEXT, icons, thin borders on --bg. >= 4.5:1.
+ *   --on-primary         TEXT drawn ON --primary. >= 4.5:1 against --primary.
+ *   --primary-hover      hover fill for --primary. >= 4.5:1 with --on-primary.
+ *   --secondary          dormant accent (no consumers; kept off the button
+ *                        hover path because these values were tuned as text
+ *                        colours and fail as fills)
  *   --theme-button-background  fill behind the theme-switch icon
  *
- * Contrast is measured against --bg (#181a1b) and noted per theme.
- * --primary is deliberately dark: it is only ever used behind light text.
+ * Contrast is measured against --bg (#181a1b) and --primary, and noted inline.
+ * --primary is deliberately dark in theme1 so light text sits on it; themes
+ * 2-4 have light primaries, so their --on-primary is dark. Using a single
+ * fixed light text colour on all four (the previous behaviour) failed AA in
+ * themes 2-4 at 2.55 / 2.53 / 1.86:1.
  *
- * Legacy --z-* aliases live in globals.css `:root`, so theme switching only
- * needs to override the canonical names below.
+ * Theme switching only needs to override the canonical names below; they are
+ * all consumed directly (the legacy --z-* aliases were removed in Phase 1.5).
  */
 
 .theme1 {
-  --primary: #8c0800; /* fill: 6.85:1 vs #d8d8d8 text */
-  --primary-text: #e8604f; /* text: 5.17:1 */
-  --secondary: #fe716a; /* hover fill: 6.05:1 vs #111 text */
+  --primary: #8c0800;
+  --primary-text: #e8604f; /* on --bg: 5.17:1 */
+  --on-primary: #ffffff; /* on --primary: 9.77:1 */
+  --primary-hover: #6d0600; /* on --on-primary: 12.53:1 */
+  --secondary: #fe716a;
   --text-shadow: #fac852;
   --theme-button-background: #fac852;
 }
 
 .theme2 {
   --primary: #0a8ece;
-  --primary-text: #4bb8ea; /* text: 7.77:1 */
-  /* Was declared twice (#0a8ece then #181818) — the near-black silently won.
-   * Preserving the effective value; revisit the secondary palette in Phase 2. */
+  --primary-text: #4bb8ea; /* on --bg: 7.77:1 */
+  --on-primary: #06121a; /* on --primary: 5.21:1 */
+  /* Light primary => hover must go LIGHTER to keep dark text legible.
+     (Going darker drops this pairing to 3.42:1.) */
+  --primary-hover: #4cbdf5; /* on --on-primary: 8.93:1 */
+  /* Dormant. The duplicate declaration that used to resolve this to near-black
+   * is gone; --primary-hover now handles button hover. Delete once settled. */
   --secondary: #181818;
   --text-shadow: #0a8ece;
   --theme-button-background: #0a8ece;
@@ -36,7 +50,9 @@
 
 .theme3 {
   --primary: #4c956c;
-  --primary-text: #7fbf9a; /* text: 8.17:1 */
+  --primary-text: #7fbf9a; /* on --bg: 8.17:1 */
+  --on-primary: #05140c; /* on --primary: 5.24:1 */
+  --primary-hover: #63c48e; /* on --on-primary: 8.83:1 */
   --secondary: #42835e;
   --text-shadow: #9191e9;
   --theme-button-background: #9191e9;
@@ -44,7 +60,9 @@
 
 .theme4 {
   --primary: #ff7800;
-  --primary-text: #ffa04d; /* text: 8.64:1 */
+  --primary-text: #ffa04d; /* on --bg: 8.64:1 */
+  --on-primary: #1a0d00; /* on --primary: 7.21:1 */
+  --primary-hover: #ff9433; /* on --on-primary: 8.66:1 */
   --secondary: #e26b00;
   --text-shadow: #e26b00;
   --theme-button-background: #e26b00;

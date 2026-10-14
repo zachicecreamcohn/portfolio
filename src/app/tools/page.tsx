@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "@/components/NavBar/NavBar";
 import styles from "./Tools.module.css";
 
 interface Tool {
@@ -21,8 +20,7 @@ const tools: Tool[] = [
 export default function ToolsPage() {
   return (
     <>
-      <Navbar />
-      <div className={"container " + styles.container}>
+      <div className={styles.container}>
         <h1>Tools</h1>
         <div className={styles.list}>
           {tools.map((tool) => (

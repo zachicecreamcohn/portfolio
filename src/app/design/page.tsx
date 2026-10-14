@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import styles from "./Art.module.css";
 import WorkPreview from "@/components/WorkPreview/WorkPreview";
-import { root } from "postcss";
-import Navbar from "@/components/NavBar/NavBar";
 import dbData from "../../../public/data/db.json";
 import { Project } from "@/Types";
 
@@ -15,7 +13,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <Navbar />
       <div className={styles.cvLink}>
         For a full list of work, see <Link href="/resume/lighting-projections.pdf" target="_blank" rel="noopener noreferrer" className="animate-hover">my CV</Link>
       </div>
