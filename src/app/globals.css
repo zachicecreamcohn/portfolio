@@ -267,17 +267,35 @@ a {
  * the shared rule as well would silently reset both, because at equal
  * specificity the last declaration wins.
  *
- * `display: inline` (not inline-block) so the underline tracks each line box of
- * a wrapped link rather than spanning the whole wrapped block. With inline-block
- * the rule sat at the bottom of the block, the width of the longest line, which
- * read as the line overshooting the text.
+ * `display: inline-block` + `width: fit-content` is required, and neither part
+ * is optional:
+ *
+ *   display: inline-block   makes `position: relative` actually apply, so the
+ *                           ::after resolves against THIS element.
+ *   width: fit-content      shrink-wraps the box to the text. Without it the
+ *                           block box fills its container and the rule animates
+ *                           across the whole column instead of the words.
+ *
+ * `display: inline` does NOT work here: `position: relative` is a no-op on
+ * non-atomic inlines, so the absolutely positioned ::after skipped past this
+ * element and resolved against an ancestor (the stretched flex item
+ * `.Posts_item`), drawing the rule across the full column.
+ *
+ * `max-width: 100%` stops fit-content overflowing a narrow container.
+ *
+ * Tradeoff: the box is now a single block, so a link that WRAPS gets one rule
+ * across the bottom at the width of its longest line rather than a rule under
+ * each line. Single-line links — nav, titles, inline body links — are what this
+ * site actually uses, and they are unaffected.
  */
 .link--headline,
 .link--inline,
 .prose a {
   /* `position: relative` anchors the ::after. */
   position: relative;
-  display: inline;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .link--headline::after,
