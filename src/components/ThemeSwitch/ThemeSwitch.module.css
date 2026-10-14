@@ -1,21 +1,31 @@
 /*
- * ThemeSwitch — a control in the NavBar, not a floating bubble.
+ * ThemeSwitch — the palette control in the NavBar.
  *
- * Previously a 60px circle fixed to the bottom-right corner with
- * `z-index: 99999`, which sat on top of page content on small screens. It is
- * now a normal inline control with a proper touch target.
+ * Shows the active theme at rest, so the control doubles as an indicator:
+ *   ring + icon  ->  currentColor, set from --primary-text (>= 5.17:1 on --bg
+ *                    in every theme, so the glyph is always legible)
+ *   hover fill   ->  --theme-button-background
+ *
+ * The icon is a CSS mask rather than an <img>. The SVG has a hardcoded white
+ * stroke, so colouring it with `filter` would have needed a different filter
+ * per palette; a mask paints it in `currentColor` for all of them.
  */
 
 .button {
+  /* A themed ring at rest: the only always-visible cue for which palette is
+     active. Uses --primary-text, which passes contrast in all four themes. */
+  --ring: color-mix(in srgb, var(--primary-text) 35%, transparent);
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   padding: 0;
-  border: 1px solid transparent;
+  border: 1px solid var(--ring);
   border-radius: var(--radius-full);
   background-color: transparent;
+  color: var(--primary-text);
   cursor: pointer;
   transition:
     background-color var(--dur-fast) var(--ease),
@@ -23,11 +33,26 @@
 }
 
 .button:hover {
+  --ring: var(--border);
   background-color: var(--theme-button-background);
-  border-color: var(--border);
 }
 
-.button img {
+.button:focus-visible {
+  outline: 2px solid var(--primary-text);
+  outline-offset: 2px;
+}
+
+.icon {
+  display: block;
   width: 20px;
   height: 20px;
+  background-color: currentColor;
+  -webkit-mask-image: var(--icon-src);
+  mask-image: var(--icon-src);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
