@@ -47,6 +47,21 @@ export default function Figure({
     .filter(Boolean)
     .join(" ");
 
+  /*
+   * The caption is a subtitle ON the image, not a line of text underneath it.
+   *
+   * It renders as a real <figcaption>, but when there is a frame to sit in
+   * (`ratio` set, so the frame is a sized box the image fills) it is rendered
+   * INSIDE the frame and overlaid on the bottom of the image, with a scrim for
+   * legibility. Without a ratio there is no sized frame to anchor to, so it
+   * falls back to sitting below the image.
+   */
+  const captionNode = caption ? (
+    <figcaption className={ratio ? styles.captionOverlay : styles.caption}>
+      {caption}
+    </figcaption>
+  ) : null;
+
   return (
     <figure className={classes}>
       <div
@@ -97,8 +112,9 @@ export default function Figure({
             decoding="async"
           />
         )}
+        {ratio && captionNode}
       </div>
-      {caption && <figcaption className={styles.caption}>{caption}</figcaption>}
+      {!ratio && captionNode}
     </figure>
   );
 }

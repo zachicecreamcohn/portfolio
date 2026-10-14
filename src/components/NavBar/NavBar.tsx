@@ -9,7 +9,7 @@ import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 const PAGES = [
   { title: "Work", path: "/design" },
   { title: "About", path: "/about" },
-  { title: "Dev", path: "/dev" },
+  { title: "Writing", path: "/posts" },
   { title: "Tools", path: "/tools" },
 ];
 

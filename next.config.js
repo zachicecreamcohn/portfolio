@@ -18,6 +18,17 @@ const nextConfig = {
           "https://docs.google.com/document/d/1eN_pMOG4Rz2iXEkLVxvSXaXTNk_DsOvEr194x6ckBiA/edit?tab=t.0",
         permanent: false,
       },
+      /* The /dev section was removed; this was its one surviving page. */
+      {
+        source: "/dev/love-note-printer",
+        destination: "/design/love-note-printer",
+        permanent: true,
+      },
+      {
+        source: "/dev",
+        destination: "/design",
+        permanent: true,
+      },
     ];
   },
 };

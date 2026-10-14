@@ -34,8 +34,38 @@
   object-fit: cover;
 }
 
+/* ---- captions ----
+ *
+ * Two placements:
+ *   .caption         below the image (no sized frame to anchor to)
+ *   .captionOverlay  a subtitle ON the image, anchored to the bottom of the
+ *                    frame with a scrim for legibility
+ */
+
 .caption {
+  margin: 0;
   font-size: var(--step--1);
   line-height: var(--leading-ui);
   color: var(--text-muted);
+}
+
+.captionOverlay {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+  padding: var(--space-5) var(--space-4) var(--space-3);
+  font-size: var(--step--1);
+  line-height: var(--leading-ui);
+  color: #f0f0f0;
+  /* Keeps the text legible over any image without darkening the whole frame. */
+  background: linear-gradient(
+    to top,
+    rgb(0 0 0 / 0.78) 0%,
+    rgb(0 0 0 / 0.55) 45%,
+    rgb(0 0 0 / 0) 100%
+  );
+  /* A short caption should not wrap awkwardly across a wide bleed. */
+  text-wrap: pretty;
 }
