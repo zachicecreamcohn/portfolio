@@ -513,6 +513,7 @@ Run after **every** phase — this is what keeps the site shippable:
 
 | Risk | Mitigation |
 |---|---|
+| **All routes became dynamic (λ) instead of static** | Introduced in Phase 1.5+2: `RootLayout` reads the theme cookie so the SSR markup already carries the right theme (no hydration flash). Tradeoff: no static prerender / CDN caching. **Decision needed.** Option A (current): accept dynamic — fine for a portfolio's traffic. Option B: render a static page and let the blocking script apply the theme client-side — restores `○ (Static)` at the cost of a brief flash of the default palette. Option C: `export const dynamic = 'force-static'` + read the theme client-side only. Revisit before Phase 4, since a blog benefits from static generation. |
 | **Cloudflare flexible variants may be disabled** | Task 3.1a verifies a real URL before anything is built on it. Fallback: named variants. **The only external unknown.** |
 | `git filter-repo` rewrites all history | Treated as a separate, deliberate task with a `--mirror` backup. Deferred out of the main path. |
 | MDX/remark dependency churn | 6 pinned deps, Dependabot monthly, changelogs read before merge. |
