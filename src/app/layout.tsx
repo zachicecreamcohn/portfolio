@@ -5,11 +5,8 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import MainContainer from "@/components/Layout/MainContainer/MainContainer";
 import NavBar from "@/components/NavBar/NavBar";
-import {
-  ThemeProvider,
-  DEFAULT_THEME,
-  isTheme,
-} from "@/components/ThemeProvider/ThemeProvider";
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
+import { DEFAULT_THEME, isTheme } from "@/lib/theme";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {

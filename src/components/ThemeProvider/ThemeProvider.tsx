@@ -1,11 +1,8 @@
 "use client";
 
 import React, { createContext, useCallback, useContext, useState } from "react";
+import { DEFAULT_THEME, THEMES, type Theme } from "@/lib/theme";
 
-export const THEMES = ["theme1", "theme2", "theme3", "theme4"] as const;
-export type Theme = (typeof THEMES)[number];
-
-export const DEFAULT_THEME: Theme = "theme1";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 interface ThemeContextValue {
@@ -17,8 +14,9 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-export function isTheme(value: unknown): value is Theme {
-  return typeof value === "string" && (THEMES as readonly string[]).includes(value);
+function persist(theme: Theme) {
+  document.documentElement.className = theme;
+  document.cookie = `theme=${theme}; path=/; max-age=${COOKIE_MAX_AGE}; samesite=lax`;
 }
 
 /**
@@ -28,6 +26,9 @@ export function isTheme(value: unknown): value is Theme {
  * RootLayout before paint, so the server-rendered markup must already carry
  * the right value. `initialTheme` is read from the cookie on the server and
  * passed in; this component keeps it in sync from then on.
+ *
+ * Note: types/constants live in `@/lib/theme` so that server components can
+ * import them without crossing the client boundary.
  */
 export function ThemeProvider({
   initialTheme = DEFAULT_THEME,
@@ -40,15 +41,13 @@ export function ThemeProvider({
 
   const setTheme = useCallback((next: Theme) => {
     setThemeState(next);
-    document.documentElement.className = next;
-    document.cookie = `theme=${next}; path=/; max-age=${COOKIE_MAX_AGE}; samesite=lax`;
+    persist(next);
   }, []);
 
   const cycleTheme = useCallback(() => {
     setThemeState((current) => {
       const next = THEMES[(THEMES.indexOf(current) + 1) % THEMES.length];
-      document.documentElement.className = next;
-      document.cookie = `theme=${next}; path=/; max-age=${COOKIE_MAX_AGE}; samesite=lax`;
+      persist(next);
       return next;
     });
   }, []);

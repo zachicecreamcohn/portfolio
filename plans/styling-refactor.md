@@ -271,7 +271,20 @@ export const srcSet = (id: string, widths = CF_WIDTHS) =>
 export const lqip = (id: string) => `${BASE}/${id}/w=32,blur=1000,format=auto`;
 ```
 
-> **3.1a — Verify flexible variants first.** Open one known image ID with `?w=480` / `/w=480` in a browser and confirm it returns a resized image. Flexible variants may need enabling in the Cloudflare dashboard. If unavailable, fall back to creating 3–4 **named** variants (`card`, `wide`, `full`) and have `srcSet` compose those instead. **This is the one external unknown in the plan — resolve it before building components on top.**
+> **3.1a — RESOLVED (verified against the live CDN).** Cloudflare **flexible variants are DISABLED** on this account:
+>
+> | Request | Result |
+> |---|---|
+> | `/<id>/public` | 200 — 491,438 bytes, `image/png` |
+> | `/<id>/w=480` | **403** |
+> | `/<id>/w=480,q=82,format=auto` | **403** |
+> | `/<id>/public?w=480` | 200 — **identical 491,438 bytes**, param ignored |
+>
+> So the `/w=…,q=…,format=auto` URL shape sketched below does **not** work, and query params are not a workaround. **Named variants are the path** — and they are the better fit regardless: fixed, cacheable, predictable URLs.
+>
+> **Action required (one-time, Cloudflare dashboard → Images → Variants):** create `thumb` (400), `card` (800), `wide` (1200), `full` (1600) with **format: auto** and fit: scale. Then change `ACTIVE_VARIANT` in `src/lib/images.ts` from `"public"` to `"card"` — that is the only code change needed.
+>
+> **Why this matters — measured, not assumed:** the 16 portfolio thumbnails currently total **3.03 MB**, averaging **194 KB** each, and **4 are being served as PNG at 280–480 KB** (photographic content in a lossless format). `format: auto` recovers most of that. Until the variants exist, `srcSet()` returns `undefined` and images fall back to `/public` — correct but heavy, with no broken images.
 
 ### 3.2 Image delivery decision (important)
 
