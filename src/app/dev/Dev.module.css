@@ -1,35 +1,47 @@
 .container {
-    margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  max-width: min(var(--measure), 100%);
 }
 
 .container h1 {
-    font-size: calc(1.375rem + 1.5vw);
-    margin-top: 4rem;
+  margin-block-end: var(--space-5);
 }
 
-.container .right {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+.left {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.left .experienceSection {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+.experienceSection {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: var(--space-6);
 }
 
-.left .experienceSection h2 {
-    font-size: 16pt;
-    font-weight: bold;
-    color: var(--primary-text);
-    text-decoration: none;
-    margin-top: .75rem;
-    margin-bottom: 0.75rem;
+.experienceSection h2 {
+  font-family: "Oceanwide", system-ui, sans-serif;
+  font-size: var(--step-1);
+  font-weight: var(--weight-bold);
+  color: var(--primary-text);
+  margin-block-end: var(--space-3);
 }
 
-.left .intro {
-    margin-bottom: 8rem;
+.experienceSection p {
+  color: var(--text-muted);
+}
+
+.experienceSection p + p {
+  margin-block-start: var(--space-3);
+}
+
+.intro {
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: var(--leading-body);
+  margin-block-end: var(--space-6);
+}
+
+.technology {
+  margin-block-start: var(--space-9);
 }

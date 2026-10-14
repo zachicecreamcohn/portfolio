@@ -1,0 +1,93 @@
+/*
+ * Shared layout for a single work / project detail page.
+ *
+ * Replaces two near-identical modules that had drifted:
+ *   app/design/[slug]/SpecificWork.module.css      115 lines
+ *   app/dev/love-note-printer/SpecificWork.module.css  114 lines
+ * They differed by 3 lines, only one of which mattered (the design version
+ * also styled <i>).
+ *
+ * Also removed here:
+ *   - the `.hidden` spacer class (8 invisible divs per page, used to influence
+ *     flex-wrap line breaking — CSS Grid does this natively)
+ *   - `object-fit: contain !important` (the !important existed only to beat
+ *     next/image's inline styles; images are now sized via width/height props)
+ *   - hardcoded 600x350 / 350x219 image boxes
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container h1 {
+  font-size: var(--step-3);
+  margin-block-end: var(--space-4);
+}
+
+.intro {
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: var(--leading-ui);
+  max-width: min(var(--measure), 100%);
+}
+
+/* Prose paragraphs inside a work page. These were previously styled by a
+   bare `.container p` rule with hardcoded 15pt/650px values. */
+.container p,
+.container i {
+  font-family: inherit;
+  font-weight: var(--weight-regular);
+  color: var(--text-muted);
+  margin-block: var(--space-3);
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
+  max-width: min(var(--measure), 100%);
+}
+
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: var(--space-5);
+  margin-block-start: var(--space-6);
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 12 / 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--surface-1);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+/* Screenshots and diagrams must not be cropped. */
+.imageContainer.contain img {
+  object-fit: contain;
+}
+
+.videoContainer {
+  width: 100%;
+  max-width: 62rem;
+  aspect-ratio: 16 / 9;
+  margin-block-start: var(--space-6);
+  margin-inline: auto;
+  grid-column: 1 / -1;
+}
+
+.videoContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-md);
+}

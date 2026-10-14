@@ -1,85 +1,57 @@
+/*
+ * WorkPreview — a portfolio card.
+ *
+ * Removed: the `.hidden` class, which rendered 8 invisible cards on /design to
+ * force flex-wrap line breaking. The grid in Art.module.css handles that, and
+ * the `hidden` prop is gone from the component for the same reason.
+ *
+ * Also removed `object-fit: contain !important` — the `!important` existed only
+ * to beat next/image's inline styles, and these are now plain <img> tags sized
+ * by the grid.
+ */
+
 .container {
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    height: auto;
-    max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
 }
 
-.container.hidden {
-    opacity: 0;
-    height: 0;
-    margin-bottom: 0 !important;
-    padding: 0;
-    margin-top: 0 !important;
+.imageContainer {
+  display: block;
+  aspect-ratio: 12 / 7;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--surface-1);
 }
 
-.container .imageContainer {
-    width: 600px;
-    height: 350px;
-    margin: 1em auto;
-    background-color: black; /* Set black background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 0.75rem;
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-base) var(--ease);
 }
 
-.container .imageContainer img {
-    min-width: 100%;
-    min-height: 100%;
-    /*width: 100%;*/
-    /*height: 100%;*/
-    border-radius: 0.75rem;
-    object-fit: contain !important;
-
+.imageContainer:hover img {
+  transform: scale(1.03);
 }
 
-
-.container .titleContainer a {
-    font-size: 18pt;
-    font-weight: bold;
-    color: var(--primary-text);
-    text-decoration: none;
-    margin-top: .75rem;
+.titleContainer a {
+  font-family: "Oceanwide", system-ui, sans-serif;
+  font-size: var(--step-1);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--primary-text);
 }
 
 .container p {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-top: .8rem;
-    font-size: 15pt;
-    width: 600px;
+  color: var(--text-muted);
+  font-size: var(--step--1);
+  line-height: var(--leading-body);
 }
 
-
-/*On mobile */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        max-width: none;
-    }
-
-    .container .imageContainer {
-        width: 350px;
-        height: 219px;
-        margin: 0;
-    }
-
-    .container .titleContainer a {
-        font-size: 16pt;
-        max-width: 350px;
-        text-wrap: normal;
-
-    }
-
-    .container p {
-        width: 350px;
-        font-size: 14pt;
-    }
+@media (prefers-reduced-motion: reduce) {
+  .imageContainer:hover img {
+    transform: none;
+  }
 }

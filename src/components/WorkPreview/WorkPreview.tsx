@@ -9,23 +9,19 @@ export default function WorkPreview({
   Title,
   Description,
   Route,
-  hidden,
 }: {
   ImageSrc: string;
   Title: string;
   Description: string;
   Route: string;
-  hidden?: boolean;
 }) {
   return (
-    <div className={styles.container + " " + (hidden ? styles.hidden : "")}>
-      <Link href={Route} legacyBehavior>
-        <a className={styles.imageContainer}>
-          <img src={ImageSrc} alt={Title} width={500} height={500} />
-        </a>
+    <div className={styles.container}>
+      <Link href={Route} className={styles.imageContainer}>
+        <img src={ImageSrc} alt={Title} loading="lazy" decoding="async" />
       </Link>
       <div className={styles.titleContainer}>
-        <Link href={Route} className={"animate-hover"}>
+        <Link href={Route} className="animate-hover">
           {Title}
         </Link>
       </div>

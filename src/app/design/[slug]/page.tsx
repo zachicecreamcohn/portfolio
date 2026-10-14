@@ -1,91 +1,59 @@
 import React from "react";
-import Image from "next/image";
-import styles from "./SpecificWork.module.css"
+import styles from "@/components/WorkDetail/WorkDetail.module.css";
 
-import dbData from "../../../../public/data/db.json"
-import {Project} from "@/Types";
+import dbData from "../../../../public/data/db.json";
+import { Project } from "@/Types";
 
-export default async function Page({params}: { params: { slug: string } }) {
+export function generateStaticParams() {
+  return dbData.work
+    .filter((work: Project) => !work.hidden)
+    .map((work: Project) => ({ slug: work.link.split("/").pop() ?? "" }))
+    .filter((entry: { slug: string }) => entry.slug.length > 0);
+}
 
-    const getSlugData = (): Project | undefined => {
-        for (let work of dbData.work) {
-            // get the part of the link after the last slash
-            const slug = work.link.split("/").pop();
-            if (slug === params.slug) {
-                return work;
-            }
-        }
-        // Optionally return undefined explicitly if no match is found
-        return undefined;
-    }
+export default function Page({ params }: { params: { slug: string } }) {
+  const slugData: Project | undefined = dbData.work.find(
+    (work: Project) => work.link.split("/").pop() === params.slug,
+  );
 
-    const slugData: Project | undefined = getSlugData();
+  if (!slugData) return null;
 
-    return (
-        <>
-            {slugData &&
-                <div className={styles.container}>
-                    <h1>{slugData.title}</h1>
-                    <i>{slugData.introText}</i>
-                    {slugData.paragraphs.map((paragraph: string, index: number) => {
-                        return (
-                            <p key={index} className={styles.paragraph}>
-                                {paragraph}
-                            </p>
-                        )
-                    }
-                                            )}
+  const contentImages = slugData.images.filter(
+    (image) => image.isOnContentPage,
+  );
 
-                    <div className={styles.works}>
-                        {slugData.videos.map((video: string, index: number) => {
-                            // @ts-ignore
-                            return (
-                                <div className={styles.videoContainer} key={index}>
-                                    <iframe
-                                        src={video}
-                                        allowFullScreen={true}
-                                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                                    ></iframe>
-                                </div>
+  return (
+    <div className={styles.container}>
+      <h1>{slugData.title}</h1>
+      {slugData.introText && <i className={styles.intro}>{slugData.introText}</i>}
 
+      {slugData.paragraphs.map((paragraph: string, index: number) => (
+        <p key={index}>{paragraph}</p>
+      ))}
 
-                            )
-                        })
-                        }
-                        {slugData.images.map((image: {
-                                src: string,
-                                isThumb: boolean,
-                                isOnContentPage: boolean
-                            }, index: number) => {
-                                if (image.isOnContentPage) {
-                                    return (
-                                        <div className={styles.imageContainer} key={index}>
-                                            <img key={index} src={`${image.src}`}
-                                                 width={1000}
-                                                 height={1000}
-                                                 alt={slugData.title}/>
-                                        </div>
-                                    )
-                                }
-                            }
-                        )}
+      <div className={styles.works}>
+        {slugData.videos.map((video: string, index: number) => (
+          <div className={styles.videoContainer} key={`video-${index}`}>
+            <iframe
+              src={video}
+              allowFullScreen={true}
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+              title={`${slugData.title} — video ${index + 1}`}
+            ></iframe>
+          </div>
+        ))}
 
-                        {
-                            // if there is more than 1 image, show the spacers
-                            slugData.images.length > 1 &&
-
-                            Array(8)
-                                .fill(0)
-                                .map((_, i) => (
-                                    <div
-                                        className={`${styles.imageContainer} ${styles.hidden}`}
-                                        key={i}
-                                    ></div>
-                                ))}
-                    </div>
-                </div>
-            }
-                </>
-                )
-
-            }
+        {contentImages.map((image, index) => (
+          <div className={styles.imageContainer} key={`image-${index}`}>
+            <img
+              src={image.src}
+              alt={`${slugData.title} — image ${index + 1}`}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

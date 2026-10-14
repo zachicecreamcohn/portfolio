@@ -1,38 +1,37 @@
+/*
+ * TechnologyIcon — a glyph in a circle.
+ *
+ * Removed: the `.spacer` class, which rendered invisible icons (`opacity: 0;
+ * height: 0 !important`) to nudge flex-wrap line breaks. That was the last
+ * `!important` in this component.
+ */
+
 .container {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
 }
 
-.container.spacer {
-    pointer-events: none;
-    opacity: 0;
-    height: 0 !important;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 7px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  background-color: #ffffff;
+  transition: border-color var(--dur-base) var(--ease);
 }
-
-.container .icon {
-    background: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px;
-    z-index: 99;
-    transition: all .25s ease-in-out;
-    border: 1px solid transparent;
-}
-
 
 .container:hover .icon {
-    border: 1px solid rgba(0, 0, 0, 0.16);
+  border-color: rgb(0 0 0 / 0.16);
 }
 
-
 .container i {
-    font-size: 30pt;
+  font-size: 30pt;
 }

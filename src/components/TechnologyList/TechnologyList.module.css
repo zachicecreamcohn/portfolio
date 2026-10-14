@@ -1,29 +1,38 @@
-
-.right .proficiencyHeader h2:nth-of-type(2) {
-    opacity: 0;
-}
-.right .technologySection {
-    margin-top: .75rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+.heading {
+  margin-block-end: var(--space-5);
 }
 
-.technologySection .title {
-    font-size: 16pt;
-    font-weight: bold;
-    color: var(--primary-text);
-    text-decoration: none;
-    margin-top: .75rem;
-    margin-bottom: 0.75rem;
+.technologySection {
+  display: flex;
+  flex-direction: column;
+  margin-block: var(--space-5);
 }
 
-
-.technologySection .technologyIcons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
-    justify-content: center;
+.title {
+  font-size: var(--step-0);
+  font-weight: var(--weight-bold);
+  color: var(--primary-text);
+  margin-block-end: var(--space-3);
 }
 
+/*
+ * Grid, not flex-wrap. The previous implementation appended 5 invisible
+ * spacer icons per category to force line breaks; `auto-fill` does it
+ * properly and keeps rows aligned when a row is not full.
+ *
+ * Removed with this change: `.right .proficiencyHeader h2:nth-of-type(2)
+ * { opacity: 0 }`, a dead selector — `.right` and `.proficiencyHeader` were
+ * never both in scope, and the proficiency-label feature it related to is
+ * commented out in the component.
+ *
+ * The devicon glyphs are a fixed 60px, so the track is a fixed 60px rather
+ * than a flexible minmax().
+ */
+.technologyIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

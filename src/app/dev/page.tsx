@@ -2,7 +2,7 @@
 "use client"
 
 import React from "react";
-import TechnologyIcon from "@/components/TechnologyIcon/TechnologyIcon";
+import TechnologyList from "@/components/TechnologyList/TechnologyList";
 import styles from "./Dev.module.css";
 import Link from "next/link";
 export default function Dev() {
@@ -99,6 +99,17 @@ As <b>Senior Web Editor</b>, I led the website redesign with a focus on boosting
                         </div>
                     </div>
                 </div>
+
+                {/*
+                  TechnologyList was never rendered anywhere — it has been dead
+                  code since 8b71c3b, and the dev page imported an unused
+                  TechnologyIcon instead. It is restored here because it is the
+                  only place the devicon glyphs are needed, and it has been
+                  rewritten to drop the invisible spacer-icon hack.
+                */}
+                <section className={styles.technology}>
+                    <TechnologyList />
+                </section>
             </div>
         </>
     );
