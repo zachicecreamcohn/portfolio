@@ -15,7 +15,7 @@
 .section h2 {
     font-size: 20pt;
     font-weight: bold;
-    color: var(--z-primary);
+    color: var(--z-primary-text);
     margin-bottom: 0.75rem;
 }
 

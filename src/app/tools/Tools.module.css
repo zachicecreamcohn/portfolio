@@ -23,7 +23,7 @@
 .title {
     font-size: 16pt;
     font-weight: bold;
-    color: var(--z-primary);
+    color: var(--z-primary-text);
     text-decoration: none;
 }
 

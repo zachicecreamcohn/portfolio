@@ -1,14 +1,9 @@
-"use client";
-
 import "./globals.css";
 import "./theming.css";
 import "../../public/fonts/fonts.css";
 import type { Metadata } from "next";
-import Navbar from "../components/NavBar/NavBar";
-import React, { useState } from "react";
 import MainContainer from "@/components/Layout/MainContainer/MainContainer";
 import "../bootstrap.min.css";
-import Footer from "@/components/Footer/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function RootLayout({
@@ -46,7 +41,16 @@ export default function RootLayout({
         <script defer src="https://umami.zachwcohn.com/script.js" data-website-id="ab92de79-1741-4644-a1f8-11a7cfc9bfd9"></script>
       </head>
       <body>
-        <MainContainer>{children}</MainContainer>
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        <MainContainer>
+          {/* `.page` is a global class defined in globals.css. It is the single
+              owner of page-level geometry — see the comment there. */}
+          <main id="main" className="page">
+            {children}
+          </main>
+        </MainContainer>
         <GoogleAnalytics gaId="G-PPDRH7FT49" />
       </body>
     </html>

@@ -41,7 +41,7 @@
 .container .titleContainer a {
     font-size: 18pt;
     font-weight: bold;
-    color: var(--z-primary);
+    color: var(--z-primary-text);
     text-decoration: none;
     margin-top: .75rem;
 }

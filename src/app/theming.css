@@ -1,56 +1,58 @@
+/*
+ * theming.css — theme colour tokens.
+ *
+ * Applied as a class on <html> by the blocking script in layout.tsx.
+ *
+ * Token roles:
+ *   --primary            FILLS ONLY (button backgrounds). Dark on purpose.
+ *   --primary-text       TEXT, icons, thin borders. Must pass 4.5:1 on --bg.
+ *   --secondary          hover fill for --primary
+ *   --theme-button-background  fill behind the theme-switch icon
+ *
+ * Contrast is measured against --bg (#181a1b) and noted per theme.
+ * --primary is deliberately dark: it is only ever used behind light text.
+ *
+ * Legacy --z-* aliases live in globals.css `:root`, so theme switching only
+ * needs to override the canonical names below.
+ */
+
 .theme1 {
-        --z-primary: #8c0800;
-        --z-secondary: #fe716a;
-        --text-shadow: #fac852;
-        --secondary-box-shadow: #8d08010f;
-        --secondary-box-shadow-hover: #8d08011f;
-        --z-third: #000000;
-        --z-gray: #a4a4a4;
-        --z-gray-light: #c7c7c7;
-        --z-icon: #fac852;
-        --z-theme-button-background: #fac852;
+  --primary: #8c0800; /* fill: 6.85:1 vs #d8d8d8 text */
+  --primary-text: #e8604f; /* text: 5.17:1 */
+  --secondary: #fe716a; /* hover fill: 6.05:1 vs #111 text */
+  --text-shadow: #fac852;
+  --theme-button-background: #fac852;
 }
 
 .theme2 {
-    --z-primary: #0a8ece;
-    --z-secondary:  #0a8ece;
-    --z-secondary: #181818;
-    --text-shadow: #0a8ece;
-    --secondary-box-shadow: #2020200f;
-    --secondary-box-shadow-hover: #2020201f;
-    --z-third: #73d1ff;
-    --z-gray: #a4a4a4;
-    --z-gray-light: #c7c7c7;
-    --z-icon: #ffffff;
-    --z-theme-button-background: #0a8ece;
+  --primary: #0a8ece;
+  --primary-text: #4bb8ea; /* text: 7.77:1 */
+  /* Was declared twice (#0a8ece then #181818) — the near-black silently won.
+   * Preserving the effective value; revisit the secondary palette in Phase 2. */
+  --secondary: #181818;
+  --text-shadow: #0a8ece;
+  --theme-button-background: #0a8ece;
 }
 
 .theme3 {
-    --z-primary: #4c956c;
-    --z-secondary: #42835e;
-    --text-shadow: #9191E9;
-    --secondary-box-shadow: #4c956c0f;
-    --secondary-box-shadow-hover: #4c956c1f;
-    --z-third: #000000;
-    --z-gray: #a4a4a4;
-    --z-gray-light: #c7c7c7;
-    --z-icon: #ffffff;
-    --z-theme-button-background: #9191E9
+  --primary: #4c956c;
+  --primary-text: #7fbf9a; /* text: 8.17:1 */
+  --secondary: #42835e;
+  --text-shadow: #9191e9;
+  --theme-button-background: #9191e9;
 }
 
 .theme4 {
-    --z-primary: #ff7800;
-    --z-secondary: #e26b00;
-    --text-shadow: #e26b00;
-    --secondary-box-shadow: #2020200f;
-    --secondary-box-shadow-hover: #2020201f;
-    --z-third: #000000;
-    --z-gray: #a4a4a4;
-    --z-gray-light: #c7c7c7;
-    --z-icon: #000000;
-    --z-theme-button-background: #e26b00;
+  --primary: #ff7800;
+  --primary-text: #ffa04d; /* text: 8.64:1 */
+  --secondary: #e26b00;
+  --text-shadow: #e26b00;
+  --theme-button-background: #e26b00;
 }
 
-:root {
-    --light-border: #303436;
-}
+/*
+ * Retired tokens (declared 4x each, consumed 0x):
+ *   --z-third, --z-icon, --secondary-box-shadow,
+ *   --secondary-box-shadow-hover, --light-border
+ * Re-add with a consumer if they are ever needed.
+ */

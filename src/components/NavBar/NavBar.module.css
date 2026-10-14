@@ -40,7 +40,7 @@
 }
 
 .container .left a.active {
-    color: var(--z-primary);
+    color: var(--z-primary-text);
 }
 
 
@@ -52,6 +52,11 @@
     padding-bottom: 0.5rem;
     font-weight: bold;
     font-size: 14pt;
+    /* Phase 1 shim: the nav's vertical padding is in `em`, and `em` now
+       resolves against a 16px body font (was 14px under bootstrap), which
+       would grow the nav box from ~85px to ~119px. Pinning line-height holds
+       the box at its current height until Phase 2 restructures the nav. */
+    line-height: 1.35;
     margin-right: 1.5rem;
 }
 

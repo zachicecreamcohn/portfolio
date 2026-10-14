@@ -242,7 +242,8 @@ Retire the last Roboto reference. Decide Oceanwide's role: **display/headings on
 | 2.4 | SiteFooter | The current `Footer` is imported in `layout.tsx` and **never rendered** `[audit §7.7]`. Build a real one, rendered in `layout.tsx` |
 | 2.5 | Delete dead Footer | `git rm src/components/Footer/` and its module |
 | 2.6 | `buttons` | Remove fixed `height: 55px` in favour of `min-height: 44px` + padding `[audit §7.2]` |
-| 2.7 | Skip link | `<a href="#main" class="skip-link">` as the first focusable element |
+| 2.7 | Skip link | Already added in Phase 1 (`globals.css` + `layout.tsx`) |
+| 2.8 | **⚠️ Button text contrast (found in Phase 1)** | `Button.primary` sets `color: #d8d8d8` on `background: var(--primary)`. That passes only in theme1 (6.85:1); themes 2/3/4 fail at **2.55 / 2.53 / 1.86:1**. `.button` also has no `font-weight` of its own, so it inherits body weight and does *not* qualify for the 3:1 large-text exception. Fix by (a) adding an explicit `--on-primary` token per theme (dark text for the light primaries), or (b) explicitly setting `font-weight: bold` + a >=3:1 fill — note `--weight-bold` on 14pt (18.7px) *does* qualify as large text. `Button.secondary:hover` has the mirror problem: `#f8f8f8` fill under `color: #111` is fine at 15.9:1, but theme1's `--secondary` hover (`#fe716a`) under `#d8d8d8` text is 1.89:1 |
 
 **Verify:** keyboard-only tab through nav from the top — visible focus everywhere, skip link works, mobile menu opens/closes with Escape, no tap target under 44px.
 

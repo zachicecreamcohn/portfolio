@@ -15,7 +15,7 @@
 }
 
 .heroContainer .hero h1 .color {
-    color: var(--z-primary);
+    color: var(--z-primary-text);
 }
 .heroContainer .hero p {
     color: var(--z-gray);
