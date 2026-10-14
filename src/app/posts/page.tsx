@@ -28,7 +28,10 @@ export default function PostsIndex() {
         <ul className={styles.list}>
           {posts.map((post) => (
             <li key={post.slug} className={styles.item}>
-              <Link href={`/posts/${post.slug}`} className={styles.title}>
+              <Link
+                href={`/posts/${post.slug}`}
+                className={`link--headline ${styles.title}`}
+              >
                 {post.title}
               </Link>
               {post.description && (

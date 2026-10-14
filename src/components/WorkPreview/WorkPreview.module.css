@@ -36,12 +36,13 @@
   transform: scale(1.03);
 }
 
+/* Type only. Colour, hover colour, and the animated underline all come from
+   the global `.link--headline` class. */
 .titleContainer a {
   font-family: "Oceanwide", system-ui, sans-serif;
   font-size: var(--step-1);
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
-  color: var(--primary-text);
 }
 
 .container p {

@@ -216,12 +216,85 @@ h6 {
 
 /* ---------------------------------------------------------------- links */
 
+/*
+ * Link hover system — two sanctioned behaviours, no more.
+ *
+ * Before this, hover varied across seven patterns (three links animated an
+ * underline, six changed colour only, prose links had a static underline, a
+ * back link had its own rule) purely because each was styled at a different
+ * time. It is now a decision:
+ *
+ *   1. CONTENT LINKS — the animated underline.
+ *
+ *        .link--headline   a card title, post title, or tool title. No
+ *                          underline at rest: it is already the most prominent
+ *                          thing in its block, so underlining adds noise.
+ *                          Underlines on hover and shifts to --primary-text.
+ *
+ *        .link--inline     a link inside a paragraph of body copy. Carries a
+ *                          subtle static underline so it stays findable while
+ *                          scanning; it goes solid on hover and the animated
+ *                          rule reinforces it.
+ *
+ *   2. STRUCTURAL LINKS — colour/background change only, no underline. Nav
+ *      items, the Contact pill, the back link on a tools page. These are
+ *      already unmistakably interactive from their shape or position, and they
+ *      are 44px targets where a text-height underline looks misplaced. Each
+ *      defines its own hover locally (e.g. NavBar.module.css).
+ *
+ * Adding a new link: pick one of the two. If it seems to need a third, that is
+ * a sign the hierarchy needs rethinking rather than another rule.
+ */
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Prose links are the exception: readable long-form needs a visible cue. */
+/* Content links: the animated underline. */
+.link--headline,
+.link--inline,
+.prose a {
+  /* Positioned so ::after can be drawn relative to the text. */
+  position: relative;
+  display: inline-block;
+}
+
+.link--headline::after,
+.link--inline::after,
+.prose a::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.05em;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform var(--dur-base) var(--ease);
+}
+
+.link--headline:hover::after,
+.link--headline:focus-visible::after,
+.link--inline:hover::after,
+.link--inline:focus-visible::after,
+.prose a:hover::after,
+.prose a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* Primary content links: no underline until hovered. */
+.link--headline {
+  color: var(--text);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.link--headline:hover {
+  color: var(--primary-text);
+}
+
+/* Inline prose links: visible at rest, so they are scannable mid-paragraph. */
+.link--inline,
 .prose a {
   color: var(--primary-text);
   text-decoration: underline;
@@ -231,9 +304,13 @@ a {
   transition: text-decoration-color var(--dur-fast) var(--ease);
 }
 
+.link--inline:hover,
 .prose a:hover {
   text-decoration-color: currentColor;
 }
+
+/* The animated underline sits on top of the static one; both resolve to
+   currentColor on hover so they reinforce rather than fight. */
 
 /* ---------------------------------------------------------------- focus */
 
@@ -245,33 +322,6 @@ a {
 
 /* ---------------------------------------------------------------- utilities */
 
-/* Animated underline for links that should NOT get a static underline. */
-.animate-hover {
-  position: relative;
-  display: inline-block;
-}
-
-.animate-hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-text);
-  visibility: hidden;
-  transform: scaleX(0);
-  transform-origin: bottom left;
-  transition:
-    transform var(--dur-base) var(--ease),
-    visibility var(--dur-base) var(--ease);
-}
-
-.animate-hover:hover::after,
-.animate-hover:focus-visible::after {
-  visibility: visible;
-  transform: scaleX(1);
-}
 
 /* Visually hidden but available to screen readers. */
 .sr-only {

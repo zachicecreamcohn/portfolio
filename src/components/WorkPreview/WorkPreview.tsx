@@ -21,7 +21,7 @@ export default function WorkPreview({
         <img src={ImageSrc} alt={Title} loading="lazy" decoding="async" />
       </Link>
       <div className={styles.titleContainer}>
-        <Link href={Route} className="animate-hover">
+        <Link href={Route} className="link--headline">
           {Title}
         </Link>
       </div>

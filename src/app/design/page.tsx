@@ -16,7 +16,7 @@ export default function Page() {
           href="/resume/lighting-projections.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="animate-hover"
+          className="link--inline"
         >
           my CV
         </Link>

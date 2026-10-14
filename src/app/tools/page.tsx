@@ -25,7 +25,10 @@ export default function ToolsPage() {
         <div className={styles.list}>
           {tools.map((tool) => (
             <div key={tool.href} className={styles.row}>
-              <Link href={tool.href} className={"animate-hover " + styles.title}>
+              <Link
+                href={tool.href}
+                className={`link--headline ${styles.title}`}
+              >
                 {tool.title}
               </Link>
               <p className={styles.subtitle}>{tool.subtitle}</p>
