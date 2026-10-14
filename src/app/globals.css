@@ -251,13 +251,33 @@ a {
   text-decoration: none;
 }
 
-/* Content links: the animated underline. */
+/* ---- the underline ----
+ *
+ * One stacked ::after, two properties, no `text-decoration` anywhere:
+ *
+ *   opacity   rest value -> 1 on hover   (a wash that softens the shift)
+ *   transform scaleX(0) -> scaleX(1)     (the wipe, left to right)
+ *
+ * Deliberately NOT `text-decoration: underline` plus a pseudo-element. That
+ * combination was the cause of a double underline: the browser drew its own
+ * line and the ::after drew a second, a hair below it.
+ *
+ * `--link-rest-opacity` is the single difference between the two content-link
+ * variants, and it is declared exactly once per variant below. Declaring it in
+ * the shared rule as well would silently reset both, because at equal
+ * specificity the last declaration wins.
+ *
+ * `display: inline` (not inline-block) so the underline tracks each line box of
+ * a wrapped link rather than spanning the whole wrapped block. With inline-block
+ * the rule sat at the bottom of the block, the width of the longest line, which
+ * read as the line overshooting the text.
+ */
 .link--headline,
 .link--inline,
 .prose a {
-  /* Positioned so ::after can be drawn relative to the text. */
+  /* `position: relative` anchors the ::after. */
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .link--headline::after,
@@ -266,12 +286,18 @@ a {
   content: "";
   position: absolute;
   inset-inline: 0;
-  bottom: -0.05em;
-  height: 2px;
+  bottom: -0.06em;
+  height: 0.08em;
+  min-height: 1px;
   background-color: currentColor;
+  border-radius: 999px;
+  opacity: var(--link-rest-opacity, 0);
   transform: scaleX(0);
   transform-origin: bottom left;
-  transition: transform var(--dur-base) var(--ease);
+  transition:
+    transform var(--dur-base) var(--ease),
+    opacity var(--dur-fast) var(--ease);
+  pointer-events: none;
 }
 
 .link--headline:hover::after,
@@ -280,11 +306,14 @@ a {
 .link--inline:focus-visible::after,
 .prose a:hover::after,
 .prose a:focus-visible::after {
+  opacity: 1;
   transform: scaleX(1);
 }
 
-/* Primary content links: no underline until hovered. */
+/* Primary content links: nothing at rest — the title is already the most
+   prominent thing in its block, so a resting rule is just noise. */
 .link--headline {
+  --link-rest-opacity: 0;
   color: var(--text);
   transition: color var(--dur-fast) var(--ease);
 }
@@ -293,24 +322,13 @@ a {
   color: var(--primary-text);
 }
 
-/* Inline prose links: visible at rest, so they are scannable mid-paragraph. */
+/* Inline links in body copy: a faint line at rest so the link stays findable
+   while scanning, sharpening to full strength on hover. */
 .link--inline,
 .prose a {
+  --link-rest-opacity: 0.45;
   color: var(--primary-text);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.15em;
-  text-decoration-color: color-mix(in srgb, var(--primary-text) 45%, transparent);
-  transition: text-decoration-color var(--dur-fast) var(--ease);
 }
-
-.link--inline:hover,
-.prose a:hover {
-  text-decoration-color: currentColor;
-}
-
-/* The animated underline sits on top of the static one; both resolve to
-   currentColor on hover so they reinforce rather than fight. */
 
 /* ---------------------------------------------------------------- focus */
 

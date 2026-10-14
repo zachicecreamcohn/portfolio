@@ -17,8 +17,11 @@
   gap: var(--space-6) var(--space-5);
 }
 
+/* The colour and hover affordance come from the global `.link--inline` class on
+   the anchor. Setting `color` here would win on source order, because CSS
+   Modules are emitted after globals at equal specificity, and the link would
+   lose its link colour. */
 .cvLink {
   font-size: var(--step--1);
-  color: var(--text-muted);
   margin-block-end: var(--space-6);
 }
