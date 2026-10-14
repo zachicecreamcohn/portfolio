@@ -7,19 +7,42 @@ import { usePathname } from "next/navigation";
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 
 /**
- * Nav items that are not conditional. `Writing` is added by buildPages below
- * only when there is at least one published post, so an empty blog never
- * produces a dead nav link.
+ * Whether the Tools section appears in the nav.
+ *
+ * TEMPORARILY HIDDEN. The routes still exist and are fully linked from the
+ * sitemap — /tools and /tools/script-follow-along both build and serve as
+ * before — they are simply not advertised in the nav. Flip this to `true` to
+ * bring the item back; nothing else needs to change.
  */
-const BASE_PAGES = [
+const SHOW_TOOLS = false;
+
+/**
+ * The canonical nav order. Items carry the conditions that hide them, so the
+ * order lives in one place rather than being reconstructed from index
+ * positions.
+ */
+interface NavItem {
+  title: string;
+  path: string;
+  /** Only shown when at least one post is published. */
+  requiresPosts?: boolean;
+  /** Only shown while SHOW_TOOLS is true. */
+  requiresTools?: boolean;
+}
+
+const NAV_ITEMS: NavItem[] = [
   { title: "Work", path: "/design" },
   { title: "About", path: "/about" },
-  { title: "Tools", path: "/tools" },
+  { title: "Writing", path: "/posts", requiresPosts: true },
+  { title: "Tools", path: "/tools", requiresTools: true },
 ];
 
 function buildPages(hasPosts: boolean) {
-  if (!hasPosts) return BASE_PAGES;
-  return [BASE_PAGES[0], BASE_PAGES[1], { title: "Writing", path: "/posts" }, BASE_PAGES[2]];
+  return NAV_ITEMS.filter((item) => {
+    if (item.requiresTools) return SHOW_TOOLS;
+    if (item.requiresPosts) return hasPosts;
+    return true;
+  });
 }
 
 export default function NavBar({ hasPosts = false }: { hasPosts?: boolean }) {
