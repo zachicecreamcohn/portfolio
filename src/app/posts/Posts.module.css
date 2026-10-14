@@ -1,0 +1,70 @@
+.container {
+  max-width: min(var(--measure), 100%);
+  margin-inline: auto;
+}
+
+.header {
+  margin-block-end: var(--space-8);
+}
+
+.header p {
+  margin-block-start: var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: var(--leading-ui);
+}
+
+.empty {
+  color: var(--text-muted);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* The underline is left to the global link style; this is a heading-level
+   link, so it gets the reading colour and a heavier weight. */
+.title {
+  font-family: "Oceanwide", system-ui, sans-serif;
+  font-size: var(--step-2);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--text);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.title:hover {
+  color: var(--primary-text);
+}
+
+.description {
+  color: var(--text-muted);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--step--1);
+  color: var(--text-subtle);
+}
+
+.draft {
+  padding: 0.1em 0.5em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

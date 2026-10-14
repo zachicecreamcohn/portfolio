@@ -1,5 +1,36 @@
 # Refactor Plan — Styling System + Long-Form Content Pipeline
 
+## Status
+
+| Phase | State | Commit |
+|---|---|---|
+| 0 — baseline & safety net | ✅ done | tag `pre-styling-refactor` |
+| 1 — tokens, type scale, contrast | ✅ done | `9ebe447` |
+| 1.5 — remove Bootstrap | ✅ done | `e8589f0` |
+| 2 — nav, footer, mobile | ✅ done | `e8589f0` |
+| 3 — image layer | ✅ done | `a6f3abe` |
+| 4 — content pipeline + SEO | ✅ done | *(this commit)* |
+| 5 — layout components, de-dup, dead code | ⬜ partly done | — |
+| 6 — portfolio → Markdown *(optional)* | ⬜ not started | — |
+
+**Done ahead of schedule in Phase 4:** `<Prose>`, `<Bleed>`, `<Gallery>`, `<Split>`,
+`<MdxContent>`, and the MDX component map — items originally scoped to Phase 5.
+They were needed to author a real post, so building them speculatively was
+avoided in favour of building them against actual content.
+
+**Still outstanding from Phase 5:** merge the two duplicated
+`SpecificWork.module.css` files (114 + 115 lines, ~95% identical); replace the
+remaining spacer-element hacks in `WorkPreview` / `TechnologyIcon` /
+`TechnologyList`; clear the last 10 `!important`s; and migrate `db.json` to
+Markdown (Phase 6, optional).
+
+**Live content decision:** `content/posts/2026-01-15-mapping-stardust-92ny.mdx`
+is shipped **published** (`draft: false`) as a working proof of the pipeline,
+using real Stardust copy and real image ids. It is intentionally a placeholder —
+edit the date to today and rewrite it, or delete the file.
+
+---
+
 **Goal:** Replace the ad-hoc styling with a token-based system, add a Markdown/MDX long-form content pipeline with a Cloudflare Images-backed image layer, and remove the dead code and layout hacks — while keeping the site shippable and `next build`-clean after every phase.
 
 **Companion document:** [styling-summary.md](styling-summary.md) — the verified pre-refactor inventory. Every finding referenced below as `[audit §N]` is documented and verified there.

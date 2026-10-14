@@ -20,6 +20,22 @@ export const metadata: Metadata = {
 };
 
 /**
+ * Render everything on demand.
+ *
+ * This layout reads the theme cookie, which is a dynamic data source, so no
+ * route in this app can actually be static — Next would otherwise pre-render
+ * some routes and then throw DYNAMIC_SERVER_USAGE the moment an unlisted param
+ * arrived (e.g. an unknown blog slug), returning a 500 instead of a 404.
+ *
+ * Declaring it explicitly makes the whole app consistent: every route renders
+ * per request, and notFound() behaves correctly. The alternative is to stop
+ * reading cookies here and let the blocking script set the theme client-side,
+ * which restores static rendering at the cost of a brief flash of the default
+ * palette. See the phase 3/4 notes in plans/styling-refactor.md.
+ */
+export const dynamic = "force-dynamic";
+
+/**
  * The theme is applied as a class on <html> by the blocking script below,
  * BEFORE paint, to avoid a flash of the wrong palette. Reading the cookie here
  * too means the server-rendered markup already carries the right theme, so

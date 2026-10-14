@@ -1,0 +1,37 @@
+.header {
+  max-width: min(var(--measure), 100%);
+  margin-inline: auto;
+  margin-block-end: var(--space-7);
+}
+
+.title {
+  margin-block-end: var(--space-3);
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: var(--leading-ui);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-start: var(--space-4);
+  font-size: var(--step--1);
+  color: var(--text-subtle);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  padding: 0.1em 0.6em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+}

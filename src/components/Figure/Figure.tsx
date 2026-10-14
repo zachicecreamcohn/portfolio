@@ -54,6 +54,17 @@ export default function Figure({
         style={ratio ? ({ "--ratio": ratio } as React.CSSProperties) : undefined}
       >
         {cfId ? (
+          /*
+           * Deliberately a plain <img>, not next/image.
+           *
+           * Cloudflare Images already does format negotiation (WebP/AVIF) and
+           * resizing, so routing these through Next's optimizer would transform
+           * them a second time and consume the metered Vercel image quota for
+           * no visual gain. The `srcSet`/`sizes`/`aspect-ratio` below give the
+           * same responsive behaviour. next/image is still the right choice for
+           * local assets, which is the branch underneath.
+           */
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             className={styles.image}
             src={img(cfId)}
@@ -74,6 +85,7 @@ export default function Figure({
         ) : (
           /* Local assets are not on Cloudflare; render them directly rather
              than routing through the image CDN. */
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             className={styles.image}
             src={src}

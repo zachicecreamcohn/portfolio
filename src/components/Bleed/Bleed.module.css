@@ -1,0 +1,21 @@
+/*
+ * Bleed — widens content beyond the prose measure without exceeding the page
+ * band.
+ *
+ * The prose column is centred, so centring this on its own container (using
+ * a percentage margin) re-centres it against the page instead, and the
+ * width caps at --page-pad short of the viewport so it lines up with the
+ * header rather than hitting the screen edge.
+ */
+
+.bleed {
+  width: min(100vw - (2 * var(--page-pad)), var(--page-max) - (2 * var(--page-pad)));
+  max-width: none;
+  margin-inline: calc(50% - min(50vw - var(--page-pad), (var(--page-max) / 2) - var(--page-pad)));
+}
+
+/* Bleed figures should not also be inset by the figure's own rounding. */
+.bleed > figure,
+.bleed > div {
+  margin-inline: 0;
+}

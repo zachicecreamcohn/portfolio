@@ -1,0 +1,188 @@
+/*
+ * Prose — the long-form element stylesheet.
+ *
+ * Rhythm is handled with the lobotomised-owl rule (`> * + *`) instead of
+ * per-element margin-top/margin-bottom pairs. That is what removes the
+ * `margin-top: 0 !important` / `margin-bottom: 0 !important` hackery the old
+ * `.hidden` classes needed.
+ *
+ * The measure lives here, once. The old site declared it per page at three
+ * different values (650px, 720px, 1000px) for otherwise identical text.
+ */
+
+.prose {
+  max-width: min(var(--measure), 100%);
+  margin-inline: auto;
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
+  color: var(--text);
+}
+
+/* ---- vertical rhythm ---- */
+
+.prose > * + * {
+  margin-block-start: var(--flow, 1.25em);
+}
+
+/* A heading pulls itself away from the preceding block and stays close to
+   the text it introduces. */
+.prose > h2 {
+  --flow: 2.25em;
+  margin-block-start: 2.25em;
+}
+.prose > h3 {
+  --flow: 1.75em;
+  margin-block-start: 1.75em;
+}
+.prose > h4 {
+  --flow: 1.5em;
+  margin-block-start: 1.5em;
+}
+
+/* First child should not push the container down. */
+.prose > :first-child {
+  margin-block-start: 0;
+}
+
+/* ---- headings ---- */
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--text);
+  scroll-margin-top: calc(var(--nav-h) + var(--space-4));
+}
+
+/* Anchor appended by rehype-autolink-headings. Subtle until hovered, so it
+   does not add visual noise to the reading flow. */
+.prose :global(.heading-anchor) {
+  margin-inline-start: 0.4em;
+  color: var(--text-subtle);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.prose h2:hover :global(.heading-anchor),
+.prose h3:hover :global(.heading-anchor),
+.prose h4:hover :global(.heading-anchor),
+.prose :global(.heading-anchor:focus-visible) {
+  opacity: 1;
+}
+
+/* ---- inline elements ---- */
+
+.prose strong {
+  color: var(--text);
+  font-weight: var(--weight-bold);
+}
+
+/* Oceanwide ships a single 600 weight, so <em> is a real italic and <code>
+   avoids faux-bolding. */
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  background-color: var(--surface-2);
+  color: var(--text);
+}
+
+.prose pre {
+  /* Scroll the code block, not the page. This is why `overflow-x: hidden` on
+     <body> is no longer needed. */
+  overflow-x: auto;
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-1);
+  font-size: var(--step--1);
+  line-height: 1.6;
+}
+
+.prose pre code {
+  padding: 0;
+  background: none;
+  font-size: inherit;
+}
+
+/* ---- lists ---- */
+
+.prose ul,
+.prose ol {
+  padding-inline-start: 1.4em;
+}
+
+.prose li + li {
+  margin-block-start: 0.4em;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin-block-start: 0.4em;
+}
+
+/* ---- quotes ---- */
+
+.prose blockquote {
+  margin-inline: 0;
+  padding-inline-start: var(--space-5);
+  border-inline-start: 3px solid var(--primary-text);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ---- tables ---- */
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+  display: block;
+  overflow-x: auto;
+}
+
+.prose th,
+.prose td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.prose th {
+  color: var(--text);
+  font-weight: var(--weight-bold);
+}
+
+/* ---- media ---- */
+
+/* Plain Markdown `![alt](src)` renders correctly with no component. Captions
+   require <Figure>, because Markdown has no caption syntax. */
+.prose img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin-block: 2.5em;
+}
+
+/* ---- page-level prose header ---- */
+
+.prose > header {
+  margin-block-end: var(--space-6);
+}
+
+.prose > header h1 {
+  margin-block-end: var(--space-3);
+}
+
+.prose > header p {
+  color: var(--text-muted);
+  font-size: var(--step-1);
+  line-height: var(--leading-ui);
+}

@@ -1,0 +1,35 @@
+/*
+ * Gallery — auto-fitting image grid.
+ *
+ * `auto-fit` + `minmax` gives responsive column counts with no media queries,
+ * which is what the old spacer-element hacks were approximating by hand.
+ */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--gallery-min, 18rem), 100%), 1fr));
+  gap: var(--space-4);
+  margin-block: var(--space-6);
+}
+
+/* Let the grid own spacing; figures inside should not add their own. */
+.gallery > * {
+  margin: 0;
+}
+
+/* `cover` is what makes a grid read as deliberate; `contain` is only right for
+   screenshots and diagrams, which should opt out via a ratio-less Figure. */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery figure,
+.gallery > div {
+  min-width: 0;
+}
+
+.gallery[style*="--gallery-ratio"] figure > div:first-child {
+  aspect-ratio: var(--gallery-ratio);
+}

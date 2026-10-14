@@ -1,52 +1,45 @@
 import React from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
+import MdxContent from "@/components/MdxContent/MdxContent";
+import { getEntry } from "@/lib/content";
 import styles from "./ScriptFollowAlong.module.css";
 
+const SLUG = "script-follow-along-privacy";
+const KIND = "pages" as const;
+
+export const metadata: Metadata = {
+  title: "Script Follow-Along",
+  description:
+    "Script Follow-Along is an iPad and Mac app that syncs your script with lighting, video, and sound cues.",
+};
+
+/**
+ * This page used to be 52 lines of hand-written JSX prose styled by a
+ * page-specific module. The prose is now an .mdx file rendered through the
+ * shared <Prose> pipeline — which is the point of the content refactor:
+ * long-form text is content, not component code.
+ *
+ * The module below now holds only the page chrome (the back link), not the
+ * text styles. The public URL is unchanged.
+ */
 export default function ScriptFollowAlongPage() {
+  const entry = getEntry(KIND, SLUG);
+  const body = entry?.body ?? FALLBACK_BODY;
+
   return (
-    <>
-      <div className={styles.container}>
-        <h1>Script Follow-Along</h1>
-
-        <section className={styles.section}>
-          <h2>Privacy Policy</h2>
-
-          <p className={styles.updated}>Last updated: October 14, 2026</p>
-
-          <p>
-            Script Follow-Along does not collect, transmit, or share any personal
-            information.
-          </p>
-
-          <h3>Data stored on your device</h3>
-          <p>
-            Your projects — show names, imported PDF references, cue index, and
-            settings — are saved in a local file on your device. This data never
-            leaves your device and is never accessible to us or any third party.
-          </p>
-
-          <h3>Network use</h3>
-          <p>
-            The app listens for OSC (Open Sound Control) messages on your local
-            network to provide live cue navigation. It does not send any data over
-            the network and does not communicate with any external servers.
-          </p>
-
-          <h3>Analytics and tracking</h3>
-          <p>
-            The app does not use analytics, advertising, or tracking of any kind.
-          </p>
-
-          <h3>Changes</h3>
-          <p>If this policy changes, the updated version will be posted at this URL.</p>
-
-          <h3>Contact</h3>
-          <p>
-            Questions about this policy can be sent through the{" "}
-            <Link href="/contact" className="animate-hover">contact page</Link>.
-          </p>
-        </section>
-      </div>
-    </>
+    <article>
+      <p className={styles.backLink}>
+        <Link href="/tools">← Tools</Link>
+      </p>
+      <h1>Script Follow-Along</h1>
+      <MdxContent source={body} />
+    </article>
   );
 }
+
+/* If the content file goes missing, say so rather than rendering nothing. */
+const FALLBACK_BODY = `## Privacy Policy
+
+The privacy policy content could not be loaded.`;
+
