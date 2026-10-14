@@ -67,8 +67,16 @@ function readEntry(kind: ContentKind, file: string): ContentEntry | null {
 /**
  * All entries of a kind, newest first.
  *
- * Drafts are excluded from production builds but visible in development, so
- * `npm run dev` shows work in progress without it ever shipping.
+ * Drafts are excluded from production builds but rendered by `npm run dev`.
+ * That is deliberate: it lets a half-finished post be read in the browser
+ * without any risk of shipping, because NODE_ENV is "production" during
+ * `next build`, so the draft is never in the built output at all.
+ *
+ * Two consequences worth knowing:
+ *   - Drafts are a *build-time* exclusion (SSG), not a runtime check, so a
+ *     draft cannot leak through a stale page.
+ *   - The feed (feed.xml) and sitemap use these same functions, so drafts are
+ *     absent from both automatically.
  */
 export function getEntries(kind: ContentKind): ContentEntry[] {
   const dir = dirFor(kind);

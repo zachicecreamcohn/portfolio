@@ -6,17 +6,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 
-const PAGES = [
+/**
+ * Nav items that are not conditional. `Writing` is added by buildPages below
+ * only when there is at least one published post, so an empty blog never
+ * produces a dead nav link.
+ */
+const BASE_PAGES = [
   { title: "Work", path: "/design" },
   { title: "About", path: "/about" },
-  { title: "Writing", path: "/posts" },
   { title: "Tools", path: "/tools" },
 ];
 
-export default function NavBar() {
+function buildPages(hasPosts: boolean) {
+  if (!hasPosts) return BASE_PAGES;
+  return [BASE_PAGES[0], BASE_PAGES[1], { title: "Writing", path: "/posts" }, BASE_PAGES[2]];
+}
+
+export default function NavBar({ hasPosts = false }: { hasPosts?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLDetailsElement>(null);
   const pathname = usePathname();
+  const pages = buildPages(hasPosts);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 0);
@@ -56,7 +66,7 @@ export default function NavBar() {
 
         <div className={styles.right}>
           <ul className={styles.links}>
-            {PAGES.map((page) => (
+            {pages.map((page) => (
               <li key={page.path}>
                 <Link
                   href={page.path}
@@ -86,7 +96,7 @@ export default function NavBar() {
               <span className="sr-only">Menu</span>
             </summary>
             <ul className={styles.menuLinks}>
-              {PAGES.map((page) => (
+              {pages.map((page) => (
                 <li key={page.path}>
                   <Link
                     href={page.path}

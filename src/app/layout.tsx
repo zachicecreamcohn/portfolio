@@ -7,6 +7,7 @@ import MainContainer from "@/components/Layout/MainContainer/MainContainer";
 import NavBar from "@/components/NavBar/NavBar";
 import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import { DEFAULT_THEME, isTheme } from "@/lib/theme";
+import { getPosts } from "@/lib/content";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
@@ -49,6 +50,15 @@ export default function RootLayout({
   const cookieTheme = cookies().get("theme")?.value;
   const initialTheme = isTheme(cookieTheme) ? cookieTheme : DEFAULT_THEME;
 
+  /*
+   * Whether to show the Writing nav item. getPosts() applies the draft filter,
+   * so in a production build this is false while every post is a draft — which
+   * keeps an empty blog from advertising itself with a dead link. It has to be
+   * resolved here because NavBar is a client component and cannot read the
+   * filesystem.
+   */
+  const hasPosts = getPosts().length > 0;
+
   return (
     <html lang="en" className={initialTheme} suppressHydrationWarning>
       <head>
@@ -88,7 +98,7 @@ export default function RootLayout({
         </a>
         <ThemeProvider initialTheme={initialTheme}>
           <MainContainer>
-            <NavBar />
+            <NavBar hasPosts={hasPosts} />
             <main id="main" className="page">
               {children}
             </main>
