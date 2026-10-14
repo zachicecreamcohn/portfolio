@@ -32,6 +32,7 @@
   --secondary: #fe716a;
   --text-shadow: #fac852;
   --theme-button-background: #fac852;
+  --on-theme-button: #101010;
 }
 
 .theme2 {
@@ -46,6 +47,7 @@
   --secondary: #181818;
   --text-shadow: #0a8ece;
   --theme-button-background: #0a8ece;
+  --on-theme-button: #101010;
 }
 
 .theme3 {
@@ -56,6 +58,7 @@
   --secondary: #42835e;
   --text-shadow: #9191e9;
   --theme-button-background: #9191e9;
+  --on-theme-button: #101010;
 }
 
 .theme4 {
@@ -66,6 +69,7 @@
   --secondary: #e26b00;
   --text-shadow: #e26b00;
   --theme-button-background: #e26b00;
+  --on-theme-button: #101010;
 }
 
 /*

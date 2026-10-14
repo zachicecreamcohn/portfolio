@@ -85,6 +85,10 @@
   --secondary: #fe716a; /* dormant accent — see theming.css */
   --text-shadow: #fac852;
   --theme-button-background: #fac852;
+  /* Icon colour while the theme-switch fill is showing. Must be DARK: all four
+     --theme-button-background values are light, so --primary-text (also light)
+     measures only 1.32-2.16:1 against them. #101010 measures 5.23-12.19:1. */
+  --on-theme-button: #101010;
 }
 
 /* ---------------------------------------------------------------- reset */

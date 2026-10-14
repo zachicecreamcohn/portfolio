@@ -33,11 +33,18 @@
 }
 
 .button:hover {
-  --ring: var(--border);
+  --ring: color-mix(in srgb, var(--on-theme-button) 30%, transparent);
   background-color: var(--theme-button-background);
+  /* The fill is a light accent in every theme, so the glyph and ring must go
+     dark here. --primary-text on the fill measures only 1.32-2.16:1;
+     --on-theme-button measures 5.23-12.19:1. */
+  color: var(--on-theme-button);
 }
 
 .button:focus-visible {
+  --ring: color-mix(in srgb, var(--on-theme-button) 30%, transparent);
+  background-color: var(--theme-button-background);
+  color: var(--on-theme-button);
   outline: 2px solid var(--primary-text);
   outline-offset: 2px;
 }
