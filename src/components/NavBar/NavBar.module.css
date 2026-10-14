@@ -63,6 +63,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  /* Extra breathing room before the theme control. The .right gap is only
+     --space-2, which read as cramped next to the --space-5 spacing between the
+     links themselves. Applies to the last link, so it separates the links
+     cluster from the control rather than adding trailing space in general.
+     The links list is hidden below the nav breakpoint, so this only affects
+     the desktop layout. */
+  margin-inline-end: var(--space-4);
 }
 
 .links a {
