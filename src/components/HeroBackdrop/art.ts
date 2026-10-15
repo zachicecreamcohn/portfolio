@@ -74,7 +74,7 @@ export const RULE_FLOOR = 0.003;
  * nothing else, so the surface between them — and every shadowed area — stays
  * black.
  */
-export const PEAK = 0.15;
+export const PEAK = 0.07;
 
 /** Angular resolution of the shadow map: one texel per angle. */
 export const SHADOW_MAP_ANGLES = 2048;
