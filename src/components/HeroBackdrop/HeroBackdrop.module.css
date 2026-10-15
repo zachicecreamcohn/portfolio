@@ -1,0 +1,41 @@
+/*
+ * HeroBackdrop — the generative artwork layer behind the home hero.
+ *
+ * `position: fixed` makes the artwork full-bleed without fighting `.page`'s
+ * max-width or gutter, and `inset: 0` means it exactly fills the viewport, so
+ * <html>'s `overflow-x: clip` never has anything to clip.
+ *
+ * Stacking: z-index 0 sits above the body background but below the hero copy,
+ * which Home.module.css raises to z-index 1. The nav carries z-index
+ * var(--z-nav) and so stays on top. Both layers resolve in the root stacking
+ * context — MainContainer is a bare <div> and `.page` sets no position — so no
+ * ancestor can trap the fixed layer.
+ */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  /* Critical. The canvas covers the viewport and would otherwise swallow every
+     click on the hero's Contact and Work buttons. */
+  pointer-events: none;
+}
+
+.backdrop canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* Fade in once the lazily loaded chunk has painted its first frame, so the
+     artwork arrives rather than appearing. The global reduced-motion block in
+     globals.css collapses this transition for anyone who asked for less
+     movement.
+     
+     No static gradient fallback is painted underneath: body already carries
+     --bg, so first paint is a clean dark page and there is nothing to pop when
+     the canvas takes over. */
+  opacity: 0;
+  transition: opacity 0.9s var(--ease);
+}
+
+.backdrop[data-ready="true"] canvas {
+  opacity: 1;
+}

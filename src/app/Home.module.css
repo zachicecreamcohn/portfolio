@@ -9,6 +9,12 @@
 .hero {
   display: flex;
   flex-direction: column;
+  /* Raises the copy above the fixed HeroBackdrop layer, which sits at
+     z-index 0. Both resolve in the root stacking context, so this is the whole
+     of the contract: without it the artwork would paint over the headline and
+     the buttons. */
+  position: relative;
+  z-index: 1;
 }
 
 .title {

@@ -24,8 +24,7 @@ export default function About() {
           <div className={styles.aboutContainer}>
             <h1>hello!</h1>
             <p>
-              I&apos;m an NYC-based lighting and projections designer for
-              theatre.
+              I&apos;m an NYC-based lighting and projections designer for live performance.
             </p>
             <p>
               I love combining art and technology in new and interesting ways.
