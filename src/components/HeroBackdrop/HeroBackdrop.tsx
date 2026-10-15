@@ -305,6 +305,8 @@ function startScene(ogl: Ogl, host: HTMLElement, seedText?: string) {
   let frameId = 0;
   let lastFrame = 0;
   let lastPaint = 0;
+  let lastWidth = 0;
+  let lastHeight = 0;
   let elapsed = 0;
   /** True once a real pointer has moved, which retires the resting drift. */
   let hasPointer = false;
@@ -458,6 +460,15 @@ function startScene(ogl: Ogl, host: HTMLElement, seedText?: string) {
   function resize() {
     const width = host.clientWidth || window.innerWidth;
     const height = host.clientHeight || window.innerHeight;
+
+    /*
+     * A no-op resize still runs renderer.setSize, which resets the canvas buffer
+     * to black. Guard it so a redundant ResizeObserver callback (or the init
+     * double-fire) never clears a live frame.
+     */
+    if (width === lastWidth && height === lastHeight) return;
+    lastWidth = width;
+    lastHeight = height;
 
     /*
      * Cap the total shaded pixels. At native density the hairlines stay crisp,
